@@ -1,13 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-
-namespace Player
+namespace Player.Movement
 {
-    public class PlayerMovment : MonoBehaviour
+    public class PlayerMovement : MonoBehaviour
     {
-        [Header("movment")]
+        [Header("Movement")]
         public float moveSpeed;
 
         public Transform orientation;

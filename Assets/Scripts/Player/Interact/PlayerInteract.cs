@@ -9,6 +9,8 @@ namespace Player.Interact
         [SerializeField] private float detectDistance = 2f;
 
         private InteractableObj _interactableObj;
+        [SerializeField] private LayerMask interactLayer;
+        
         private void Update()
         {
             DetectInteractable();
@@ -17,7 +19,7 @@ namespace Player.Interact
         private bool DetectInteractable()
         {
             RaycastHit hit;
-            Physics.Raycast(camObj.position, camObj.forward, out hit, detectDistance);
+            Physics.Raycast(camObj.position, camObj.forward, out hit, detectDistance, interactLayer);
             
             if(hit.collider == null)
             {
