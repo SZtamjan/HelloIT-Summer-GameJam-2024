@@ -10,6 +10,8 @@ namespace Player.Interact.InteractBehaviors
         private PlayerManager _playerManager;
         private float _playerHeight;
 
+        [Header("Teleport info")] 
+        [SerializeField] private float teleportDistance = 2f;
         [SerializeField] private TeleportDirection teleportDirection;
         private void Start()
         {
@@ -20,6 +22,7 @@ namespace Player.Interact.InteractBehaviors
         public void SitDownPlayer()
         {
             _playerManager.transform.position = transform.position + new Vector3(0, _playerHeight, 0);
+            Physics.SyncTransforms();
             StartCoroutine(TeleportMeOut());
         }
 
@@ -32,10 +35,12 @@ namespace Player.Interact.InteractBehaviors
             switch (teleportDirection)
             {
                 case TeleportDirection.forward:
-                    _playerManager.transform.position = pPos + new Vector3(0, 0, pPos.z + 1f);
+                    pPos.z += teleportDistance;
+                    _playerManager.transform.position = pPos;
                     break;
                 case TeleportDirection.back:
-                    _playerManager.transform.position = pPos + new Vector3(0, 0, pPos.z - 1f);
+                    pPos.z -= teleportDistance;
+                    _playerManager.transform.position = pPos;
                     break;
                 default:
                     Debug.LogError("EXCEPTION");
