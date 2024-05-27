@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,6 +9,12 @@ namespace Player.Movement
         private InputAction _moveAction;
 
         [SerializeField] private float playerSpeed = 5f;
+
+        #region Properties
+
+        public InputAction MoveActionProperty => _moveAction;
+
+        #endregion
 
         private void Start()
         {

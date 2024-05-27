@@ -14,7 +14,7 @@ namespace Player.Movement
         {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.None;
+            //Cursor.lockState = CursorLockMode.None;
             
             camTransform = GetComponentInChildren<Camera>().transform;
             playerBody = GetComponent<Transform>(); 
