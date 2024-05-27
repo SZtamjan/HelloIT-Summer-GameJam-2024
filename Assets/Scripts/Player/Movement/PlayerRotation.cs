@@ -4,34 +4,32 @@ namespace Player.Movement
 {
     public class PlayerRotation : MonoBehaviour
     {
-        public float sensX;
-        public float sensY;
+        private Transform playerBody;
+        private Transform camTransform;
 
-        public Transform orientation;
-
-        float xRotarion;
-        float yRotarion;
+        public float mouseSens = 500f;
+        private float _xRot = 0f;
 
         private void Start()
         {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.None;
+            
+            camTransform = GetComponentInChildren<Camera>().transform;
+            playerBody = GetComponent<Transform>(); 
         }
 
-        private void Update()
+        private void FixedUpdate()
         {
-            float mouseX = Input.GetAxisRaw("Mouse X") * Time.deltaTime * sensX;
-            float mouseY = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * sensY;
+            float mouseX = Input.GetAxisRaw("Mouse X") * mouseSens * Time.deltaTime;
+            float mouseY = Input.GetAxisRaw("Mouse Y") * mouseSens * Time.deltaTime;
 
-            yRotarion += mouseX;
-            xRotarion -= mouseY;
-
-            xRotarion = Mathf.Clamp(xRotarion, -90f, 90f);
-
-            transform.rotation = Quaternion.Euler(xRotarion, yRotarion, 0);
-            orientation.rotation = Quaternion.Euler(0, yRotarion, 0);
-
+            _xRot -= mouseY;
+            _xRot = Mathf.Clamp(_xRot, -90f, 90f);
+        
+            camTransform.transform.localRotation = Quaternion.Euler(_xRot, 0f, 0f);
+            playerBody.Rotate(Vector3.up * mouseX);
         }
 
     }

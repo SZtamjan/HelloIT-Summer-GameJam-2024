@@ -1,30 +1,20 @@
+using System;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Player.Movement
 {
     public class PlayerMovement : MonoBehaviour
     {
-        [Header("Movement")]
-        public float moveSpeed;
+        private PlayerInput _playerInput;
+        private InputAction _moveAction;
 
-        public Transform orientation;
-
-        float horizontalInput;
-        float verticalInput;
-
-        Vector3 moveDirection;
-
-        Rigidbody rb;
+        [SerializeField] private float playerSpeed = 5f;
 
         private void Start()
         {
-            rb = GetComponent<Rigidbody>();
-            rb.freezeRotation = true;
-        }
-
-        private void Update()
-        {
-            MyInput();
+            _playerInput = GetComponent<PlayerInput>();
+            _moveAction = _playerInput.actions.FindAction("Move");
         }
 
         private void FixedUpdate()
@@ -34,16 +24,10 @@ namespace Player.Movement
 
         private void MovePlayer()
         {
-            moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+            Vector2 dir = _moveAction.ReadValue<Vector2>();
 
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+            Quaternion currRot = transform.rotation;
+            transform.position += currRot * new Vector3(dir.x, 0, dir.y) * (playerSpeed * Time.deltaTime);
         }
-
-        private void MyInput()
-        {
-            horizontalInput = Input.GetAxisRaw("Horizontal");
-            verticalInput = Input.GetAxisRaw("Vertical");
-        }
-
     }
 }
