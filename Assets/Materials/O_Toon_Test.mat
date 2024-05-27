@@ -12,7 +12,7 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - _HALFTONESHAPE_CROSS
+  - _HALFTONESHAPE_STRIPE
   - _OUTLINE
   - _SPECULARHIGHLIGHTS_OFF
   - _TOON_SHADING_ON
@@ -165,7 +165,7 @@ Material:
     - _HalfToneDiffuseStep: -0.293
     - _HalfToneEnabled: 1
     - _HalfToneIncludeReceivedShadow: 1
-    - _HalfToneShape: 2
+    - _HalfToneShape: 1
     - _HalfToneUvMode: 0
     - _HalftoneDiffuseOffest: 0
     - _HalftoneFadeDistance: 47.6

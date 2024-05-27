@@ -25,7 +25,7 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - _HALFTONESHAPE_CROSS
+  - _HALFTONESHAPE_STRIPE
   - _OUTLINE
   - _SPECULARHIGHLIGHTS_OFF
   - _TOON_SHADING_ON
@@ -165,12 +165,12 @@ Material:
     - _HalfToneDiffuseStep: -0.099
     - _HalfToneEnabled: 1
     - _HalfToneIncludeReceivedShadow: 0
-    - _HalfToneShape: 2
+    - _HalfToneShape: 1
     - _HalfToneUvMode: 1
     - _HalftoneFadeDistance: 8.3
     - _HalftoneFadeToColor: 0
     - _HalftoneNoiseClip: 0.82
-    - _HalftoneTilling: 54.2
+    - _HalftoneTilling: 90.4
     - _HatchingDensity: 0.845
     - _HatchingDiffuseOffset: -0.426
     - _HatchingDrawStrength: 3.36
@@ -215,7 +215,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 0
     m_Colors:
-    - _BaseColor: {r: 0.6317451, g: 0.63799995, b: 0.5629412, a: 0}
+    - _BaseColor: {r: 0.6317451, g: 0.63799995, b: 0.5629412, a: 0.6862745}
     - _Color: {r: 0.9063317, g: 0.9063317, b: 0.9063317, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
     - _FaceFrontDirection: {r: 0, g: 0, b: 1, a: 0}

@@ -37,13 +37,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Fill: 0.673
+    - _Fill: 0.646
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _WobbleZ: 0
+    - _WobbleX: -0.37
+    - _WobbleZ: 0.25
     m_Colors:
-    - _Side_Color: {r: 0.2264151, g: 0.16966711, b: 0.124955505, a: 1}
-    - _Top_Color: {r: 0.3962264, g: 0.35120034, b: 0.28969383, a: 1}
+    - _Side_Color: {r: 0.5566038, g: 0.23548622, b: 0, a: 1}
+    - _Top_Color: {r: 0.6509434, g: 0.41201398, b: 0.06448024, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &1823614143488541405
 MonoBehaviour:
