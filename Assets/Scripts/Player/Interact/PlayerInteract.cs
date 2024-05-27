@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using UI;
+using UnityEngine;
 using UnityEngine.InputSystem;
 
 namespace Player.Interact
@@ -23,17 +24,19 @@ namespace Player.Interact
             
             if(hit.collider == null)
             {
+                UIController.Instance.SwitchInteractInfoDisplay(false);
                 _interactableObj = null;
                 return false;
             }
             
             if (hit.collider.gameObject.TryGetComponent(out InteractableObj interactableObj))
             {
-                //UI.UIController.Instance.SwitchInteractInfoDisplay();
+                UIController.Instance.SwitchInteractInfoDisplay(true);
                 _interactableObj = interactableObj;
                 return true;
             }
 
+            UIController.Instance.SwitchInteractInfoDisplay(false);
             _interactableObj = null;
             return false;
         }
