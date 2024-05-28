@@ -1,4 +1,6 @@
-﻿using UI;
+﻿using System;
+using Audio;
+using UI;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -12,6 +14,14 @@ namespace Player.Interact
         private InteractableObj _interactableObj;
         [SerializeField] private LayerMask interactLayer;
         
+        //Components
+        private AudioManagerScript _audioManagerScript;
+
+        private void Start()
+        {
+            _audioManagerScript = AudioManagerScript.Instance;
+        }
+
         private void Update()
         {
             DetectInteractable();
@@ -44,6 +54,9 @@ namespace Player.Interact
         public void UseInteractable(InputAction.CallbackContext ctx)
         {
             if (!DetectInteractable() || _interactableObj == null) return;
+            
+            //click audio
+            _audioManagerScript.PlaySFXOneShot("nice");
             
             if(ctx.started) _interactableObj.StartThisOnInteract();
         }
