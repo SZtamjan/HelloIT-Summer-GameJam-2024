@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static MaskInfoClass;
 
 public class NPCBody : MonoBehaviour
 {

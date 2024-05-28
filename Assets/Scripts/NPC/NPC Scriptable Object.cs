@@ -2,6 +2,7 @@ using NaughtyAttributes;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static MaskInfoClass;
 
 [CreateAssetMenu(fileName = "Pacjent", menuName = "NPC`s/NPC", order = 100)]
 public class NPCScriptableObject : ScriptableObject
@@ -109,8 +110,8 @@ public class NPCScriptableObject : ScriptableObject
 
     public MaskInfo GetMask()
     {
-        MaskInfo mask = new MaskInfo() {mesh=_maskMesh,material=_maskMaterial };
-        return mask;
+        MaskInfo maskInfo = new MaskInfo() { mesh = _maskMesh, material = _maskMaterial };
+        return maskInfo;
     }
 
 
