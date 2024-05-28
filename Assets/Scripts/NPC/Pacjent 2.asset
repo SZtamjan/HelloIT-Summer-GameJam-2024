@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 762eec23d535603438e1a9444a00ad61, type: 3}
-  m_Name: Pacjent
+  m_Name: Pacjent 2
   m_EditorClassIdentifier: 
   name: Zbyszek
   _maskMesh: {fileID: 6929103289814954685, guid: cb10124aa97d4d64c990a9247bec8c3a, type: 3}

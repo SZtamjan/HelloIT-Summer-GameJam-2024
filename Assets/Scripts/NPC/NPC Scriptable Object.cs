@@ -6,8 +6,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Pacjent", menuName = "NPC`s/NPC", order = 100)]
 public class NPCScriptableObject : ScriptableObject
 {
-    [SerializeField, Foldout("body")] private new string name = "Zbyszek";
-    [SerializeField, Foldout("body")] private GameObject _body;
+    [SerializeField, Foldout("body")] private string imie = "Zbyszek";
     [SerializeField, Foldout("body")] private Mesh _maskMesh;
     [SerializeField, Foldout("body")] private Material _maskMaterial;
 
@@ -87,7 +86,7 @@ public class NPCScriptableObject : ScriptableObject
 
     public string GetName()
     {
-        return name;
+        return imie;
     }
 
     public void SetWyleczonyPacjent(bool zadowolenie)
@@ -108,6 +107,11 @@ public class NPCScriptableObject : ScriptableObject
 
     }
 
+    public MaskInfo GetMask()
+    {
+        MaskInfo mask = new MaskInfo() {mesh=_maskMesh,material=_maskMaterial };
+        return mask;
+    }
 
 
 }

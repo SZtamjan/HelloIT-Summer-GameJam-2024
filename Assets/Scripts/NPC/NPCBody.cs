@@ -5,7 +5,12 @@ using UnityEngine.UI;
 
 public class NPCBody : MonoBehaviour
 {
-    public MeshFilter MeshFilter;
-    public MeshRenderer MeshRenderer;
+    [SerializeField] private MeshFilter MeshFilter;
+    [SerializeField] private MeshRenderer MeshRenderer;
        
+    public void UpdateMask(MaskInfo maska)
+    {
+        MeshFilter.mesh = maska.mesh;
+        MeshRenderer.material = maska.material;
+    }
 }
