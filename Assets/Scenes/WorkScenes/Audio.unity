@@ -2228,9 +2228,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 481094912}
   sfxSource: {fileID: 485442516}
-  sounds:
-  - name: nice
-    clip: {fileID: 8300000, guid: 0647ba8cb63421c469cde0b8bbb1fae9, type: 3}
+  sounds: []
 --- !u!1 &1917561265
 GameObject:
   m_ObjectHideFlags: 0
