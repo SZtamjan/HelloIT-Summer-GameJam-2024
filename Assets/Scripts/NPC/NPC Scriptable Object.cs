@@ -95,7 +95,7 @@ public class NPCScriptableObject : ScriptableObject
         _wyleczonyPacjent = zadowolenie;
     }
 
-    public int GetPienizki()
+    public int GetPieniazki()
     {
         if (_wyleczonyPacjent)
         {
