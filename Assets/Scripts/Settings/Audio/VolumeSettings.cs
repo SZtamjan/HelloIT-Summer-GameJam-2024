@@ -20,7 +20,7 @@ namespace Settings.Audio
         public void SetSfxVolume()
         {
             float volume = sfxSlider.value;
-            myMixer.SetFloat("MusicMixer", Mathf.Log10(volume) * 20f);
+            myMixer.SetFloat("SFXMixer", Mathf.Log10(volume) * 20f);
         }
         
     }
