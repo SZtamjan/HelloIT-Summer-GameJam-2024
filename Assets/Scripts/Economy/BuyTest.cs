@@ -1,4 +1,5 @@
-﻿using Economy.EconomyActions;
+﻿using Audio;
+using Economy.EconomyActions;
 using UnityEngine;
 
 namespace Economy
@@ -8,7 +9,6 @@ namespace Economy
         public ResourcesStruct r;
         public void Buy()
         {
-            
             EconomyOperations.Purchase(r);
         }
     }
