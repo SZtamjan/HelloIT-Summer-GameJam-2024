@@ -1,9 +1,7 @@
 using Crafting;
 using NaughtyAttributes;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 
 namespace NPC
 {
@@ -13,16 +11,16 @@ namespace NPC
 
         [SerializeField] private NPCBody _pacjentBody;
 
-
         [SerializeField] private List<NPCScriptableObject> _kolejka;
         public int kolejkaCount = 0;
 
-
         [SerializeField] private NPCScriptableObject TestowyPacjent;
+
         private void Awake()
         {
             Instance = this;
         }
+
         private void Start()
         {
             Debug.LogWarning("Nie ma nigogo w kolejce");
@@ -38,6 +36,7 @@ namespace NPC
         {
             UpdatePajcent(TestowyPacjent);
         }
+
         [Button]
         public void SprawdzChorobe()
         {
@@ -48,7 +47,7 @@ namespace NPC
             {
                 if (!lek.Contains(objaw))
                 {
-                    wszytskieObjawy=false;
+                    wszytskieObjawy = false;
                 }
             }
 
@@ -68,6 +67,5 @@ namespace NPC
         {
             _pacjentBody.UpdateMask(pacjentInfo.GetMask());
         }
-
     }
 }

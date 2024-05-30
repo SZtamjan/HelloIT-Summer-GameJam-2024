@@ -25,14 +25,15 @@ namespace NPC
         [SerializeField, Foldout("Pieni¹dze"), Tooltip("Ile zap³aci")] private int pieniazkiZaWyleczenie;
         [SerializeField, Foldout("Pieni¹dze"), Tooltip("Ile zap³aci")] private int pieniazkiZaPora¿ke;
 
-
         private bool _wyleczonyPacjent;
 
-        #region chat    
+        #region chat
+
         public List<string> EntryChatList()
         {
             return _EntryChat;
         }
+
         public string EntryChatId(int id)
         {
             if (id > (_EntryChat.Count - 1))
@@ -70,11 +71,9 @@ namespace NPC
             return _ExitChat[id];
         }
 
-        #endregion
+        #endregion chat
 
         #region gazeta
-
-
 
         public string GetGazeta()
         {
@@ -88,7 +87,7 @@ namespace NPC
             }
         }
 
-        #endregion
+        #endregion gazeta
 
         public string GetName()
         {
@@ -110,7 +109,6 @@ namespace NPC
             {
                 return pieniazkiZaPora¿ke;
             }
-
         }
 
         public MaskInfo GetMask()
@@ -123,7 +121,5 @@ namespace NPC
         {
             return _Choroba.objawy;
         }
-
-
     }
 }

@@ -1,5 +1,3 @@
-using System;
-using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,36 +7,34 @@ namespace Player.Movement
     {
         private PlayerInput _playerInput;
         private InputAction _moveAction;
-        private InputAction lookAction;
+        private InputAction _lookAction;
 
-        private Transform camTransform;
+        [SerializeField] private Transform camTransform;
 
         private Rigidbody _rb;
 
         [SerializeField] private float playerSpeed = 5f;
-        [SerializeField] private float rotationSpeed = 100f;
+        [SerializeField] private float YawSpeed = 100f;
+        [SerializeField] private float PitchSpeed = 100f;
+        [SerializeField] private float CameraSpeed = 100f;
 
         #region Properties
 
         public InputAction MoveActionProperty => _moveAction;
 
-        #endregion
-
-
-        public float xd = 0;
-        public float xd2 = 0;
+        #endregion Properties
 
         private void Awake()
         {
             _rb = GetComponent<Rigidbody>();
-            camTransform = GetComponentInChildren<Camera>().transform;
+            //camTransform = GetComponentInChildren<Camera>().transform;
         }
 
         private void Start()
         {
             _playerInput = GetComponent<PlayerInput>();
             _moveAction = _playerInput.actions.FindAction("Move");
-            lookAction = _playerInput.actions.FindAction("Look");
+            _lookAction = _playerInput.actions.FindAction("Look");
         }
 
         private void OnEnable()
@@ -48,40 +44,31 @@ namespace Player.Movement
 
         private void OnDisable()
         {
-            lookAction.Disable();
+            _lookAction.Disable();
         }
 
         private void FixedUpdate()
         {
             MovePlayer();
-            LookPlayer();
+            YawPlayer();
+            PitchPlayer();
         }
 
-        private void LookPlayer()
+        private void YawPlayer()
         {
-            Vector2 lookDelta = lookAction.ReadValue<Vector2>();
-            float yaw = lookDelta.x * rotationSpeed * Time.deltaTime;
+            Vector2 lookDelta = _lookAction.ReadValue<Vector2>();
+            float yaw = lookDelta.x * YawSpeed * Time.deltaTime;
 
             transform.rotation = Quaternion.Euler(0, yaw, 0) * transform.rotation;
         }
 
-        private void MovePlayer()
+        private void PitchPlayer()
         {
-            Vector2 dir = _moveAction.ReadValue<Vector2>();
-
-            Quaternion currRot = transform.rotation;
-            _rb.AddForce(currRot * new Vector3(dir.x, 0, dir.y) * (playerSpeed * Time.deltaTime));
-        }
-
-        private void Update()
-        {
-            Vector2 lookDelta = lookAction.ReadValue<Vector2>();
+            Vector2 lookDelta = _lookAction.ReadValue<Vector2>();
             float currentPitch = camTransform.transform.localRotation.eulerAngles.x;
 
-            float pitch = (lookDelta.y * rotationSpeed * Time.deltaTime * (-1));
+            float pitch = (lookDelta.y * PitchSpeed * Time.deltaTime * (-1));
 
-            xd = currentPitch;
-            xd2 = pitch;
             if (currentPitch > 80f && currentPitch < 90f)
             {
                 if (pitch > 0f)
@@ -101,10 +88,21 @@ namespace Player.Movement
                     pitch = 0f;
                 }
             }
-
-
             camTransform.transform.localRotation = Quaternion.Euler(pitch + currentPitch, 0f, 0f);
+        }
 
+        private void MovePlayer()
+        {
+            Vector2 dir = _moveAction.ReadValue<Vector2>();
+            Quaternion currRot = transform.rotation;
+            _rb.AddForce(currRot * new Vector3(dir.x, 0, dir.y) * (playerSpeed * Time.deltaTime));
+        }
+
+        private void Update()
+        {
+            Quaternion rot = Quaternion.Slerp(Camera.main.transform.rotation, camTransform.rotation, CameraSpeed * Time.deltaTime);
+            Vector3 pos = camTransform.position;
+            Camera.main.transform.SetPositionAndRotation(pos, rot);
         }
     }
 }

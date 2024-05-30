@@ -8,9 +8,7 @@ namespace Crafting
 {
     public class Skladnik : MonoBehaviour
     {
-
-        [SerializeField, Required] private SkladnikiScriptableObject skladnik; 
-
+        [SerializeField, Required] private SkladnikiScriptableObject skladnik;
 
         public SkladnikiScriptableObject GetSkładnik()
         {
