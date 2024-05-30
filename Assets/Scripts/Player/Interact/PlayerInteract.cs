@@ -56,7 +56,7 @@ namespace Player.Interact
             if (!DetectInteractable() || _interactableObj == null) return;
             
             //click audio
-            _audioManagerScript.PlaySFXOneShot("nice");
+            //_audioManagerScript.PlaySFXOneShot("nice");
             
             if(ctx.started) _interactableObj.StartThisOnInteract();
         }
