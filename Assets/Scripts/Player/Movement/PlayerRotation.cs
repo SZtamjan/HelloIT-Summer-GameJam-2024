@@ -13,17 +13,17 @@ namespace Player.Movement
 
         //private InputAction _moveAction;
 
-        //private void Start()
-        //{
-        //    Cursor.lockState = CursorLockMode.Locked;
-        //    Cursor.visible = false;
+        private void Start()
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         //    Cursor.lockState = CursorLockMode.None;
 
         //    camTransform = GetComponentInChildren<Camera>().transform;
         //    playerBody = GetComponent<Transform>();
 
 
-        //}
+        }
 
         //private void FixedUpdate()
         //{

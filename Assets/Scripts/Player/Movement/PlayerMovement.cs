@@ -9,6 +9,7 @@ namespace Player.Movement
         private InputAction _moveAction;
         private InputAction _lookAction;
 
+        [SerializeField] private Camera mainCam;
         [SerializeField] private Transform camTransform;
 
         private Rigidbody _rb;
@@ -102,7 +103,7 @@ namespace Player.Movement
         {
             Quaternion rot = Quaternion.Slerp(Camera.main.transform.rotation, camTransform.rotation, CameraSpeed * Time.deltaTime);
             Vector3 pos = camTransform.position;
-            Camera.main.transform.SetPositionAndRotation(pos, rot);
+            mainCam.transform.SetPositionAndRotation(pos, rot);
         }
     }
 }
