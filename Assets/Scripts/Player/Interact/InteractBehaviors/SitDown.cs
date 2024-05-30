@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using Player.Movement;
 using UnityEngine;
 
@@ -49,10 +48,10 @@ namespace Player.Interact.InteractBehaviors
             
         }
     }
-}
 
-public enum TeleportDirection
-{
-    forward,
-    back
+    public enum TeleportDirection
+    {
+        forward,
+        back
+    }
 }
