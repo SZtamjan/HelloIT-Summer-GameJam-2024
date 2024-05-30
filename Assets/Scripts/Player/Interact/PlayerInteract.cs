@@ -13,9 +13,14 @@ namespace Player.Interact
 
         private InteractableObj _interactableObj;
         [SerializeField] private LayerMask interactLayer;
-        
+
         //Components
         private AudioManagerScript _audioManagerScript;
+
+        private void Awake()
+        {
+            camObj = Camera.main.transform;
+        }
 
         private void Start()
         {
@@ -31,14 +36,14 @@ namespace Player.Interact
         {
             RaycastHit hit;
             Physics.Raycast(camObj.position, camObj.forward, out hit, detectDistance, interactLayer);
-            
-            if(hit.collider == null)
+
+            if (hit.collider == null)
             {
                 UIController.Instance.SwitchInteractInfoDisplay(false);
                 _interactableObj = null;
                 return false;
             }
-            
+
             if (hit.collider.gameObject.TryGetComponent(out InteractableObj interactableObj))
             {
                 UIController.Instance.SwitchInteractInfoDisplay(true);
@@ -54,11 +59,11 @@ namespace Player.Interact
         public void UseInteractable(InputAction.CallbackContext ctx)
         {
             if (!DetectInteractable() || _interactableObj == null) return;
-            
+
             //click audio
             //_audioManagerScript.PlaySFXOneShot("nice");
-            
-            if(ctx.started) _interactableObj.StartThisOnInteract();
+
+            if (ctx.started) _interactableObj.StartThisOnInteract();
         }
     }
 }
