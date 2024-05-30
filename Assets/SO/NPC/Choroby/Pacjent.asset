@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 762eec23d535603438e1a9444a00ad61, type: 3}
-  m_Name: Pacjent 2
+  m_Name: Pacjent
   m_EditorClassIdentifier: 
   imie: Zbyszek
-  _maskMesh: {fileID: 4923970991324832188, guid: 93c0e292bc253dd4c88d43b9ac6d4d00, type: 3}
-  _maskMaterial: {fileID: 2100000, guid: 9d78cbcb8d976004397f875b82692b30, type: 2}
+  _maskMesh: {fileID: 0}
+  _maskMaterial: {fileID: 0}
+  _Choroba: {fileID: 11400000, guid: 78189e62ea4dbfc419dc8ea2f12b1bea, type: 2}
   _EntryChat:
   - Elo Doktorku
   _NormalChat:

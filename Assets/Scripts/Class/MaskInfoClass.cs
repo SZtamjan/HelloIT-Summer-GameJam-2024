@@ -2,14 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MaskInfoClass : MonoBehaviour
-{
 
-    [System.Serializable]
-    public class MaskInfo
+namespace Class
+{
+    public class MaskInfoClass : MonoBehaviour
     {
-        public Mesh mesh;
-        public Material material;
+
+        [System.Serializable]
+        public class MaskInfo
+        {
+            public Mesh mesh;
+            public Material material;
+        }
+
     }
-   
 }
