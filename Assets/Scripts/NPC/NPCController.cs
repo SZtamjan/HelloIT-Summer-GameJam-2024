@@ -1,3 +1,4 @@
+using Crafting;
 using NaughtyAttributes;
 using System.Collections;
 using System.Collections.Generic;
@@ -33,9 +34,34 @@ namespace NPC
         }
 
         [Button]
-        private void TestPajcent()
+        private void ZmienMaske()
         {
             UpdatePajcent(TestowyPacjent);
+        }
+        [Button]
+        public void SprawdzChorobe()
+        {
+            CraftingController.Instance.ZrobLek();
+            var lek = CraftingController.Instance.lek.GetObjawy();
+            bool wszytskieObjawy = true;
+            foreach (var objaw in TestowyPacjent.GetObjawy())
+            {
+                if (!lek.Contains(objaw))
+                {
+                    wszytskieObjawy=false;
+                }
+            }
+
+            TestowyPacjent.SetWyleczonyPacjent(wszytskieObjawy);
+
+            if (wszytskieObjawy)
+            {
+                Debug.Log("Sukces");
+            }
+            else
+            {
+                Debug.Log("Œmieræ");
+            }
         }
 
         public void UpdatePajcent(NPCScriptableObject pacjentInfo)

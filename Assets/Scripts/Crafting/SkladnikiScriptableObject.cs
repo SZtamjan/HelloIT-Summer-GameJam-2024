@@ -9,7 +9,7 @@ namespace Crafting
     [CreateAssetMenu(fileName = "Składnik", menuName = "Crafting/Składnik")]
     public class SkladnikiScriptableObject : ScriptableObject
     {
-        public Skladnik nazwa;
+        public Class.SkladnikiClass.Skladnik nazwa;
         public List<Objaw> objawy;
 
     }

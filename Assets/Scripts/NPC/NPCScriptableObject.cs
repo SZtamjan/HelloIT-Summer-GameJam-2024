@@ -3,6 +3,7 @@ using NaughtyAttributes;
 using System.Collections.Generic;
 using UnityEngine;
 using static Class.MaskInfoClass;
+using static Class.ObjawyClass;
 
 namespace NPC
 {
@@ -15,10 +16,10 @@ namespace NPC
 
         [SerializeField, Foldout("choroba"), Required] private ChorobaScriptableObject _Choroba;
 
-        [SerializeField, Foldout("Chat")] private List<string> _EntryChat = new List<string> { "Elo Doktorku" };
+        [SerializeField, Foldout("Chat"), ResizableTextArea] private List<string> _EntryChat = new() { "Elo Doktorku" };
 
-        [SerializeField, Foldout("Chat")] private List<string> _NormalChat = new List<string> { "Mam horom horobe" };
-        [SerializeField, Foldout("Chat")] private List<string> _ExitChat = new List<string> { "Adios Bia³asie" };
+        [SerializeField, Foldout("Chat"), ResizableTextArea] private List<string> _NormalChat = new() { "Mam horom horobe" };
+        [SerializeField, Foldout("Chat"), ResizableTextArea] private List<string> _ExitChat = new() { "Adios Bia³asie" };
         [SerializeField, Foldout("Chat"), Tooltip("Piersza opcja klient zadowolony, druga nie")] private string[] GazetaStory = new string[] { "Klient ¿yje i tañczy", "Klient Umar³ i nie ¿yje" };
 
         [SerializeField, Foldout("Pieni¹dze"), Tooltip("Ile zap³aci")] private int pieniazkiZaWyleczenie;
@@ -114,8 +115,13 @@ namespace NPC
 
         public MaskInfo GetMask()
         {
-            MaskInfo maskInfo = new MaskInfo() { mesh = _maskMesh, material = _maskMaterial };
+            MaskInfo maskInfo = new() { mesh = _maskMesh, material = _maskMaterial };
             return maskInfo;
+        }
+
+        public List<Objaw> GetObjawy()
+        {
+            return _Choroba.objawy;
         }
 
 
