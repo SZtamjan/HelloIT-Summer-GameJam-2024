@@ -7,12 +7,13 @@ namespace Crafting
 {
     public class Lek : MonoBehaviour
     {
-
         [SerializeField] private List<Objaw> objawy;
+
         public void ClearObjawy()
         {
             objawy.Clear();
         }
+
         public void AddObjaw(Objaw objaw)
         {
             objawy.Add(objaw);
