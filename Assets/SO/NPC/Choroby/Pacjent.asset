@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Pacjent
   m_EditorClassIdentifier: 
   imie: Zbyszek
-  _maskMesh: {fileID: 6929103289814954685, guid: cb10124aa97d4d64c990a9247bec8c3a, type: 3}
-  _maskMaterial: {fileID: 2100000, guid: 9d78cbcb8d976004397f875b82692b30, type: 2}
+  _maskMesh: {fileID: 0}
+  _maskMaterial: {fileID: 0}
+  _Choroba: {fileID: 0}
   _EntryChat:
   - Elo Doktorku
   _NormalChat:
