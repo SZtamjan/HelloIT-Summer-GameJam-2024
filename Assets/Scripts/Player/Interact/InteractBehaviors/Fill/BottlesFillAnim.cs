@@ -9,10 +9,7 @@ namespace Player.Interact.InteractBehaviors.Fill
         private Transform lookAtTarget;
 
         public float duration = 1f;
-        private float currentValue;
-        private float elapsedTime = 0f;
-        private bool isRunning = false;
-        
+
         //Components
         private FillBottle _fillBottle;
 
@@ -30,20 +27,51 @@ namespace Player.Interact.InteractBehaviors.Fill
             _fillBottle = fillBottle;
         }
 
-        public IEnumerator PlayFill()
+        public IEnumerator PlayFill(float fillValueOfOtherBottle)
         {
-            Debug.LogWarning("Played fill anim");
-
-            //po animacji niech ten item zniknie - to nie ten obiekt
+            Material liquid = GetComponent<MeshRenderer>().materials[2];
+            
+            float endValue = fillValueOfOtherBottle;
+            float elapsedTime = 0f;
+            float currentValue;
+            
+            while (liquid.GetFloat("_Fill") >= 0f)
+            {
+                elapsedTime += Time.deltaTime;
+                currentValue = Mathf.Lerp(0f, endValue, elapsedTime / duration);
+                liquid.SetFloat("_Fill", currentValue);
+                if (elapsedTime >= duration)
+                {
+                    currentValue = 0f;
+                    break;
+                }
+                yield return null;
+            }
+            
             _fillBottle.FillCor = null;
             yield return null;
         }
 
-        public IEnumerator PlayEmpty()
+        public IEnumerator PlayEmpty(GameObject bottle)
         {
-            Debug.LogWarning("Played emptying anim");
+            Material liquid = bottle.GetComponent<MeshRenderer>().materials[2];
             
+            float startValue = liquid.GetFloat("_Fill");
+            float elapsedTime = 0f;
+            float currentValue;
             
+            while (liquid.GetFloat("_Fill") >= 0f)
+            {
+                elapsedTime += Time.deltaTime;
+                currentValue = Mathf.Lerp(startValue, 0f, elapsedTime / duration);
+                liquid.SetFloat("_Fill", currentValue);
+                if (elapsedTime >= duration)
+                {
+                    currentValue = 0f;
+                    break;
+                }
+                yield return null;
+            }
             
             yield return null;
         }

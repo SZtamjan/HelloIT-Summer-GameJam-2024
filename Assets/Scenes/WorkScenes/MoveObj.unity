@@ -21968,7 +21968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91c6259b1468407e8ac2fe92ea0b9549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 1
+  duration: 2
 --- !u!65 &1397712709
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22055,7 +22055,7 @@ MeshRenderer:
   m_Materials:
   - {fileID: 2100000, guid: b1b5eab8f15902c4d80532b440f228ff, type: 2}
   - {fileID: 2100000, guid: 0e1c6bef7cd79224c86afdb217557126, type: 2}
-  - {fileID: 2100000, guid: 89fc5cddcd97f7b488b29de7ab6a0ecd, type: 2}
+  - {fileID: 2100000, guid: f0885bc2d6bb98c4d82c16379ca6e541, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
