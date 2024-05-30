@@ -54,14 +54,21 @@ namespace Player.Interact.InteractBehaviors.Fill
 
         public IEnumerator PlayEmpty(GameObject bottle)
         {
+            FillTarget fillTarget = FillTarget.Instance;
+            Transform target = fillTarget.transform;
+            
             Material liquid = bottle.GetComponent<MeshRenderer>().materials[2];
             
             float startValue = liquid.GetFloat("_Fill");
             float elapsedTime = 0f;
             float currentValue;
             
+            fillTarget.MoveCor = StartCoroutine(fillTarget.StartMovingTarget(duration));
+            
             while (liquid.GetFloat("_Fill") >= 0f)
             {
+                bottle.transform.LookAt(target);
+                
                 elapsedTime += Time.deltaTime;
                 currentValue = Mathf.Lerp(startValue, 0f, elapsedTime / duration);
                 liquid.SetFloat("_Fill", currentValue);
@@ -72,6 +79,13 @@ namespace Player.Interact.InteractBehaviors.Fill
                 }
                 yield return null;
             }
+            
+            if (fillTarget.MoveCor != null)
+            {
+                StopCoroutine(fillTarget.MoveCor);
+                fillTarget.MoveCor = null;
+            }
+            fillTarget.RestorePos();
             
             yield return null;
         }
