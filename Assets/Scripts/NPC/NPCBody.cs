@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using static Class.MaskInfoClass;
 
-
 namespace NPC
 {
     public class NPCBody : MonoBehaviour
@@ -19,4 +18,3 @@ namespace NPC
         }
     }
 }
-

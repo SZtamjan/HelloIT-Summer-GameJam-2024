@@ -11,6 +11,5 @@ namespace Crafting
     {
         public Class.SkladnikiClass.Skladnik nazwa;
         public List<Objaw> objawy;
-
     }
 }

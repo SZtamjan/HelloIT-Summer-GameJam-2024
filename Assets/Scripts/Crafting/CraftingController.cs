@@ -1,5 +1,4 @@
 ﻿using NaughtyAttributes;
-using UnityEditor;
 using UnityEngine;
 
 namespace Crafting
@@ -8,15 +7,15 @@ namespace Crafting
     {
         public static CraftingController Instance;
 
-
-
         #region testowe zmienne
+
         public Skladnik jeden;
         public Skladnik dwa;
 
         public Lek lek;
 
-        #endregion
+        #endregion testowe zmienne
+
         private void Awake()
         {
             Instance = this;
@@ -27,7 +26,6 @@ namespace Crafting
         [Button]
         public void ZrobLek()
         {
-
             var a = jeden.GetObjawy();
             var b = dwa.GetObjawy();
             lek.ClearObjawy();
@@ -35,6 +33,6 @@ namespace Crafting
             lek.AddObjawy(b);
         }
 
-        #endregion
+        #endregion Testowe metody
     }
 }

@@ -11,6 +11,5 @@ namespace Crafting
     {
         public Choroba nazwa;
         public List<Objaw> objawy;
-
     }
 }
