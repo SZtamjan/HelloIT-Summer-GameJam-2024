@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Player.Interact.InteractBehaviors
+namespace Player.Interact.InteractBehaviors.PickAndPlace
 {
     public class PlaceItem : MonoBehaviour
     {
@@ -15,6 +15,7 @@ namespace Player.Interact.InteractBehaviors
         public void PlaceMyItem()
         {
             if(_pickUpSpot.childCount <= 0) return;
+            if (transform.childCount <= 0) return;
             
             Transform item = _pickUpSpot.GetChild(0);
 
@@ -31,6 +32,7 @@ namespace Player.Interact.InteractBehaviors
         public void PlaceItemAndMakeNotPickable()
         {
             if(_pickUpSpot.childCount <= 0) return;
+            if (transform.childCount <= 0) return;
             
             Transform item = _pickUpSpot.GetChild(0);
 

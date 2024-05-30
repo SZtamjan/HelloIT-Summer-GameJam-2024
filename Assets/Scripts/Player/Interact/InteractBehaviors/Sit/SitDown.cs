@@ -2,7 +2,7 @@
 using Player.Movement;
 using UnityEngine;
 
-namespace Player.Interact.InteractBehaviors
+namespace Player.Interact.InteractBehaviors.Sit
 {
     public class SitDown : MonoBehaviour
     {

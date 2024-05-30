@@ -1,7 +1,6 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Player.Interact.InteractBehaviors
+namespace Player.Interact.InteractBehaviors.PickAndPlace
 {
     public class PickItem : MonoBehaviour
     {
