@@ -1,15 +1,12 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Main
+public class GameManager : MonoBehaviour
 {
-    public class GameManager : MonoBehaviour
-    {
-        public static GameManager Instance;
+    public static GameManager Instance;
 
-        private void Awake()
-        {
-            Instance = this;
-        }
+    private void Awake()
+    {
+        Instance = this;
     }
 }
