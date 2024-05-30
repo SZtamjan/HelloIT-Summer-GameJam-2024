@@ -10,8 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 664709363359604867}
   - component: {fileID: 6153830934110141909}
-  - component: {fileID: 1594352035321762821}
-  - component: {fileID: 8873921300606047628}
   m_Layer: 0
   m_Name: MenuManager
   m_TagString: Untagged
@@ -46,32 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52ab72713c884525af6928e67133d446, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  entireMenu: {fileID: 0}
   main: {fileID: 0}
   settings: {fileID: 0}
   audioSettings: {fileID: 0}
   confirmation: {fileID: 0}
   backBtn: {fileID: 0}
---- !u!114 &1594352035321762821
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5336421515242420978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52e49bc39521438496b0883078084dd6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &8873921300606047628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5336421515242420978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21fe6619d671468fb89fef10fea57659, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

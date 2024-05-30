@@ -7,12 +7,22 @@ namespace UI
 {
     public class MenuManager : MonoBehaviour
     {
+        public static MenuManager Instance;
+
+        [SerializeField] private GameObject entireMenu;
+        
+        [Header("Elements")]
         [SerializeField] private GameObject main;
         [SerializeField] private GameObject settings;
         [SerializeField] private GameObject audioSettings;
         [SerializeField] private GameObject confirmation;
         [SerializeField] private GameObject backBtn;
-        
+
+        private void Awake()
+        {
+            Instance = this;
+        }
+
         private void ChangeUI(MenuPos newPos)
         {
             switch (newPos)
@@ -50,6 +60,8 @@ namespace UI
                 break;
             }
         }
+
+        #region Menu Elements
 
         private void SwitchMain(bool value)
         {
@@ -89,6 +101,14 @@ namespace UI
                 ChangeUI(MenuPos.Main);
                 return;
             }
+        }
+        
+        #endregion
+        
+        public void SwitchMenuVis(bool value)
+        {
+            ChangeUI(MenuPos.Main);
+            entireMenu.SetActive(value);
         }
 
         public void ChangeUIToMain() => ChangeUI(MenuPos.Main);
