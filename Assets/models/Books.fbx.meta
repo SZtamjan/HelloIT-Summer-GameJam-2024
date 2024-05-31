@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cecd43eed213851468a74b39b4022b4a
+guid: 42faaee41515680488e8de5e80d19a3b
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: clock
-    second: {fileID: 2100000, guid: b36d70d1fee56dc4e957cc7b9654a6e1, type: 2}
+      name: Book
+    second: {fileID: 2100000, guid: 87215ab1f567662449afe7605786cb6b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Book_Ingredientia_et_indicia
+    second: {fileID: 2100000, guid: c1494df9f81bba24fa265249db049c5c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Book_Liber_morborum
+    second: {fileID: 2100000, guid: d747166375736c446976868d626b99a5, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -36,36 +46,7 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: clock's indicator
-      takeName: clock's indicator
-      internalID: -3111541027850158245
-      firstFrame: 0
-      lastFrame: 60
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 0
   meshes:
     lODScreenPercentages: []
