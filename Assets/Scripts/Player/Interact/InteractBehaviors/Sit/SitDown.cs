@@ -52,6 +52,8 @@ namespace Player.Interact.InteractBehaviors.Sit
     public enum TeleportDirection
     {
         forward,
-        back
+        back,
+        left,
+        right
     }
 }

@@ -19,10 +19,17 @@ namespace UIDialog
 
         private InputAction _interactionAction;
         private Coroutine _currChatCor;
+        private Coroutine _entireChat;
         
         public void ProcessThroughChats(List<string> entryChat, List<string> normalChat, List<string> exitChat)
         {
-            StartCoroutine(ProcessThroughChatsCor(entryChat, normalChat, exitChat));
+            if (_entireChat != null)
+            {
+                Debug.LogError("URUCHOMIONO DRUGI CZAT, ZANIM SKONCZONO POPRZEDNI");
+                Debug.LogError("Przerywanie czatu...");
+                return;
+            }
+            _entireChat = StartCoroutine(ProcessThroughChatsCor(entryChat, normalChat, exitChat));
         }
 
         private void Awake()
@@ -45,6 +52,8 @@ namespace UIDialog
             yield return new WaitUntil(() => _currChatCor == null);
             //yield return new WaitUntil(() => _currChatCor == null);
             _currChatCor = StartCoroutine(GoThroughChat(exitChat));
+
+            _entireChat = null;
             yield return null;
         }
 
