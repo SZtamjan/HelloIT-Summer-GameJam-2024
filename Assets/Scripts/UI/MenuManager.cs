@@ -14,7 +14,6 @@ namespace UI
         [Header("Elements")]
         [SerializeField] private GameObject main;
         [SerializeField] private GameObject settings;
-        [SerializeField] private GameObject audioSettings;
         [SerializeField] private GameObject confirmation;
         [SerializeField] private GameObject backBtn;
 
@@ -30,28 +29,24 @@ namespace UI
                 case MenuPos.Main:
                     SwitchMain(true);
                     SwitchSettings(false);
-                    SwitchAudioSettings(false);
                     SwitchConfirmation(false);
                     SwitchBackBtn(false);
                     break;
                 case MenuPos.Settings:
                     SwitchMain(false);
                     SwitchSettings(true);
-                    SwitchAudioSettings(false);
                     SwitchConfirmation(false);
                     SwitchBackBtn(true);
                     break;
                 case MenuPos.AudioSettings:
                     SwitchMain(false);
                     SwitchSettings(false);
-                    SwitchAudioSettings(true);
                     SwitchConfirmation(false);
                     SwitchBackBtn(true);
                     break;
                 case MenuPos.Confirmation:
                     SwitchMain(true);
                     SwitchSettings(false);
-                    SwitchAudioSettings(false);
                     SwitchConfirmation(true);
                     SwitchBackBtn(false);
                     break;
@@ -72,12 +67,7 @@ namespace UI
         {
             settings.SetActive(value);
         }
-        
-        private void SwitchAudioSettings(bool value)
-        {
-            audioSettings.SetActive(value);
-        }
-        
+
         private void SwitchConfirmation(bool value)
         {
             confirmation.SetActive(value);
@@ -90,12 +80,6 @@ namespace UI
 
         public void BackButton()
         {
-            if (audioSettings.activeSelf)
-            {
-                ChangeUI(MenuPos.Settings);
-                return;
-            }
-            
             if(settings.activeSelf)
             {
                 ChangeUI(MenuPos.Main);
