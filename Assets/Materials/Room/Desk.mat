@@ -10,7 +10,7 @@ Material:
   m_Name: Desk
   m_Shader: {fileID: 4800000, guid: 933f24cde1e3f6a41818f56d729421ab, type: 3}
   m_Parent: {fileID: 2100000, guid: fe7c18e41142e734f965188be2fca1d0, type: 2}
-  m_ModifiedSerializedProperties: 0
+  m_ModifiedSerializedProperties: 16
   m_ValidKeywords:
   - _ALPHATEST_ON
   - _HALFTONESHAPE_STRIPE
@@ -21,7 +21,7 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2500
   stringTagMap:
     RenderType: TransparentCutout
   disabledShaderPasses: []
@@ -38,8 +38,12 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
-    m_Floats: []
-    m_Colors: []
+    m_Floats:
+    - _DiffuseStep: -1
+    - _ToonBlending: 0
+    m_Colors:
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _HalfToneColor: {r: 0, g: 0, b: 0, a: 0.469}
   m_BuildTextureStacks: []
 --- !u!114 &4960391682521876532
 MonoBehaviour:

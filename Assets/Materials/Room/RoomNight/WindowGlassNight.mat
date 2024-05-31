@@ -20,17 +20,19 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WindowGlass 1
+  m_Name: WindowGlassNight
   m_Shader: {fileID: 4800000, guid: 933f24cde1e3f6a41818f56d729421ab, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
+  - _EMISSION
   - _HALFTONESHAPE_STRIPE
   - _OUTLINE
   - _SPECULARHIGHLIGHTS_OFF
   - _TOON_SHADING_ON
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
+  m_InvalidKeywords:
+  - _ALPHAMODULATE_ON
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: 3050
@@ -169,8 +171,8 @@ Material:
     - _HalfToneUvMode: 0
     - _HalftoneFadeDistance: 8.3
     - _HalftoneFadeToColor: 0
-    - _HalftoneNoiseClip: 0.88
-    - _HalftoneTilling: 15.78
+    - _HalftoneNoiseClip: 1.83
+    - _HalftoneTilling: 20.8
     - _HatchingDensity: 0.845
     - _HatchingDiffuseOffset: -0.426
     - _HatchingDrawStrength: 3.36
@@ -215,13 +217,13 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 0
     m_Colors:
-    - _BaseColor: {r: 0.9593702, g: 1, b: 0.5518868, a: 0.8784314}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 0.1764706}
     - _Color: {r: 0.9063317, g: 0.9063317, b: 0.9063317, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissionColor: {r: 0.22926308, g: 0.27901843, b: 0.3018868, a: 0}
     - _FaceFrontDirection: {r: 0, g: 0, b: 1, a: 0}
     - _FaceRightDirection: {r: 1, g: 0, b: 0, a: 0}
     - _HairSpecColor: {r: 0, g: 0, b: 0, a: 1}
-    - _HalfToneColor: {r: 0, g: 0, b: 0, a: 0.718}
+    - _HalfToneColor: {r: 0, g: 0, b: 0, a: 0.469}
     - _HatchingColor: {r: 0, g: 0, b: 0, a: 1}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _OutlineDistancFade: {r: -5.152668, g: 12.213734, b: 0, a: 0}
