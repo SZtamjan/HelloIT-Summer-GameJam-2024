@@ -509,8 +509,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 100, y: 0}
-  m_SizeDelta: {x: 200, y: 125}
+  m_AnchoredPosition: {x: 110, y: 0}
+  m_SizeDelta: {x: 220, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6191891536921694117
 CanvasRenderer:
@@ -540,7 +540,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Czu\u0142o\u015B\u0107 myszy"
+  m_text: Mouse Sensitivity
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -828,7 +828,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6372052984038393582}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Settings.Graphic.FullScreenSettings, Assembly-CSharp
         m_MethodName: SwitchFullScreen
         m_Mode: 0
@@ -1488,7 +1488,7 @@ MonoBehaviour:
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7583064251613131770}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Settings.Controls.MouseSensitivity, Assembly-CSharp
         m_MethodName: OnInputFieldChangeSens
         m_Mode: 1
@@ -3125,7 +3125,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7583064251613131770}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Settings.Controls.MouseSensitivity, Assembly-CSharp
         m_MethodName: OnSliderChangeSens
         m_Mode: 1
@@ -3580,47 +3580,10 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 7057977219839714652}
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3959342227308845757, guid: ffbf12c8bf65798429afe7d77345d170, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 9037833491863188018}
-    - targetCorrespondingSourceObject: {fileID: 3959342227308845757, guid: ffbf12c8bf65798429afe7d77345d170, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6372052984038393582}
     - targetCorrespondingSourceObject: {fileID: 5908763921673448676, guid: ffbf12c8bf65798429afe7d77345d170, type: 3}
       insertIndex: -1
       addedObject: {fileID: 9170299011008599221}
   m_SourcePrefab: {fileID: 100100000, guid: ffbf12c8bf65798429afe7d77345d170, type: 3}
---- !u!1 &1121199560609395630 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3959342227308845757, guid: ffbf12c8bf65798429afe7d77345d170, type: 3}
-  m_PrefabInstance: {fileID: 4142508774894135571}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &9037833491863188018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1121199560609395630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9aefd153fb434b86b500a296ca11aea0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  resDropdown: {fileID: 6650312797849560012}
---- !u!114 &6372052984038393582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1121199560609395630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06ac6482ac8f4dc4a3621a19dd141c41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toggle: {fileID: 5657022153713963805}
 --- !u!224 &2522120245879125841 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1908816818079981122, guid: ffbf12c8bf65798429afe7d77345d170, type: 3}
@@ -3919,9 +3882,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 4163910870153918211}
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3959342227308845757, guid: ffbf12c8bf65798429afe7d77345d170, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7583064251613131770}
     - targetCorrespondingSourceObject: {fileID: 5908763921673448676, guid: ffbf12c8bf65798429afe7d77345d170, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5238072503433564170}
@@ -3962,26 +3922,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!1 &5811853484849904321 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3959342227308845757, guid: ffbf12c8bf65798429afe7d77345d170, type: 3}
-  m_PrefabInstance: {fileID: 7373994804099326076}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &7583064251613131770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5811853484849904321}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e384bd6ea0c432bb6f7ca635ad9f1b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultSensitivity: 2
-  sensSlider: {fileID: 701178675820078662}
-  inputField: {fileID: 5274321864203130445}
 --- !u!224 &8946624946572394046 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1908816818079981122, guid: ffbf12c8bf65798429afe7d77345d170, type: 3}

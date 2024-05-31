@@ -1,19 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Settings.Graphic
 {
     public class ResolutionSettings : MonoBehaviour
     {
         private Resolution[] _resolutions;
+        private int myResolutionIndex = 0;
         [SerializeField] private TMP_Dropdown resDropdown;
 
         private void Start()
         {
             SetUpDropdown();
+            LoadRes();
         }
 
         private void SetUpDropdown()
@@ -23,8 +23,7 @@ namespace Settings.Graphic
             resDropdown.ClearOptions();
 
             List<string> resolutions = new List<string>();
-
-            int currResIndex = 0;
+            
             for (int i = 0; i < _resolutions.Length; i++)
             {
                 double a = _resolutions[i].refreshRateRatio.value;
@@ -34,12 +33,12 @@ namespace Settings.Graphic
                 if (_resolutions[i].width == Screen.currentResolution.width &&
                     _resolutions[i].height == Screen.currentResolution.height)
                 {
-                    currResIndex = i;
+                    myResolutionIndex = i;
                 }
             }
             
             resDropdown.AddOptions(resolutions);
-            resDropdown.value = currResIndex;
+            resDropdown.value = myResolutionIndex; //to trzeba gdzies wywalic bo nie bedzie dobrze dzialac
             resDropdown.RefreshShownValue();
         }
 
@@ -54,7 +53,24 @@ namespace Settings.Graphic
                 return;
             }
             
+            SaveResolution(res.width,res.height);
             Screen.SetResolution(res.width,res.height,fullScreenSettings.Toggle.isOn);
+        }
+
+        private void LoadRes()
+        {
+            //sprawdz czy hasKey
+        }
+        
+        private void SaveResolution(float w, float h)
+        {
+            PlayerPrefs.SetFloat("ResolutionW", w);
+            PlayerPrefs.SetFloat("ResolutionH", h);
+        }
+
+        private Vector2 ReadResolution()
+        {
+            return new Vector2(PlayerPrefs.GetFloat("ResolutionW"),PlayerPrefs.GetFloat("ResolutionH"));
         }
     }
 }
