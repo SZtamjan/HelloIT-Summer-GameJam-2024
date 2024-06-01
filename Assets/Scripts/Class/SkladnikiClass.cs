@@ -16,7 +16,8 @@ namespace Class
             LiścieMącznicy,
             SzałwiaLekarska,
             Rumianek,
-            Woda
+            Woda,
+            None
         }
     }
 }

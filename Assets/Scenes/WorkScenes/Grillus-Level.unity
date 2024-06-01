@@ -29056,7 +29056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33504cafab8d2304795f90fcd349837e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skladnik: {fileID: 11400000, guid: 7010cc068c23f4944a3bcb3e415918f5, type: 2}
+  skladnik: {fileID: 11400000, guid: 017ac04f1e0e25a4d8a7e70033971d72, type: 2}
 --- !u!65 &1972637028
 BoxCollider:
   m_ObjectHideFlags: 0
