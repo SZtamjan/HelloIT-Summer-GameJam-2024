@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 762eec23d535603438e1a9444a00ad61, type: 3}
-  m_Name: Pacjent 1
+  m_Name: Pacjent 27
   m_EditorClassIdentifier: 
-  imie: "Natalia z Su\u0142kowic"
-  _maskMesh: {fileID: -2298614842991098249, guid: f20b7eb16c5dc634a87729e2d52dc50d, type: 3}
+  imie: Paracelsus
+  _maskMesh: {fileID: 4923970991324832188, guid: 93c0e292bc253dd4c88d43b9ac6d4d00, type: 3}
   _maskMaterial: {fileID: 2100000, guid: 9d78cbcb8d976004397f875b82692b30, type: 2}
-  _Choroba: {fileID: 11400000, guid: 7266688f9b3850e4cae59acacc6f9fc2, type: 2}
+  _Choroba: {fileID: 11400000, guid: e662e3f7e1d80724fbdc2c8910e537bc, type: 2}
   _EntryChat:
-  - "Dzie\u0144 dobry."
+  - 
   _NormalChat:
-  - "Ci\u0105gn\u0119 nosem, jestem rozpalony i kaszl\u0119 bez przerwy."
+  - "Teraz ostatnia. Mam nadziej\u0119, \u017Ce co\u015B wymy\u015Bli\u0142e\u015B."
   _ExitChat:
-  - "\u017Begnaj."
+  - "Cho\u0107 ze mn\u0105."
   GazetaStory:
   - "Klient \u017Cyje i ta\u0144czy"
   - "Klient Umar\u0142 i nie \u017Cyje"
-  pieniazkiZaWyleczenie: 11
+  pieniazkiZaWyleczenie: 0
   "pieniazkiZaPora\u017Cke": 0

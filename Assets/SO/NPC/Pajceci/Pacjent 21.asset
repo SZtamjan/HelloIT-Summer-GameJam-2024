@@ -10,20 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 762eec23d535603438e1a9444a00ad61, type: 3}
-  m_Name: Pacjent 2
+  m_Name: Pacjent 21
   m_EditorClassIdentifier: 
-  imie: "Micha\u0142 z Rucini"
+  imie: Marek Markowski
   _maskMesh: {fileID: 4923970991324832188, guid: 93c0e292bc253dd4c88d43b9ac6d4d00, type: 3}
   _maskMaterial: {fileID: 2100000, guid: 9d78cbcb8d976004397f875b82692b30, type: 2}
-  _Choroba: {fileID: 11400000, guid: ae8f9f603f53ddf44a72ba0ed71de4ce, type: 2}
+  _Choroba: {fileID: 11400000, guid: ea568e6d33db7dd49b4e5662cad1b959, type: 2}
   _EntryChat:
   - Uszanowanie.
   _NormalChat:
-  - "M\xF3j kolega ma b\xF3le w dolnej cz\u0119\u015Bci brzucha. Ten kolega ma te\u017C
-    problem, gdy chodzi do wychodka. Nie wiem jaki, ale m\xF3wi\u0142 mi, \u017Ce
-    czasami wypadaj\u0105 mi jakie\u015B twarde kamienie... To znaczy jemu."
+  - "Mam obrz\u0119k doktorze, czy to ki\u0142a? Wydaj\u0119 mi si\u0119, \u017Ce
+    co\u015B si\u0119 dzieje te\u017C z moj\u0105 sk\xF3r\u0105, czy to mo\u017Ce
+    by\u0107 ospa? Boj\u0119 si\u0119 ospy, wiele os\xF3b, kt\xF3re znam zachorowa\u0142o
+    na ni\u0105. W og\xF3le sucho mi w gardle to na pewno musi by\u0107 gru\u017Alica,
+    prawda? Boli mnie te\u017C ca\u0142e cia\u0142o i wydaj\u0119 mi si\u0119, \u017Ce
+    mam gor\u0105czk\u0119. To jak przy grypie, mam racj\u0119? To wszystko doktorze,
+    nie mam wi\u0119cej pyta\u0144."
   _ExitChat:
-  - "Dzi\u0119kuj\u0119."
+  - Do widzenia.
   GazetaStory:
   - "Klient \u017Cyje i ta\u0144czy"
   - "Klient Umar\u0142 i nie \u017Cyje"

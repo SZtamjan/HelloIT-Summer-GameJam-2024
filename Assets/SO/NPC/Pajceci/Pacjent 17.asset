@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 762eec23d535603438e1a9444a00ad61, type: 3}
+  m_Name: Pacjent 17
+  m_EditorClassIdentifier: 
+  imie: "Damian zwany Buczy\u0144skim"
+  _maskMesh: {fileID: 4923970991324832188, guid: 93c0e292bc253dd4c88d43b9ac6d4d00, type: 3}
+  _maskMaterial: {fileID: 2100000, guid: 9d78cbcb8d976004397f875b82692b30, type: 2}
+  _Choroba: {fileID: 11400000, guid: 7266688f9b3850e4cae59acacc6f9fc2, type: 2}
+  _EntryChat:
+  - Witaj mistrzu w fachu!
+  _NormalChat:
+  - "Jestem zmuszony zauwa\u017Cy\u0107, \u017Ce do\u015B\u0107 zimno masz w gabinecie
+    *khe* *khe* R\xF3wnie\u017C jestem lekarzem, ale potrzebuj\u0119 twojej pomocy,
+    bo niestety sko\u0144czy\u0142y mi si\u0119 odczynniki do tworzenia mikstur.
+    By\u0142em oczywi\u015Bcie w stanie przynajmniej siebie zdiagnozowa\u0107. *khe*
+    *khe* Strasznie gor\u0105co tu macie Mistrzu. *khe* *khe* Prawdopodobnie pad\u0142em
+    ofiar\u0105 d\u017Cumy. Nie musisz mnie dotyka\u0107, nie chcia\u0142bym, \u017Ceby\u015B
+    si\u0119 zarazi\u0142. Wystarczy mi lekarstwo i ju\u017C wychodz\u0119 mistrzu.
+    Tak poza tym mia\u0142by\u015B mo\u017Ce co\u015B na przeczyszczenie nosa? Niestety
+    jak to przy d\u017Cumie mam okropny katar."
+  _ExitChat:
+  - "\u017Begnaj mistrzu!"
+  GazetaStory:
+  - "Klient \u017Cyje i ta\u0144czy"
+  - "Klient Umar\u0142 i nie \u017Cyje"
+  pieniazkiZaWyleczenie: 5
+  "pieniazkiZaPora\u017Cke": 0

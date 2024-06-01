@@ -10,20 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 762eec23d535603438e1a9444a00ad61, type: 3}
-  m_Name: Pacjent 1
+  m_Name: Pacjent 22
   m_EditorClassIdentifier: 
-  imie: "Natalia z Su\u0142kowic"
-  _maskMesh: {fileID: -2298614842991098249, guid: f20b7eb16c5dc634a87729e2d52dc50d, type: 3}
+  imie: "S\u0142ynny Bart Bart\u0142omiej"
+  _maskMesh: {fileID: 4923970991324832188, guid: 93c0e292bc253dd4c88d43b9ac6d4d00, type: 3}
   _maskMaterial: {fileID: 2100000, guid: 9d78cbcb8d976004397f875b82692b30, type: 2}
-  _Choroba: {fileID: 11400000, guid: 7266688f9b3850e4cae59acacc6f9fc2, type: 2}
+  _Choroba: {fileID: 11400000, guid: a349470c84df5bd4eab144a2e4557fbb, type: 2}
   _EntryChat:
-  - "Dzie\u0144 dobry."
+  - Sen Dobly.
   _NormalChat:
-  - "Ci\u0105gn\u0119 nosem, jestem rozpalony i kaszl\u0119 bez przerwy."
+  - "Doktole, lisa moich objal\xF3w jes balzo dluga. S takich gl\xF3wnych szeszy
+    to na pewno mam gol\u0105ck\u0119 i balso, ale to balso suchy kachel. Mia\u0142em
+    tes katal, ale mi pses\u0142o. Tloch\u0119 mnie bol\u0105 l\u0119ce i nogi. Chyba
+    to wsystko."
   _ExitChat:
-  - "\u017Begnaj."
+  - Segnam.
   GazetaStory:
   - "Klient \u017Cyje i ta\u0144czy"
   - "Klient Umar\u0142 i nie \u017Cyje"
-  pieniazkiZaWyleczenie: 11
+  pieniazkiZaWyleczenie: 15
   "pieniazkiZaPora\u017Cke": 0
