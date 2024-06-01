@@ -1,8 +1,13 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
+using Economy;
+using UnityEngine.UI;
+using Class;
+using Crafting;
+using static Class.SkladnikiClass;
 
 namespace UI
 {
@@ -24,11 +29,23 @@ namespace UI
         [Header("Economy Display")]
         [SerializeField] private TextMeshProUGUI cash;
 
+        [Header("ActualShop")]
+        [SerializeField] public List<Button> buttony;
+
+        [SerializeField] public List<TextMeshProUGUI> buttonyText;
+
+        [SerializeField] public List<TextMeshProUGUI> tytuly;
+
         #endregion Vars
 
         private void Awake()
         {
             Instance = this;
+        }
+
+        private void Start()
+        {
+            StartNames();
         }
 
         #region Interactions
@@ -98,5 +115,44 @@ namespace UI
         }
 
         #endregion Economy Warnings
+
+        #region buying
+
+        public void BuySkladnik(int value)
+        {
+            EconomyResources.Instance.BuySkladnik(value);
+            // ewentualnie jakiś hajs tu albo w linijcie wyżej
+            UpdateButtons();
+        }
+
+        private void StartNames()
+        {
+            string[] skladnikiNames = Enum.GetNames(typeof(Skladniki));
+            for (int i = 0; i < tytuly.Count; i++)
+            {
+                tytuly[i].text = skladnikiNames[i];
+            }
+            UpdateButtons();
+        }
+
+        public void UpdateButtons()
+        {
+            string[] skladnikiNames = Enum.GetNames(typeof(Skladniki));
+            for (int i = 0; i < tytuly.Count; i++)
+            {
+                if (SkladnikController.Instance.ReturnIlosc(i) > 4)
+                {
+                    buttony[i].interactable = false;
+                }
+                else
+                {
+                    buttony[i].interactable = true;
+                }
+
+                buttonyText[i].text = $"kup {SkladnikController.Instance.ReturnIlosc(i)}/5";
+            }
+        }
+
+        #endregion buying
     }
 }

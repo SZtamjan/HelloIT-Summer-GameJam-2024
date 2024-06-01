@@ -1,4 +1,5 @@
 ﻿using Crafting;
+using UI;
 using UnityEngine;
 using static Class.SkladnikiClass;
 
@@ -24,6 +25,7 @@ namespace Player.Interact.InteractBehaviors.PickAndPlace
             copy.transform.parent = _pickUpSpot;
             copy.GetComponent<Collider>().enabled = false;
             _skladnik.Ilosc = -1;
+            UIController.Instance.UpdateButtons();
         }
     }
 }

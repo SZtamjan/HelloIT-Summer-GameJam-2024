@@ -11,8 +11,15 @@ namespace Crafting
 {
     public class SkladnikController : MonoBehaviour
     {
+        public static SkladnikController Instance;
+
         public List<Skladnik> storages;
         public int test = 1;
+
+        private void Awake()
+        {
+            Instance = this;
+        }
 
         [Button]
         public void Test()

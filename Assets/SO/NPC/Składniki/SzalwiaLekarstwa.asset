@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c7712edd84cc514eaf076f7e4b15796, type: 3}
   m_Name: SzalwiaLekarstwa
   m_EditorClassIdentifier: 
-  nazwa: 0
+  nazwa: 6
   objawy: 070000000800000009000000
