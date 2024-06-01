@@ -18,7 +18,8 @@ namespace Class
             Katar,
             ProblemyZOczami,
             Suchoty,
-            ProblemyZMoczem
+            ProblemyZMoczem,
+            Nic
         }
     }
 }

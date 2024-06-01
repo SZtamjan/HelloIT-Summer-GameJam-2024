@@ -19,5 +19,10 @@ namespace Crafting
         {
             return skladnik.objawy;
         }
+
+        public void SetSkladnik(SkladnikiScriptableObject obj)
+        {
+            skladnik = obj;
+        }
     }
 }

@@ -121,5 +121,28 @@ namespace NPC
         {
             return _Choroba.objawy;
         }
+
+        public void DejLek(Lek lekarstwo)
+        {
+            bool wszytskieObjawy = true;
+            foreach (var objaw in GetObjawy())
+            {
+                if (!lekarstwo.GetObjawy().Contains(objaw))
+                {
+                    wszytskieObjawy = false;
+                }
+            }
+
+            SetWyleczonyPacjent(wszytskieObjawy);
+
+            if (wszytskieObjawy)
+            {
+                Debug.Log("Sukces");
+            }
+            else
+            {
+                Debug.Log("Œmieræ");
+            }
+        }
     }
 }

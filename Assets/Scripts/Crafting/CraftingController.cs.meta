@@ -3,7 +3,11 @@ guid: 96c21acb8d4cabd4ebd326c441bc354a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - _butelka1: {instanceID: 0}
+  - _butelka2: {instanceID: 0}
+  - lekarstwo: {instanceID: 0}
+  - _woda: {fileID: 11400000, guid: 017ac04f1e0e25a4d8a7e70033971d72, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

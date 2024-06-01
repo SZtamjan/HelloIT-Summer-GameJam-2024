@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Crafting;
+using System.Collections;
 using UnityEngine;
 
 namespace Player.Interact.InteractBehaviors.Fill
@@ -7,13 +8,14 @@ namespace Player.Interact.InteractBehaviors.Fill
     {
         //Components
         private Transform _pickUpSpot;
+
         private BottlesFillAnim _bottlesFillAnim;
 
         //Vars
         private Coroutine fillCor;
 
         public Transform PickUpSpot => _pickUpSpot;
-        
+
         public Coroutine FillCor
         {
             set => fillCor = value;
@@ -22,7 +24,7 @@ namespace Player.Interact.InteractBehaviors.Fill
         private void Start()
         {
             _pickUpSpot = PlayerManager.Instance.PickUpSpot;
-            
+
             TryGetComponent(out BottlesFillAnim bottleFillAnim);
             if (bottleFillAnim == null)
             {
@@ -35,8 +37,10 @@ namespace Player.Interact.InteractBehaviors.Fill
         public void FillThisBottle()
         {
             if (_pickUpSpot.childCount <= 0) return;
+            var czyToSkladnik = _pickUpSpot.GetChild(0).gameObject.TryGetComponent(out Skladnik notUsed);
+            if (!czyToSkladnik) return;
             if (gameObject.GetComponent<MeshRenderer>().materials[2].GetFloat("_Fill") > 0.05f) return; //jezeli butelka jest napelniona to przerwij
-            
+
             StartCoroutine(FillThisBottleCor());
         }
 
@@ -56,6 +60,8 @@ namespace Player.Interact.InteractBehaviors.Fill
 
         private void SendInfoBetweenObjects(GameObject objOne, GameObject objTwo)
         {
+            objOne.GetComponent<Skladnik>().SetSkladnik(objTwo.GetComponent<Skladnik>().GetSkładnik());
+            Crafting.CraftingController.Instance.SprawdxCzyMoznaCraftowac();
             //objOne to obecny obiekt, ktory zostaje do craftowania
             //objTwo to obiekt z reki gracza, od ktorego nalezy przeslac info do objOne
             Debug.Log("Przesłano dane");

@@ -33,11 +33,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: NPC_Talking
-      takeName: NPC_Talking
+      name: NPC_WalkingIn (1)
+      takeName: NPC_WalkingIn
       internalID: 7239066299051419326
       firstFrame: 0
-      lastFrame: 159
+      lastFrame: 389
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
