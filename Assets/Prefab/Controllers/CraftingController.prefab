@@ -47,4 +47,4 @@ MonoBehaviour:
   _butelka1: {fileID: 0}
   _butelka2: {fileID: 0}
   lekarstwo: {fileID: 0}
-  _woda: {fileID: 11400000, guid: 017ac04f1e0e25a4d8a7e70033971d72, type: 2}
+  _nic: {fileID: 11400000, guid: f00d2dfc7e3108c4d9658f5cf6d8e701, type: 2}

@@ -1,6 +1,8 @@
-﻿using NaughtyAttributes;
+﻿using Class;
+using NaughtyAttributes;
 using Player.Interact.InteractBehaviors.Fill;
 using UnityEngine;
+using static Class.ObjawyClass;
 
 namespace Crafting
 {
@@ -13,7 +15,7 @@ namespace Crafting
 
         [SerializeField] private Lek lekarstwo;
 
-        [SerializeField] private SkladnikiScriptableObject _woda;
+        [SerializeField] private SkladnikiScriptableObject _nic;
 
         private void Awake()
         {
@@ -32,7 +34,7 @@ namespace Crafting
 
         public void SprawdxCzyMoznaCraftowac()
         {
-            if (_butelka1.GetSkładnik().nazwa != Class.SkladnikiClass.Skladnik.Woda && _butelka2.GetSkładnik().nazwa != Class.SkladnikiClass.Skladnik.Woda)
+            if (_butelka1.GetSkładnik().nazwa != Class.SkladnikiClass.Skladniki.None && _butelka2.GetSkładnik().nazwa != Class.SkladnikiClass.Skladniki.None)
             {
                 Debug.Log("Można craftować");
                 CraftujPote();
@@ -53,8 +55,8 @@ namespace Crafting
             StartCoroutine(lekarstwo.GetComponent<BottlesFillAnim>().PlayFill(0.3f));
             lekarstwo.AddObjawy(_butelka1.GetObjawy());
             lekarstwo.AddObjawy(_butelka2.GetObjawy());
-            _butelka1.SetSkladnik(_woda);
-            _butelka2.SetSkladnik(_woda);
+            _butelka1.SetSkladnik(_nic);
+            _butelka2.SetSkladnik(_nic);
 
             lekarstwo.gameObject.layer = 6;
         }

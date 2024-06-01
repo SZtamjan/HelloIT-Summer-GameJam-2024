@@ -6,6 +6,8 @@ namespace Player.Interact
     public class InteractableObj : MonoBehaviour
     {
         public UnityEvent interactedWithObj;
+        public string CoToJest;
+
         public void StartThisOnInteract()
         {
             Debug.Log("Interacted!");

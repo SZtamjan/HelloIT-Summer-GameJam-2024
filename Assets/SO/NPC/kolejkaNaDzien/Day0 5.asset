@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2567160b4cb88324bbb992cec9ce1115, type: 3}
+  m_Name: Day0 5
+  m_EditorClassIdentifier: 
+  kolejka:
+  - {fileID: 11400000, guid: fb4eb216da4ee074a98c94cba6fa916f, type: 2}
+  - {fileID: 11400000, guid: 679f1a8faa6e0e44daec980ac84d7fc8, type: 2}
+  - {fileID: 11400000, guid: a6e537c069d9d774aaf981c9442593a8, type: 2}

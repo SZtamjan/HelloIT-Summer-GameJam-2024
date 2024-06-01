@@ -1,4 +1,5 @@
 using Crafting;
+using Economy;
 using NaughtyAttributes;
 using System.Collections.Generic;
 using UnityEngine;
@@ -49,6 +50,7 @@ namespace NPC
         [Button]
         public void KoniecPacjenta()
         {
+            EconomyResources.Instance.Resources.Cash += _kolejka[dayCount].kolejka[kolejkaCount].GetPieniazki();
             ChangeVisibility(0);
             _anim.SetTrigger("Stop");
         }
