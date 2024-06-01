@@ -1119,6 +1119,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShopUI
       objectReference: {fileID: 0}
+    - target: {fileID: 7939243083949739979, guid: 6c7258aa4302fee42899c0682a89a6fa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8053128739951274990, guid: 6c7258aa4302fee42899c0682a89a6fa, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

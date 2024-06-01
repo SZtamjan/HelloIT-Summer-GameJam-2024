@@ -58,6 +58,7 @@ namespace UIDialog
         private IEnumerator ProcessThroughChatsCor(List<string> entryChat, List<string> normalChat, List<string> exitChat)
         {
             _currChatCor = StartCoroutine(GoThroughChat(entryChat));
+            StartCoroutine(CheckIfDialogTime());
 
             yield return new WaitUntil(() => _currChatCor == null);
             yield return new WaitUntil(() => _gameManager.GameStates == GameStates.NPCMainDialog);
@@ -91,6 +92,15 @@ namespace UIDialog
 
             _currChatCor = null;
             yield return null;
+        }
+
+        private IEnumerator CheckIfDialogTime()
+        {
+            yield return new WaitUntil(() => _gameManager.GameStates == GameStates.NPCMainDialog);
+            
+            if (_currChatCor == null) yield break;
+            StopCoroutine(_currChatCor);
+            _currChatCor = null;
         }
     }
 }

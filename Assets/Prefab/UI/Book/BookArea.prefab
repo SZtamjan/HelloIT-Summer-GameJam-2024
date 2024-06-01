@@ -619,7 +619,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2615437640052099002}
   m_Layer: 5
-  m_Name: ShopUI
+  m_Name: BookArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
