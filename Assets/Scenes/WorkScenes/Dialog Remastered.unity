@@ -5626,19 +5626,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5978670621249639772, guid: b3e565fc7bfcfaf4c87532176c5361b5, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.04879611
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5978670621249639772, guid: b3e565fc7bfcfaf4c87532176c5361b5, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5978670621249639772, guid: b3e565fc7bfcfaf4c87532176c5361b5, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.99880874
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5978670621249639772, guid: b3e565fc7bfcfaf4c87532176c5361b5, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5978670621249639772, guid: b3e565fc7bfcfaf4c87532176c5361b5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5646,7 +5646,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5978670621249639772, guid: b3e565fc7bfcfaf4c87532176c5361b5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -185.594
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 5978670621249639772, guid: b3e565fc7bfcfaf4c87532176c5361b5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -31491,7 +31491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   placeToSit: {fileID: 5195502001399651371}
-  playerSitOffset: {x: 0, y: 1, z: 0}
+  playerSitOffset: {x: 0, y: 0.1, z: 0}
   teleportDistance: 1
   teleportDirection: 2
 --- !u!1 &8053879933778768758

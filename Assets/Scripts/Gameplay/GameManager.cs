@@ -76,7 +76,7 @@ namespace Gameplay
             switch (newState)
             {
                 case GameStates.StartGame:
-                    WaitForPlayerToSitAndLockPlayer(GameStates.StartNextNPC);
+                    StartCoroutine(WaitForPlayerToSitOnAChair(GameStates.StartNextNPC));
                     break;
                 case GameStates.StartNextNPC:
                     StartNPC(); //NPC WalksIn - EMPTY Method
@@ -85,13 +85,13 @@ namespace Gameplay
                 case GameStates.StartChat:
                     StartChat(); //zczytaj z npc czat z jego SO
                     //WaitForNPCToSit(); //Czekaj aż npc usiądzie
-                    WaitForPlayerAndNPCToSitDownAndLockPlayer();
+                    StartCoroutine(WaitForPlayerToSitOnAChair());
                     break;
                 case GameStates.NPCMainDialog:
                     //Jak ten state sie zaladuje, to automatycznie przechodzi dialog do mainchatu (line 55 w DialogController)
                     //TODO:
                     //gracz nadal nie moze sie ruszac ani rozgladac
-                    WaitForNormalChatToFinish(); //Czekaj az przejdzie przez normalChat i jak przejdzie to StartGameplay
+                    StartCoroutine(WaitForNormalChatToFinishCor()); //Czekaj az przejdzie przez normalChat i jak przejdzie to StartGameplay
                     break;
                 case GameStates.StartGameplay:
                     //TODO:
@@ -99,8 +99,7 @@ namespace Gameplay
                     break;
                 case GameStates.VictoryNPC:
                     //Jak ten state sie zaladuje, to automatycznie przechodzi dialog do exitChatu (line 59 w DialogController)
-                    WaitForNpcToGoAway();
-                    
+                    StartCoroutine(WaitForNpcToGoAwayCor());
                     break;
                 case GameStates.LoseNPC:
                     
@@ -118,13 +117,14 @@ namespace Gameplay
         private void LockPlayer()
         {
             _playerMovement.MouseRotationIsOn = false;
-            Debug.LogWarning("zablokuj jeszcze movement");
+            _playerMovement.PlayerMovementIsOn = false;
+            StartCoroutine(_playerMovement.TurnPlayerTowardsNPC());
         }
 
         private void UnlockPlayer()
         {
             _playerMovement.MouseRotationIsOn = true;
-            Debug.LogWarning("odblokuj movement");
+            _playerMovement.PlayerMovementIsOn = true;
         }
         
         private void StartNPC()
@@ -138,11 +138,6 @@ namespace Gameplay
             TestFill.Instance.FillChat();
         }
 
-        private void WaitForNormalChatToFinish()
-        {
-            StartCoroutine(WaitForNormalChatToFinishCor());
-        }
-
         private IEnumerator WaitForNormalChatToFinishCor()
         {
             if (dialogController == null)
@@ -153,25 +148,6 @@ namespace Gameplay
             yield return new WaitUntil(() => dialogController.NormalChatFinished);
             
             ChangeGameState(GameStates.StartGameplay);
-        }
-        
-        private void WaitForNPCToSit()
-        {
-            StartCoroutine(WaitForNpcToSitCor());
-        }
-
-        private IEnumerator WaitForNpcToSitCor()
-        {
-            yield return new WaitUntil(() => NpcSatDown);
-
-            NpcSatDown = false;
-            
-            ChangeGameState(GameStates.NPCMainDialog);
-        }
-
-        private void WaitForPlayerAndNPCToSitDownAndLockPlayer()
-        {
-            StartCoroutine(WaitForPlayerToSitOnAChair());
         }
 
         private IEnumerator WaitForPlayerToSitOnAChair()
@@ -187,11 +163,6 @@ namespace Gameplay
             ChangeGameState(GameStates.NPCMainDialog);
         }
         
-        private void WaitForPlayerToSitAndLockPlayer(GameStates toState)
-        {
-            StartCoroutine(WaitForPlayerToSitOnAChair(toState));
-        }
-        
         private IEnumerator WaitForPlayerToSitOnAChair(GameStates toState)
         {
             Debug.Log("Waiting for player to sit down");
@@ -199,11 +170,6 @@ namespace Gameplay
             LockPlayer();
             
             ChangeGameState(toState);
-        }
-
-        private void WaitForNpcToGoAway()
-        {
-            StartCoroutine(WaitForNpcToGoAwayCor());
         }
 
         private IEnumerator WaitForNpcToGoAwayCor()
