@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Day0 2
   m_EditorClassIdentifier: 
   kolejka:
-  - {fileID: 11400000, guid: 6d1130d1de3b5bd4bb8baf82e0321003, type: 2}
-  - {fileID: 11400000, guid: 1753723cc8a81f540bb60dbaf212ab71, type: 2}
-  - {fileID: 11400000, guid: 105530ec77d56cd4d9ae91e5cc0921d2, type: 2}
+  - {fileID: 11400000, guid: 904c3730e4efd884292c570e81c91941, type: 2}
+  - {fileID: 11400000, guid: c96501eb1da20c347a11fd60e6a5fe9f, type: 2}
+  - {fileID: 11400000, guid: 8892e05adb0a57b458ba82e5a6333ad4, type: 2}
+  - {fileID: 11400000, guid: b22d727fcfb471c4fb155c0b3e7eeffc, type: 2}
+  - {fileID: 11400000, guid: 78c61e6cffb34ab4da03c4225de84719, type: 2}
