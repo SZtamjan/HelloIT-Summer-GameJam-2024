@@ -35,6 +35,13 @@ namespace UI
         public void SwitchInteractInfoDisplay(bool value)
         {
             interactInfoText.gameObject.SetActive(value);
+            interactInfoText.text = "Press E to interact";
+        }
+        
+        public void SwitchInteractInfoDisplay(bool value, string dupsko)
+        {
+            interactInfoText.gameObject.SetActive(value);
+            interactInfoText.text = dupsko;
         }
 
         #endregion

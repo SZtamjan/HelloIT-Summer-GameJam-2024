@@ -2,6 +2,7 @@
 using Player;
 using UI;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 namespace Gameplay
@@ -9,6 +10,8 @@ namespace Gameplay
     public class GameTimeScaleController : MonoBehaviour
     {
         private MenuManager _menuManager;
+
+        public UnityEvent pausedGame;
 
         private void Start()
         {
@@ -22,6 +25,8 @@ namespace Gameplay
         
         public void SwitchPause()
         {
+            pausedGame.Invoke();
+            
             if (Mathf.RoundToInt(Time.timeScale) == 1)
             {
                 _menuManager.SwitchMenuVis(true);
