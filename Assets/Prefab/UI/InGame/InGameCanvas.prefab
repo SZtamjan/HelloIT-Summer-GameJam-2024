@@ -1111,26 +1111,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4781964984117784960, guid: 6c7258aa4302fee42899c0682a89a6fa, type: 3}
-      propertyPath: pages.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4781964984117784960, guid: 6c7258aa4302fee42899c0682a89a6fa, type: 3}
-      propertyPath: pages.Array.data[0].leftPage
-      value: 
-      objectReference: {fileID: 2663119173743940075, guid: 3d033132d16c7e3448f572d051c65bae, type: 3}
-    - target: {fileID: 4781964984117784960, guid: 6c7258aa4302fee42899c0682a89a6fa, type: 3}
-      propertyPath: pages.Array.data[1].leftPage
-      value: 
-      objectReference: {fileID: 2663119173743940075, guid: 59aebf538d728c740b05a367523c184a, type: 3}
-    - target: {fileID: 4781964984117784960, guid: 6c7258aa4302fee42899c0682a89a6fa, type: 3}
-      propertyPath: pages.Array.data[0].rightPage
-      value: 
-      objectReference: {fileID: 2663119173743940075, guid: 27972ff1dd7cc42489510a7af2557a0a, type: 3}
-    - target: {fileID: 4781964984117784960, guid: 6c7258aa4302fee42899c0682a89a6fa, type: 3}
-      propertyPath: pages.Array.data[1].rightPage
-      value: 
-      objectReference: {fileID: 2663119173743940075, guid: 28c432399f638314884e3b568b984b97, type: 3}
     - target: {fileID: 7151790228676888925, guid: 6c7258aa4302fee42899c0682a89a6fa, type: 3}
       propertyPath: m_IsActive
       value: 1

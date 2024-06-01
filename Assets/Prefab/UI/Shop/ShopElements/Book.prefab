@@ -75,6 +75,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3266d54bd08483fad07ebe050d5d893, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pages:
-  - leftPage: {fileID: 0}
-    rightPage: {fileID: 0}
+  pages: []
