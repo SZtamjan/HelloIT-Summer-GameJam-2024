@@ -12,12 +12,12 @@ namespace NPC
         [SerializeField] private GameObject mask;
         [SerializeField] private GameObject body;
         [SerializeField] private Material bodyMaterial;
-        private BoxCollider collider;
+        private Collider colider;
 
         private void Start()
         {
             bodyMaterial = body.GetComponent<SkinnedMeshRenderer>().material;
-            collider = GetComponent<BoxCollider>();
+            colider = GetComponent<Collider>();
             MakeInvisible();
         }
 
@@ -25,7 +25,7 @@ namespace NPC
         {
             mask.GetComponent<MeshRenderer>().material.SetFloat("_DitherThreshold", 0);
             bodyMaterial.SetFloat("_DitherThreshold", 0);
-            collider.enabled = false;
+            colider.enabled = false;
         }
 
         public void UpdateMask(MaskInfo maska)
@@ -38,11 +38,11 @@ namespace NPC
         {
             if (target == 1)
             {
-                collider.enabled = true;
+                colider.enabled = true;
             }
             else
             {
-                collider.enabled = false;
+                colider.enabled = false;
             }
             float fadeTime = 2f;
             float time = 0f;

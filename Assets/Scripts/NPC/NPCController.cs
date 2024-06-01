@@ -23,7 +23,7 @@ namespace NPC
         {
             dayCount++;
             kolejkaCount = -1;
-            _pacjentBody.vMakeInvisible();
+            _pacjentBody.MakeInvisible();
         }
 
         private void Awake()

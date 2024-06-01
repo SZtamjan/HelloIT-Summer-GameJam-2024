@@ -9,6 +9,12 @@ namespace Crafting
     public class Skladnik : MonoBehaviour
     {
         [SerializeField, Required] private SkladnikiScriptableObject skladnik;
+        [SerializeField] private int _ilosc = 0;
+
+        private void Start()
+        {
+            Ilosc = 0;
+        }
 
         public SkladnikiScriptableObject GetSkładnik()
         {
@@ -23,6 +29,23 @@ namespace Crafting
         public void SetSkladnik(SkladnikiScriptableObject obj)
         {
             skladnik = obj;
+        }
+
+        public int Ilosc
+        {
+            get { return _ilosc; }
+            set
+            {
+                _ilosc += value;
+                if (_ilosc > 0)
+                {
+                    gameObject.SetActive(true);
+                }
+                else
+                {
+                    gameObject.SetActive(false);
+                }
+            }
         }
     }
 }

@@ -34,7 +34,7 @@ namespace Crafting
 
         public void SprawdxCzyMoznaCraftowac()
         {
-            if (_butelka1.GetSkładnik().nazwa != Class.SkladnikiClass.Skladnik.None && _butelka2.GetSkładnik().nazwa != Class.SkladnikiClass.Skladnik.None)
+            if (_butelka1.GetSkładnik().nazwa != Class.SkladnikiClass.Skladniki.None && _butelka2.GetSkładnik().nazwa != Class.SkladnikiClass.Skladniki.None)
             {
                 Debug.Log("Można craftować");
                 CraftujPote();

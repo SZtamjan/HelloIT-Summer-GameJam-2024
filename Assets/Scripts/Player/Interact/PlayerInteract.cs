@@ -47,6 +47,7 @@ namespace Player.Interact
             if (hit.collider.gameObject.TryGetComponent(out InteractableObj interactableObj))
             {
                 UIController.Instance.SwitchInteractInfoDisplay(true);
+                UIController.Instance.SwitchInteractInfoDisplay(interactableObj.CoToJest);
                 _interactableObj = interactableObj;
                 return true;
             }
