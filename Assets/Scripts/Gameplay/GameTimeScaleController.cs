@@ -12,6 +12,13 @@ namespace Gameplay
         private MenuManager _menuManager;
 
         public UnityEvent pausedGame;
+        public bool gamePaused = false;
+
+        public bool GamePaused
+        {
+            get => gamePaused;
+            private set => gamePaused = value;
+        }
 
         private void Start()
         {
@@ -30,10 +37,12 @@ namespace Gameplay
             if (Mathf.RoundToInt(Time.timeScale) == 1)
             {
                 _menuManager.SwitchMenuVis(true);
+                GamePaused = true;
                 Time.timeScale = 0f;
                 return;
             }
 
+            GamePaused = false;
             _menuManager.SwitchMenuVis(false);
             Time.timeScale = 1f;
         }
