@@ -10,6 +10,8 @@ namespace Audio
         
         [Tooltip("In seconds")]
         [SerializeField] private float frequency = 1f;
+
+        [SerializeField] private bool playImmediately = true;
         private float timePassed = 0f;
 
         private AudioObj _audioObj;
@@ -17,6 +19,8 @@ namespace Audio
         
         private void Start()
         {
+            if (playImmediately) timePassed = frequency;
+            
             TryGetComponent(out AudioObj audioObj);
             if (audioObj == null)
             {
@@ -41,6 +45,7 @@ namespace Audio
             if (timePassed >= frequency)
             {
                 _audioSource.PlayOneShot(_audioObj.sound[songIndex].clip);
+                timePassed = 0f;
             }
         }
     }

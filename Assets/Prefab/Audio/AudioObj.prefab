@@ -48,6 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   songIndex: 0
   frequency: 1
+  playImmediately: 1
 --- !u!114 &6667580506570459098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,9 +61,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 424b00b1019c4be98366a5acd04cd411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound:
-  - name: 
-    clip: {fileID: 8300000, guid: bd38ff0e8df86dc49847fa282930e982, type: 3}
+  sound: []
 --- !u!82 &421182024304811243
 AudioSource:
   m_ObjectHideFlags: 0
@@ -119,7 +118,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
