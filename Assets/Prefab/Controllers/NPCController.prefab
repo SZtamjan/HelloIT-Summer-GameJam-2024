@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8837988154613525402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1730739692163984428}
+  - component: {fileID: 5389549186706419990}
+  m_Layer: 0
+  m_Name: NPCController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1730739692163984428
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8837988154613525402}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.2340885, y: 1.3834319, z: 2.1314616}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5389549186706419990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8837988154613525402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 041b843ce69aff940bbe6bba7991cf7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pacjentBody: {fileID: 0}
+  _kolejka:
+  - {fileID: 11400000, guid: 4ad1cf7b4dad7e443a51e64b9a756421, type: 2}
+  - {fileID: 11400000, guid: e1a83c9fb1d9bfb4c9b18c8b55e456ca, type: 2}
+  - {fileID: 11400000, guid: fd308a44933a96d49a35ebf7b0687cd8, type: 2}
+  - {fileID: 11400000, guid: 60a77e826dc00e54f957dcf022e598c5, type: 2}
+  kolejkaCount: -1
+  dayCount: 0
+  TestowyPacjent: {fileID: 0}

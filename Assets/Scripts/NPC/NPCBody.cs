@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.UI;
 using static Class.MaskInfoClass;
@@ -8,13 +9,55 @@ namespace NPC
 {
     public class NPCBody : MonoBehaviour
     {
-        [SerializeField] private MeshFilter MeshFilter;
-        [SerializeField] private MeshRenderer MeshRenderer;
+        [SerializeField] private GameObject mask;
+        [SerializeField] private GameObject body;
+        [SerializeField] private Material bodyMaterial;
+        private BoxCollider collider;
+
+        private void Start()
+        {
+            bodyMaterial = body.GetComponent<SkinnedMeshRenderer>().material;
+            collider = GetComponent<BoxCollider>();
+            MakeInvisible();
+        }
+
+        public void MakeInvisible()
+        {
+            mask.GetComponent<MeshRenderer>().material.SetFloat("_DitherThreshold", 0);
+            bodyMaterial.SetFloat("_DitherThreshold", 0);
+            collider.enabled = false;
+        }
 
         public void UpdateMask(MaskInfo maska)
         {
-            MeshFilter.mesh = maska.mesh;
-            MeshRenderer.material = maska.material;
+            mask.GetComponent<MeshFilter>().mesh = maska.mesh;
+            mask.GetComponent<MeshRenderer>().material = maska.material;
+        }
+
+        public IEnumerator ZmienPrzezroczystosc(float target)
+        {
+            if (target == 1)
+            {
+                collider.enabled = true;
+            }
+            else
+            {
+                collider.enabled = false;
+            }
+            float fadeTime = 2f;
+            float time = 0f;
+            float startDither = bodyMaterial.GetFloat("_DitherThreshold");
+            while (time < fadeTime)
+            {
+                time += Time.deltaTime / fadeTime;
+                float ditter = Mathf.SmoothStep(startDither, target, time);
+                bodyMaterial.SetFloat("_DitherThreshold", ditter);
+                mask.GetComponent<MeshRenderer>().material.SetFloat("_DitherThreshold", ditter);
+                yield return null;
+            }
+            bodyMaterial.SetFloat("_DitherThreshold", target);
+
+            yield return null;
         }
     }
 }
