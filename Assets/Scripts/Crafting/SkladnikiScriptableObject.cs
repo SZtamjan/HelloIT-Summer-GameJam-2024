@@ -6,7 +6,7 @@ using static Class.SkladnikiClass;
 
 namespace Crafting
 {
-    [CreateAssetMenu(fileName = "Składnik", menuName = "Crafting/Składnik")]
+    [CreateAssetMenu(fileName = "Składnik", menuName = "Crafting/Składnik", order = 100)]
     public class SkladnikiScriptableObject : ScriptableObject
     {
         public Class.SkladnikiClass.Skladnik nazwa;

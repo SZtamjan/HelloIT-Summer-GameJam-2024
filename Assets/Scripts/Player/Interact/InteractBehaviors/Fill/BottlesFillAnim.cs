@@ -16,8 +16,8 @@ namespace Player.Interact.InteractBehaviors.Fill
         private void Start()
         {
             lookAtTarget = FillTarget.Instance.gameObject.transform;
-            if(lookAtTarget == null) Debug.LogError("BRAK LookAtTarget W PLAYER>MainCamera>PickUpSpot");
-            
+            if (lookAtTarget == null) Debug.LogError("BRAK LookAtTarget W PLAYER>MainCamera>PickUpSpot");
+
             TryGetComponent(out FillBottle fillBottle);
             if (fillBottle == null)
             {
@@ -30,11 +30,11 @@ namespace Player.Interact.InteractBehaviors.Fill
         public IEnumerator PlayFill(float fillValueOfOtherBottle)
         {
             Material liquid = GetComponent<MeshRenderer>().materials[2];
-            
+
             float endValue = fillValueOfOtherBottle;
             float elapsedTime = 0f;
             float currentValue;
-            
+
             while (liquid.GetFloat("_Fill") >= 0f)
             {
                 elapsedTime += Time.deltaTime;
@@ -47,7 +47,7 @@ namespace Player.Interact.InteractBehaviors.Fill
                 }
                 yield return null;
             }
-            
+
             _fillBottle.FillCor = null;
             yield return null;
         }
@@ -56,19 +56,19 @@ namespace Player.Interact.InteractBehaviors.Fill
         {
             FillTarget fillTarget = FillTarget.Instance;
             Transform target = fillTarget.transform;
-            
+
             Material liquid = bottle.GetComponent<MeshRenderer>().materials[2];
-            
+
             float startValue = liquid.GetFloat("_Fill");
             float elapsedTime = 0f;
             float currentValue;
-            
+
             fillTarget.MoveCor = StartCoroutine(fillTarget.StartMovingTarget(duration));
-            
+
             while (liquid.GetFloat("_Fill") >= 0f)
             {
                 bottle.transform.LookAt(target);
-                
+
                 elapsedTime += Time.deltaTime;
                 currentValue = Mathf.Lerp(startValue, 0f, elapsedTime / duration);
                 liquid.SetFloat("_Fill", currentValue);
@@ -79,14 +79,38 @@ namespace Player.Interact.InteractBehaviors.Fill
                 }
                 yield return null;
             }
-            
+
             if (fillTarget.MoveCor != null)
             {
                 StopCoroutine(fillTarget.MoveCor);
                 fillTarget.MoveCor = null;
             }
             fillTarget.RestorePos();
-            
+
+            yield return null;
+        }
+
+        public IEnumerator PlayDeFill(GameObject bottle)
+        {
+            Material liquid = bottle.GetComponent<MeshRenderer>().materials[2];
+
+            float startValue = liquid.GetFloat("_Fill");
+            float elapsedTime = 0f;
+            float currentValue;
+
+            while (liquid.GetFloat("_Fill") >= 0f)
+            {
+                elapsedTime += Time.deltaTime;
+                currentValue = Mathf.Lerp(startValue, 0f, elapsedTime / duration);
+                liquid.SetFloat("_Fill", currentValue);
+                if (elapsedTime >= duration)
+                {
+                    currentValue = 0f;
+                    break;
+                }
+                yield return null;
+            }
+
             yield return null;
         }
     }

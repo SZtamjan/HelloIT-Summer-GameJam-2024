@@ -1,5 +1,6 @@
 using Crafting;
 using NaughtyAttributes;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -26,9 +27,11 @@ namespace NPC
             Debug.LogWarning("Nie ma nigogo w kolejce");
         }
 
+        [Button]
         public void NastepnyPacjent()
         {
             kolejkaCount++;
+            UpdatePajcent(_kolejka[kolejkaCount]);
         }
 
         [Button]
@@ -40,32 +43,37 @@ namespace NPC
         [Button]
         public void SprawdzChorobe()
         {
-            CraftingController.Instance.ZrobLek();
-            var lek = CraftingController.Instance.lek.GetObjawy();
-            bool wszytskieObjawy = true;
-            foreach (var objaw in TestowyPacjent.GetObjawy())
-            {
-                if (!lek.Contains(objaw))
-                {
-                    wszytskieObjawy = false;
-                }
-            }
+            //CraftingController.Instance.ZrobLek();
+            //var lek = CraftingController.Instance.lekarstwo.GetObjawy();
+            //bool wszytskieObjawy = true;
+            //foreach (var objaw in TestowyPacjent.GetObjawy())
+            //{
+            //    if (!lek.Contains(objaw))
+            //    {
+            //        wszytskieObjawy = false;
+            //    }
+            //}
 
-            TestowyPacjent.SetWyleczonyPacjent(wszytskieObjawy);
+            //TestowyPacjent.SetWyleczonyPacjent(wszytskieObjawy);
 
-            if (wszytskieObjawy)
-            {
-                Debug.Log("Sukces");
-            }
-            else
-            {
-                Debug.Log("Œmieræ");
-            }
+            //if (wszytskieObjawy)
+            //{
+            //    Debug.Log("Sukces");
+            //}
+            //else
+            //{
+            //    Debug.Log("Œmieræ");
+            //}
         }
 
         public void UpdatePajcent(NPCScriptableObject pacjentInfo)
         {
             _pacjentBody.UpdateMask(pacjentInfo.GetMask());
+        }
+
+        internal void GiveLek(Lek lekarstwo)
+        {
+            _kolejka[kolejkaCount].DejLek(lekarstwo);
         }
     }
 }

@@ -15,7 +15,8 @@ namespace Class
             Naparstnica,
             LiścieMącznicy,
             SzałwiaLekarska,
-            Rumianek
+            Rumianek,
+            Woda
         }
     }
 }

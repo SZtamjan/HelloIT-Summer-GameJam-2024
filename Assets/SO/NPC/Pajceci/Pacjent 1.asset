@@ -15,6 +15,7 @@ MonoBehaviour:
   imie: Zbyszek
   _maskMesh: {fileID: -2298614842991098249, guid: f20b7eb16c5dc634a87729e2d52dc50d, type: 3}
   _maskMaterial: {fileID: 2100000, guid: 9d78cbcb8d976004397f875b82692b30, type: 2}
+  _Choroba: {fileID: 11400000, guid: cd01c7cf26f282a43b8ecdc38312edbc, type: 2}
   _EntryChat:
   - Elo Doktorku
   _NormalChat:
