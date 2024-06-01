@@ -347,19 +347,7 @@ MonoBehaviour:
     m_ActionId: 8805fc80-c18c-4334-8e13-d6bfb9d4308d
     m_ActionName: Player/Look[/Mouse/delta,/Pen/delta]
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3661606064029554915}
-        m_TargetAssemblyTypeName: Player.Interact.PlayerInteract, Assembly-CSharp
-        m_MethodName: UseInteractable
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: 449ae9c7-deb8-4478-9626-adcc59fd0a86
     m_ActionName: Player/Fire[/Mouse/leftButton]
   - m_PersistentCalls:
@@ -423,7 +411,19 @@ MonoBehaviour:
     m_ActionId: 241a39ca-6f65-467b-bf68-1ede9d7f259a
     m_ActionName: Player/Pause[/Keyboard/escape]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3661606064029554915}
+        m_TargetAssemblyTypeName: Player.Interact.PlayerInteract, Assembly-CSharp
+        m_MethodName: UseInteractable
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 005eec61-7f81-481f-948e-4b06504cc21c
     m_ActionName: Player/Interaction[/Keyboard/e]
   m_NeverAutoSwitchControlSchemes: 0

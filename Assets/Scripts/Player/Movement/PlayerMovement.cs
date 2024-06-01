@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -18,10 +19,23 @@ namespace Player.Movement
         [SerializeField] private float YawSpeed = 100f;
         [SerializeField] private float PitchSpeed = 100f;
         [SerializeField] private float CameraSpeed = 100f;
+        private bool _mouseRotationIsOn = true;
+        private bool _playerMovementIsOn = true;
 
         #region Properties
 
         public InputAction MoveActionProperty => _moveAction;
+
+        public bool PlayerMovementIsOn
+        {
+            get => _playerMovementIsOn;
+            set => _playerMovementIsOn = value;
+        }
+        public bool MouseRotationIsOn
+        {
+            get => _mouseRotationIsOn;
+            set => _mouseRotationIsOn = value;
+        }
 
         #endregion Properties
 
@@ -50,9 +64,15 @@ namespace Player.Movement
 
         private void FixedUpdate()
         {
-            MovePlayer();
-            YawPlayer();
-            PitchPlayer();
+            if (PlayerMovementIsOn)
+            { 
+                MovePlayer();
+            }
+            if (MouseRotationIsOn)
+            {
+                YawPlayer();
+                PitchPlayer();
+            }
         }
 
         private void YawPlayer()
@@ -101,9 +121,18 @@ namespace Player.Movement
 
         private void Update()
         {
-            Quaternion rot = Quaternion.Slerp(Camera.main.transform.rotation, camTransform.rotation, CameraSpeed * Time.deltaTime);
+            //Quaternion rot = Quaternion.Slerp(mainCam.transform.rotation, camTransform.rotation, CameraSpeed * Time.deltaTime);
+            Quaternion rot = camTransform.rotation;
             Vector3 pos = camTransform.position;
             mainCam.transform.SetPositionAndRotation(pos, rot);
         }
+
+        public IEnumerator TurnPlayerTowardsNPC()
+        {
+            yield return new WaitForEndOfFrame();
+            camTransform.localRotation = Quaternion.Euler(0, 0, 0);
+            transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
+        
     }
 }
