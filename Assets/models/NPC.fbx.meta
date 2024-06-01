@@ -3,7 +3,12 @@ guid: 9f301e27a6b1ce04da290b1229abdc3a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body
+    second: {fileID: 2100000, guid: 337e3cf2a65fcfd418bd995fa865596d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -33,11 +38,40 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: NPC_WalkingIn (1)
-      takeName: NPC_WalkingIn
+      name: NPC_T-Pose
+      takeName: NPC_T-Pose
+      internalID: -4920159282616445909
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: NPC_Talking
+      takeName: NPC_Talking
       internalID: 7239066299051419326
       firstFrame: 0
-      lastFrame: 389
+      lastFrame: 159
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -120,11 +154,11 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: NPC_T-Pose
-      takeName: NPC_T-Pose
-      internalID: -4920159282616445909
+      name: NPC_Disease_Decryption
+      takeName: NPC_Disease_Decryption
+      internalID: -2410757561560714550
       firstFrame: 0
-      lastFrame: 1
+      lastFrame: 520
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
