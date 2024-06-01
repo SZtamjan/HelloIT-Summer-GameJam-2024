@@ -6,7 +6,7 @@ namespace Class
 {
     public class SkladnikiClass : MonoBehaviour
     {
-        public enum Skladnik
+        public enum Skladniki
         {
             Rtęć,
             Kolcorośl,
@@ -16,7 +16,8 @@ namespace Class
             LiścieMącznicy,
             SzałwiaLekarska,
             Rumianek,
-            Woda
+            Woda,
+            None
         }
     }
 }

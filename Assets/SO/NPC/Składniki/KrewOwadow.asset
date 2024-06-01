@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c7712edd84cc514eaf076f7e4b15796, type: 3}
   m_Name: KrewOwadow
   m_EditorClassIdentifier: 
-  nazwa: 0
+  nazwa: 2
   objawy: 030000000500000002000000

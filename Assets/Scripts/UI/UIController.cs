@@ -1,8 +1,13 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
+using Economy;
+using UnityEngine.UI;
+using Class;
+using Crafting;
+using static Class.SkladnikiClass;
 
 namespace UI
 {
@@ -16,29 +21,49 @@ namespace UI
 
         [Header("Economy")]
         [SerializeField] private TextMeshProUGUI economyWarningText;
+
         [SerializeField] private float fadeDuration = 2f;
         [SerializeField] private float textFullAlpha = 2f;
         private Coroutine warningMessageCor;
 
         [Header("Economy Display")]
         [SerializeField] private TextMeshProUGUI cash;
-        
-        #endregion
-        
+
+        [Header("ActualShop")]
+        [SerializeField] public List<Button> buttony;
+
+        [SerializeField] public List<TextMeshProUGUI> buttonyText;
+
+        [SerializeField] public List<TextMeshProUGUI> tytuly;
+
+        #endregion Vars
+
         private void Awake()
         {
             Instance = this;
+        }
+
+        private void Start()
+        {
+            StartNames();
         }
 
         #region Interactions
 
         public void SwitchInteractInfoDisplay(bool value)
         {
-            interactInfoText.gameObject.SetActive(value);
+            if (!value)
+            {
+                interactInfoText.text = "";
+            }
         }
 
-        #endregion
-        
+        public void SwitchInteractInfoDisplay(string value)
+        {
+            interactInfoText.text = $"Press E to interact \n {value}";
+        }
+
+        #endregion Interactions
 
         #region Economy Warnings
 
@@ -46,12 +71,12 @@ namespace UI
         {
             cash.text = msg.Cash.ToString();
         }
-        
+
         public void ShowEconomyWarning(string msg)
         {
             economyWarningText.text = msg;
-            
-            if(warningMessageCor == null)
+
+            if (warningMessageCor == null)
                 warningMessageCor = StartCoroutine(WarningLenght());
         }
 
@@ -60,7 +85,7 @@ namespace UI
             float currentAlpha;
             float targetAlpha = 0f;
             float elapsedTime = 0f;
-        
+
             Vector2 movePos;
             Canvas parentCanvas = economyWarningText.transform.parent.GetComponent<Canvas>();
 
@@ -70,7 +95,7 @@ namespace UI
                 out movePos);
 
             economyWarningText.transform.position = parentCanvas.transform.TransformPoint(movePos);
-        
+
             economyWarningText.alpha = 1;
             currentAlpha = economyWarningText.alpha;
 
@@ -89,7 +114,45 @@ namespace UI
             warningMessageCor = null;
         }
 
-        #endregion
-        
+        #endregion Economy Warnings
+
+        #region buying
+
+        public void BuySkladnik(int value)
+        {
+            EconomyResources.Instance.BuySkladnik(value);
+            // ewentualnie jakiś hajs tu albo w linijcie wyżej
+            UpdateButtons();
+        }
+
+        private void StartNames()
+        {
+            string[] skladnikiNames = Enum.GetNames(typeof(Skladniki));
+            for (int i = 0; i < tytuly.Count; i++)
+            {
+                tytuly[i].text = skladnikiNames[i];
+            }
+            UpdateButtons();
+        }
+
+        public void UpdateButtons()
+        {
+            string[] skladnikiNames = Enum.GetNames(typeof(Skladniki));
+            for (int i = 0; i < tytuly.Count; i++)
+            {
+                if (SkladnikController.Instance.ReturnIlosc(i) > 4)
+                {
+                    buttony[i].interactable = false;
+                }
+                else
+                {
+                    buttony[i].interactable = true;
+                }
+
+                buttonyText[i].text = $"kup {SkladnikController.Instance.ReturnIlosc(i)}/5";
+            }
+        }
+
+        #endregion buying
     }
 }
