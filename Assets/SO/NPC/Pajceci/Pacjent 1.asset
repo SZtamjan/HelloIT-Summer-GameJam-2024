@@ -15,10 +15,13 @@ MonoBehaviour:
   imie: Zbyszek
   _maskMesh: {fileID: -2298614842991098249, guid: f20b7eb16c5dc634a87729e2d52dc50d, type: 3}
   _maskMaterial: {fileID: 2100000, guid: 9d78cbcb8d976004397f875b82692b30, type: 2}
+  _Choroba: {fileID: 0}
   _EntryChat:
   - Elo Doktorku
   _NormalChat:
   - Mam horom horobe
+  - tego typu
+  - pomozesz?
   _ExitChat:
   - "Adios Bia\u0142asie"
   GazetaStory:

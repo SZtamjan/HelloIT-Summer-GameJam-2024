@@ -39,8 +39,7 @@ namespace Player.Interact.InteractBehaviors.Sit
         private IEnumerator TeleportMeOut()
         {
             Vector2 test = new Vector2(0, 0);
-            yield return new WaitUntil(() => _gameManager.GameStates == GameStates.StartGame);
-            Debug.LogWarning("zmienic stargame na startgameplay");
+            yield return new WaitUntil(() => _gameManager.GameStates == GameStates.StartGameplay);
             yield return new WaitUntil(() => _playerManager.GetComponent<PlayerMovement>().MoveActionProperty.ReadValue<Vector2>() != test);
 
             Vector3 pPos = _playerManager.transform.position;

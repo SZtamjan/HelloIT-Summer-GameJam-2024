@@ -5150,7 +5150,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1989920975}
         m_TargetAssemblyTypeName: UIDialog.TestFill, Assembly-CSharp
-        m_MethodName: dupa
+        m_MethodName: FillChat
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
