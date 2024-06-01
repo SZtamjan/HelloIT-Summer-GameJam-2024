@@ -46,10 +46,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f51ac38f8f554c49a64997c781282ad3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minFreq: 5
-  maxFreq: 10
-  disappearRatAfterSeconds: 3
+  minFreq: 20
+  maxFreq: 40
+  disappearRatAfterSeconds: 1.34
   splineAnimate: {fileID: 2142046713452662635}
+  splineContainers:
+  - {fileID: 1377337948058275461}
 --- !u!1001 &4922389517029721071
 PrefabInstance:
   m_ObjectHideFlags: 0

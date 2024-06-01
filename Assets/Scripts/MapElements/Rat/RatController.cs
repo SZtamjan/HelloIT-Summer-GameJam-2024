@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.Splines;
@@ -13,12 +14,14 @@ namespace MapElements
         [SerializeField] private float maxFreq = 10f;
 
         [Header("Rat")]
-        [SerializeField] private float disappearRatAfterSeconds = 3f;
+        [SerializeField] private float disappearRatAfterSeconds;
         [SerializeField] private SplineAnimate splineAnimate;
+        [SerializeField] private List<SplineContainer> splineContainers;
         private Coroutine _coroutine;
         
         private void Start()
         {
+            disappearRatAfterSeconds = splineAnimate.Duration;
             StartCoroutine(StartRat());
         }
 
@@ -31,9 +34,9 @@ namespace MapElements
                 StartCoroutine(DisappearRat());
 
                 yield return new WaitUntil(() => _coroutine == null);
+                splineAnimate.Container = splineContainers[Random.Range(0, splineContainers.Count)];
                 splineAnimate.gameObject.SetActive(true);
-                splineAnimate.ElapsedTime = 0f;
-                splineAnimate.Play();
+                splineAnimate.Restart(true);
 
                 yield return null;
             }
