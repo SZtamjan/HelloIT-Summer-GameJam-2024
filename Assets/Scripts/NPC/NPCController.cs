@@ -3,6 +3,7 @@ using Economy;
 using Gameplay;
 using NaughtyAttributes;
 using System.Collections.Generic;
+using Gameplay.DayCycle;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -42,7 +43,10 @@ namespace NPC
         [Button]
         public void NastepnyPacjent()
         {
+            Debug.Log("Pacjent nr: " + kolejkaCount);
+            Debug.Log("Z day nr: " + dayCount);
             UpdatePajcent(_kolejka[dayCount].kolejka[kolejkaCount]);
+            DayCycleManager.Instance.FillDayTime(_kolejka[dayCount].kolejka[kolejkaCount].setDayTime);
             ChangeVisibility(1);
             _anim.SetTrigger("Start");
         }

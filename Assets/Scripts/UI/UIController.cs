@@ -136,11 +136,12 @@ namespace UI
 
         private void StartNames()
         {
-            string[] skladnikiNames = Enum.GetNames(typeof(Skladniki));
-            for (int i = 0; i < tytuly.Count; i++)
-            {
-                tytuly[i].text = skladnikiNames[i];
-            }
+            Debug.LogWarning("Wywalono nadpisywanie tytulow w sklepie");
+            // string[] skladnikiNames = Enum.GetNames(typeof(Skladniki));
+            // for (int i = 0; i < tytuly.Count; i++)
+            // {
+            //     tytuly[i].text = skladnikiNames[i];
+            // }
             UpdateButtons();
         }
 

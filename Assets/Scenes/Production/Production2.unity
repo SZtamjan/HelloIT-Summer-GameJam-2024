@@ -33597,6 +33597,26 @@ PrefabInstance:
       propertyPath: lekarstwo
       value: 
       objectReference: {fileID: 213948759}
+    - target: {fileID: 4639924843899936074, guid: 153767db9c758294e9e90256b0c0cc2f, type: 3}
+      propertyPath: light
+      value: 
+      objectReference: {fileID: 143450844}
+    - target: {fileID: 4639924843899936074, guid: 153767db9c758294e9e90256b0c0cc2f, type: 3}
+      propertyPath: candles.Array.data[0]
+      value: 
+      objectReference: {fileID: 121436897}
+    - target: {fileID: 4639924843899936074, guid: 153767db9c758294e9e90256b0c0cc2f, type: 3}
+      propertyPath: candles.Array.data[1]
+      value: 
+      objectReference: {fileID: 1154085755}
+    - target: {fileID: 4639924843899936074, guid: 153767db9c758294e9e90256b0c0cc2f, type: 3}
+      propertyPath: candles.Array.data[2]
+      value: 
+      objectReference: {fileID: 903823183}
+    - target: {fileID: 4639924843899936074, guid: 153767db9c758294e9e90256b0c0cc2f, type: 3}
+      propertyPath: godRays.Array.data[0]
+      value: 
+      objectReference: {fileID: 1659636065}
     - target: {fileID: 4926130444174565842, guid: 153767db9c758294e9e90256b0c0cc2f, type: 3}
       propertyPath: resDropdown
       value: 
@@ -33663,20 +33683,28 @@ PrefabInstance:
       objectReference: {fileID: 1479661090}
     - target: {fileID: 7301499330097679130, guid: 153767db9c758294e9e90256b0c0cc2f, type: 3}
       propertyPath: _kolejka.Array.size
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7301499330097679130, guid: 153767db9c758294e9e90256b0c0cc2f, type: 3}
       propertyPath: _kolejka.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 591374bedc1878240b4cb7642a42e8c7, type: 2}
+      objectReference: {fileID: 11400000, guid: 4ad1cf7b4dad7e443a51e64b9a756421, type: 2}
     - target: {fileID: 7301499330097679130, guid: 153767db9c758294e9e90256b0c0cc2f, type: 3}
       propertyPath: _kolejka.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 6254ed3bd27d5b847a1aadcf0279e63f, type: 2}
+      objectReference: {fileID: 11400000, guid: e1a83c9fb1d9bfb4c9b18c8b55e456ca, type: 2}
     - target: {fileID: 7301499330097679130, guid: 153767db9c758294e9e90256b0c0cc2f, type: 3}
       propertyPath: _kolejka.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: 60a77e826dc00e54f957dcf022e598c5, type: 2}
+      objectReference: {fileID: 11400000, guid: fd308a44933a96d49a35ebf7b0687cd8, type: 2}
+    - target: {fileID: 7301499330097679130, guid: 153767db9c758294e9e90256b0c0cc2f, type: 3}
+      propertyPath: _kolejka.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: 06af6eab04c71e94d86c2f9a641ca88d, type: 2}
+    - target: {fileID: 7301499330097679130, guid: 153767db9c758294e9e90256b0c0cc2f, type: 3}
+      propertyPath: _kolejka.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: a68471a20f2e3574d930d4d9ac498b40, type: 2}
     - target: {fileID: 8006899625745157961, guid: 153767db9c758294e9e90256b0c0cc2f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.94944835

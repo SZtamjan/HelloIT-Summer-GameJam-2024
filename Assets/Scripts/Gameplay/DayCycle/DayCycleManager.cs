@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using NaughtyAttributes;
 using UnityEngine;
@@ -9,6 +10,8 @@ namespace Gameplay.DayCycle
 {
     public class DayCycleManager : MonoBehaviour
     {
+        public static DayCycleManager Instance;
+        
         public DayTime currentDayTime;
 
         [SerializeField] private Light light;
@@ -23,12 +26,16 @@ namespace Gameplay.DayCycle
         [SerializeField, Foldout("Settings")] private DayCycleSettings middaySettings;
         [SerializeField, Foldout("Settings")] private DayCycleSettings eveningSettings;
         //zrob duration i wgl zeby mogli se dostosowywac
-        
-        [Button]
+
+        private void Start()
+        {
+            Instance = this;
+        }
+
         public void FillDayTime(DayTime newTime)
         {
             if (newTime == currentDayTime) return;
-            switch (currentDayTime)
+            switch (newTime)
             {
                 case DayTime.morning:
                     StartCoroutine(SetupDay(morningSettings));
@@ -56,7 +63,7 @@ namespace Gameplay.DayCycle
             float elapsedTime = 0f;
             float currentValue;
 
-            while (intensityDistance > 0f)
+            while (intensityDistance > 0f || intensityDistance < 0f)
             {
                 elapsedTime += Time.deltaTime;
                 currentValue = Mathf.Lerp(startIntensity, endIntensity, elapsedTime / daySettings.duration);
@@ -78,6 +85,8 @@ namespace Gameplay.DayCycle
                 intensityDistance = light.intensity - morningSettings.daylightIntensity;
                 yield return null;
             }
+            
+            Debug.Log("Wyszedlem");
         }
 
         private void SwitchObjects(List<GameObject> objects, bool value)

@@ -88,7 +88,6 @@ namespace Gameplay
                     break;
 
                 case GameStates.StartNextNPC:
-
                     StartNPC(); //NPC WalksIn - EMPTY Method // zrobione
                     ChangeGameState(GameStates.StartChat); //StartChat
 
