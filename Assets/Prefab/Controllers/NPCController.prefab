@@ -50,6 +50,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e1a83c9fb1d9bfb4c9b18c8b55e456ca, type: 2}
   - {fileID: 11400000, guid: fd308a44933a96d49a35ebf7b0687cd8, type: 2}
   - {fileID: 11400000, guid: 60a77e826dc00e54f957dcf022e598c5, type: 2}
-  kolejkaCount: -1
+  kolejkaCount: 0
   dayCount: 0
   TestowyPacjent: {fileID: 0}

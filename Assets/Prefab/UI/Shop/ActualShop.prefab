@@ -737,6 +737,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: ItemV2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5744711836133765820, guid: f5d90eb4b7b11b0418ace8afd90eff8c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744711836133765820, guid: f5d90eb4b7b11b0418ace8afd90eff8c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744711836133765820, guid: f5d90eb4b7b11b0418ace8afd90eff8c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744711836133765820, guid: f5d90eb4b7b11b0418ace8afd90eff8c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BuySkladnik
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744711836133765820, guid: f5d90eb4b7b11b0418ace8afd90eff8c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UI.UIController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744711836133765820, guid: f5d90eb4b7b11b0418ace8afd90eff8c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5744711836133765820, guid: f5d90eb4b7b11b0418ace8afd90eff8c, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5866609917126589585, guid: f5d90eb4b7b11b0418ace8afd90eff8c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
