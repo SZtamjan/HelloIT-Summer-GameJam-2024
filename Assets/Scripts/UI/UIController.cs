@@ -168,17 +168,23 @@ namespace UI
         public void OpenBook()
         {
             book.SetActive(true);
+            ReactionToUI.Instance.UnlockAndShowCursor();
+            ReactionToUI.Instance.LockMouseAndMovement();
         }
 
         public void CloseBook()
         {
             book.SetActive(false);
+            ReactionToUI.Instance.LockAndHideCursor();
+            ReactionToUI.Instance.UnlockMouseAndMovement();
         }
 
         [Button]
         public void WylaczSklep()
         {
             ActualShop.SetActive(false);
+            ReactionToUI.Instance.LockAndHideCursor();
+            ReactionToUI.Instance.UnlockMouseAndMovement();
         }
     }
 }

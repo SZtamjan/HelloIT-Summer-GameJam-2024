@@ -33,12 +33,18 @@ namespace Gameplay
             
             if (Mathf.RoundToInt(Time.timeScale) == 1)
             {
+                ReactionToUI.Instance.UnlockAndShowCursor();
+                ReactionToUI.Instance.LockMouseAndMovement();
+                
                 _menuManager.SwitchMenuVis(true);
                 gamePaused = true;
                 Time.timeScale = 0f;
                 return;
             }
 
+            ReactionToUI.Instance.LockAndHideCursor();
+            ReactionToUI.Instance.UnlockMouseAndMovement();
+            
             gamePaused = false;
             _menuManager.SwitchMenuVis(false);
             Time.timeScale = 1f;

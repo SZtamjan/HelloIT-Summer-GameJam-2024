@@ -1,3 +1,4 @@
+using UI;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -15,12 +16,9 @@ namespace Player.Movement
 
         private void Start()
         {
-            //Cursor.lockState = CursorLockMode.Locked;
-            //Cursor.visible = false;
-        //    Cursor.lockState = CursorLockMode.None;
-
-        //    camTransform = GetComponentInChildren<Camera>().transform;
-        //    playerBody = GetComponent<Transform>();
+            ReactionToUI.Instance.LockAndHideCursor();
+            //    camTransform = GetComponentInChildren<Camera>().transform;
+            //    playerBody = GetComponent<Transform>();
 
 
         }
