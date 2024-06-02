@@ -211,6 +211,9 @@ namespace UI
         {
             if (on)
             {
+                ReactionToUI.Instance.UnlockAndShowCursor();
+                ReactionToUI.Instance.LockMouseAndMovement();
+                
                 _podsumowanieDnia.SetActive(true);
                 UpdateDziennk();
             }
