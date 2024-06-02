@@ -78,7 +78,7 @@ namespace Player.Movement
 
         private void LoadSens()
         {
-            if (PlayerPrefs.HasKey("MouseSensitivity"))
+            if (!PlayerPrefs.HasKey("MouseSensitivity"))
             {
                 Debug.LogWarning("Fatal error, brak zapisanego sensitivity");
                 return;
