@@ -39,6 +39,10 @@ namespace Player.Interact.InteractBehaviors.Sit
         private IEnumerator TeleportMeOut()
         {
             Vector2 test = new Vector2(0, 0);
+
+            yield return new WaitUntil(() => placeToSit.GetComponent<Collider>().isTrigger);
+            StartCoroutine(PlayerManager.Instance.GetComponent<PlayerMovement>().TurnPlayerTowardsNPC());
+            
             yield return new WaitUntil(() => _gameManager.GameStates == GameStates.StartGameplay);
             yield return new WaitUntil(() => _playerManager.GetComponent<PlayerMovement>().MoveActionProperty.ReadValue<Vector2>() != test);
 

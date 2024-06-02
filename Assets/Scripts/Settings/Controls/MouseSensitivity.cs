@@ -54,6 +54,7 @@ namespace Settings.Controls
         {
             sensSlider.value = sens;
             inputField.text = sens.ToString("0.00");
+            SaveSens(sens);
         }
 
         private void SaveSens(float newSens)
