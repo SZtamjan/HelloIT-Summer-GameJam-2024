@@ -60,6 +60,18 @@ namespace NPC
             kolejkaCount++;
         }
 
+        public bool KoniecDni()
+        {
+            if (dayCount >= _kolejka.Count)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         public bool KonieKolejki()
         {
             if (kolejkaCount >= _kolejka[dayCount].kolejka.Count)
@@ -67,6 +79,11 @@ namespace NPC
                 return true;
             }
             return false;
+        }
+
+        public List<NPCScriptableObject> PacjeciZDzisiaj()
+        {
+            return _kolejka[dayCount].kolejka;
         }
 
         public NPCScriptableObject GetCurrnetPacjent()
