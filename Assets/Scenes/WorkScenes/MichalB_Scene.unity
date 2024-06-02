@@ -10778,6 +10778,119 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6339225652658644489, guid: 9f301e27a6b1ce04da290b1229abdc3a, type: 3}
   m_PrefabInstance: {fileID: 1960455808}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &564425325
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 527d6d7a16cc167469eee41fe149c000, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 527d6d7a16cc167469eee41fe149c000, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 527d6d7a16cc167469eee41fe149c000, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.364
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 527d6d7a16cc167469eee41fe149c000, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 527d6d7a16cc167469eee41fe149c000, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 527d6d7a16cc167469eee41fe149c000, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 527d6d7a16cc167469eee41fe149c000, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 527d6d7a16cc167469eee41fe149c000, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 527d6d7a16cc167469eee41fe149c000, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 527d6d7a16cc167469eee41fe149c000, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8539614726857197464, guid: 527d6d7a16cc167469eee41fe149c000, type: 3}
+      propertyPath: m_Name
+      value: rumianek
+      objectReference: {fileID: 0}
+    - target: {fileID: -7808693716971036311, guid: 527d6d7a16cc167469eee41fe149c000, type: 3}
+      propertyPath: m_Name
+      value: kolcorosl
+      objectReference: {fileID: 0}
+    - target: {fileID: -6953677407848184529, guid: 527d6d7a16cc167469eee41fe149c000, type: 3}
+      propertyPath: m_Name
+      value: opium
+      objectReference: {fileID: 0}
+    - target: {fileID: -6033274277450860303, guid: 527d6d7a16cc167469eee41fe149c000, type: 3}
+      propertyPath: m_Name
+      value: krew owadow
+      objectReference: {fileID: 0}
+    - target: {fileID: -5458199488141809026, guid: 527d6d7a16cc167469eee41fe149c000, type: 3}
+      propertyPath: m_Name
+      value: szalwia lekarska
+      objectReference: {fileID: 0}
+    - target: {fileID: -3666593920250906158, guid: 527d6d7a16cc167469eee41fe149c000, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.0689
+      objectReference: {fileID: 0}
+    - target: {fileID: -3666593920250906158, guid: 527d6d7a16cc167469eee41fe149c000, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.5291
+      objectReference: {fileID: 0}
+    - target: {fileID: -3411868841186446094, guid: 527d6d7a16cc167469eee41fe149c000, type: 3}
+      propertyPath: m_Name
+      value: maczcnica lekarska
+      objectReference: {fileID: 0}
+    - target: {fileID: -2811248560709985777, guid: 527d6d7a16cc167469eee41fe149c000, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.878
+      objectReference: {fileID: 0}
+    - target: {fileID: -2811248560709985777, guid: 527d6d7a16cc167469eee41fe149c000, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.0139
+      objectReference: {fileID: 0}
+    - target: {fileID: -2811248560709985777, guid: 527d6d7a16cc167469eee41fe149c000, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.3885
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 527d6d7a16cc167469eee41fe149c000, type: 3}
+      propertyPath: m_Name
+      value: Potions
+      objectReference: {fileID: 0}
+    - target: {fileID: 2596428139869082149, guid: 527d6d7a16cc167469eee41fe149c000, type: 3}
+      propertyPath: m_Name
+      value: woda
+      objectReference: {fileID: 0}
+    - target: {fileID: 3781161669970977925, guid: 527d6d7a16cc167469eee41fe149c000, type: 3}
+      propertyPath: m_Name
+      value: rtec
+      objectReference: {fileID: 0}
+    - target: {fileID: 7765881459236193267, guid: 527d6d7a16cc167469eee41fe149c000, type: 3}
+      propertyPath: m_Name
+      value: naparstina
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 527d6d7a16cc167469eee41fe149c000, type: 3}
 --- !u!1001 &570855133
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37152,6 +37265,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  CoToJest: 
 --- !u!4 &9032662656574154640
 Transform:
   m_ObjectHideFlags: 0
@@ -37313,3 +37427,4 @@ SceneRoots:
   - {fileID: 1661067881}
   - {fileID: 225191031}
   - {fileID: 1200419252}
+  - {fileID: 564425325}
