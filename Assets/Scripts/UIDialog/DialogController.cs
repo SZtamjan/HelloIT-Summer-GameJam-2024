@@ -57,15 +57,21 @@ namespace UIDialog
         {
             _gameManager = GameManager.Instance;
             _npcInstance = NPCInstance.Instance;
+            StartCoroutine(AssignNPCAudio());
+            
+            _interactionAction = PlayerManager.Instance.GetComponent<PlayerInput>().actions.FindAction("Interaction");
+        }
+
+        private IEnumerator AssignNPCAudio()
+        {
+            yield return new WaitUntil(() => _npcInstance.transform.GetChild(0).TryGetComponent(out PlayOnCall playOnCall));
             _npcInstance.transform.GetChild(0).TryGetComponent(out PlayOnCall playOnCall);
             if (playOnCall == null)
             {
                 Debug.LogError("Brak AudioObj, lub PlayOnCall w AudioObj w npc jako dziecko na pierwszym miejscu");
-                return;
+                yield break;
             }
             _playOnCall = playOnCall;
-            
-            _interactionAction = PlayerManager.Instance.GetComponent<PlayerInput>().actions.FindAction("Interaction");
         }
 
         private IEnumerator ProcessThroughChatsCor(List<string> entryChat, List<string> normalChat, List<string> exitChat)
