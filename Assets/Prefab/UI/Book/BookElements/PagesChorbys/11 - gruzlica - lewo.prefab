@@ -35,7 +35,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -50}
-  m_SizeDelta: {x: 550, y: 100}
+  m_SizeDelta: {x: 530, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8883717922806146925
 CanvasRenderer:
@@ -65,17 +65,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 13
+  m_text: x1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e4af804e9690308458c2ed3acb644dda, type: 2}
+  m_sharedMaterial: {fileID: -6763963794302383620, guid: e4af804e9690308458c2ed3acb644dda, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4279308561
+  m_fontColor: {r: 0.06666667, g: 0.06666667, b: 0.06666667, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -144,7 +144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6460680115010528725}
   m_Layer: 5
-  m_Name: Strona 13 - lewo
+  m_Name: 11 - gruzlica - lewo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -169,7 +169,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 550, y: 980}
+  m_SizeDelta: {x: 530, y: 980}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &5394668137737848279
 GameObject:
@@ -206,7 +206,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 440}
-  m_SizeDelta: {x: 550, y: 880}
+  m_SizeDelta: {x: 530, y: 880}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1268542425851051588
 CanvasRenderer:
@@ -236,14 +236,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "D\u017BUMA\r\n\nCzarna \u015Amier\u0107, Wielki Pom\xF3r, Czarna Plaga
-    czy w\u0142a\u015Bnie D\u017Cuma. Nie bez powodu ta choroba zaskarbi\u0142a sobie
-    tak makabryczne nazwy. Jeszcze niespe\u0142na kilkadziesi\u0105t lat temu pustoszy\u0142a
-    najwi\u0119ksze cywilizacje zabieraj\u0105c ze sob\u0105 nieobliczaln\u0105 nawet
-    liczb\u0119 istnie\u0144 i doprowadzaj\u0105c do kl\u0119sk g\u0142odowych. \n\nRozprowadzana
-    przez kontakt z zara\u017Conymi szczurami, psami, ptactwem i zara\u017Conymi
-    lud\u017Ami. Opuchnienie cia\u0142a, nieprzerwane b\xF3le, piekielne gor\u0105czki,
-    czy nieopisana sucho\u015B\u0107 gard\u0142a. "
+  m_text: "GRU\u0179LICA\r\n\nCz\u0119sto pro\u015Bciej nazywana Suchotami, w\u0142a\u015Bnie
+    przez wyst\u0119puj\u0105ce charakterystyczne wra\u017Cenie wysuszonego gard\u0142a.
+    \n\nJedyne szanse prze\u017Cycia pacjent posiada pod opiek\u0105 dobrego lekarza,
+    a i w tym pewno\u015Bci nie ma. B\xF3le gard\u0142a roznosz\u0105ce si\u0119
+    na ca\u0142e cia\u0142o i kaszel mo\u017Cna dopisa\u0107 do listy objaw\xF3w
+    uprzykrzaj\u0105cych, cz\u0119sto ostatnie tygodnie chorego, mo\u017Cna dopisa\u0107
+    do listy objaw\xF3w. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e4af804e9690308458c2ed3acb644dda, type: 2}
   m_sharedMaterial: {fileID: -6763963794302383620, guid: e4af804e9690308458c2ed3acb644dda, type: 2}
@@ -252,8 +251,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4279308561
+  m_fontColor: {r: 0.06666667, g: 0.06666667, b: 0.06666667, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -347,7 +346,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 440}
-  m_SizeDelta: {x: 550, y: 880}
+  m_SizeDelta: {x: 530, y: 880}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5349470934233846237
 MonoBehaviour:

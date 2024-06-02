@@ -35,7 +35,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -50}
-  m_SizeDelta: {x: 550, y: 100}
+  m_SizeDelta: {x: 530, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8883717922806146925
 CanvasRenderer:
@@ -65,17 +65,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 14
+  m_text: xv1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e4af804e9690308458c2ed3acb644dda, type: 2}
+  m_sharedMaterial: {fileID: -6763963794302383620, guid: e4af804e9690308458c2ed3acb644dda, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4279308561
+  m_fontColor: {r: 0.06666667, g: 0.06666667, b: 0.06666667, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -144,7 +144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6460680115010528725}
   m_Layer: 5
-  m_Name: Strona 14 - prawo
+  m_Name: 16 - kamienie - prawo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -169,7 +169,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 550, y: 980}
+  m_SizeDelta: {x: 530, y: 980}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &5394668137737848279
 GameObject:
@@ -206,7 +206,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 440}
-  m_SizeDelta: {x: 550, y: 880}
+  m_SizeDelta: {x: 530, y: 880}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1268542425851051588
 CanvasRenderer:
@@ -236,14 +236,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ju\u017C powy\u017Csze po\u0142\u0105czenie mog\u0142oby by\u0107 dla
-    wi\u0119kszo\u015Bci \u015Bmiertelne, ale najstraszniejsza jest martwica cia\u0142a.\n\nGnij\u0105ce
-    plamy na sk\xF3rze, kt\xF3re prowadz\u0105 do obumierania ca\u0142ych ko\u0144czyn.
-    Ostatecznie samoistnie odpadaj\u0105, a cykl towarzyszy zara\u017Conemu biedakowi
-    do samego ko\u0144ca. \n\nNie da si\u0119 jej wyleczy\u0107, ale mo\u017Cna wesprze\u0107
-    cia\u0142o pacjenta odpowiednimi specyfikami, aby sam by\u0142 wstanie zwalczy\u0107
-    wewn\u0119trzne zepsucie. To i gorliwa modlitwa to jedyne co mo\u017Ce pom\xF3c
-    choremu."
+  m_text: "KAMIENIE NERKOWE\r\n\nPojawiaj\u0105ce si\u0119 najcz\u0119\u015Bciej
+    u moczymord i \u017Cebrak\xF3w nieprawid\u0142owo\u015B\u0107 z wydalaniem uryny.
+    \n\nTworz\u0105ce si\u0119 kamienie w nerkach powoduj\u0105 blokowanie si\u0119
+    moczu, dodatkowo tworz\u0105c silny b\xF3l. Przy najtrudniejszych przypadkach,
+    w kt\xF3rych pacjent nie jest w stanie zachowa\u0107 fasonu z powodu b\xF3lu,
+    wymagana jest litotrypsja. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e4af804e9690308458c2ed3acb644dda, type: 2}
   m_sharedMaterial: {fileID: -6763963794302383620, guid: e4af804e9690308458c2ed3acb644dda, type: 2}
@@ -252,8 +250,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4279308561
+  m_fontColor: {r: 0.06666667, g: 0.06666667, b: 0.06666667, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -347,7 +345,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 440}
-  m_SizeDelta: {x: 550, y: 880}
+  m_SizeDelta: {x: 530, y: 880}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5349470934233846237
 MonoBehaviour:
