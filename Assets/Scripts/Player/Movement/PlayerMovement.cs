@@ -18,7 +18,6 @@ namespace Player.Movement
         [SerializeField] private float playerSpeed = 5f;
         [SerializeField] private float YawSpeed = 100f;
         [SerializeField] private float PitchSpeed = 100f;
-        [SerializeField] private float CameraSpeed = 100f;
         private bool _mouseRotationIsOn = true;
         private bool _playerMovementIsOn = true;
 
@@ -47,6 +46,7 @@ namespace Player.Movement
 
         private void Start()
         {
+            LoadSens();
             _playerInput = GetComponent<PlayerInput>();
             _moveAction = _playerInput.actions.FindAction("Move");
             _lookAction = _playerInput.actions.FindAction("Look");
@@ -73,6 +73,18 @@ namespace Player.Movement
                 YawPlayer();
                 PitchPlayer();
             }
+        }
+
+        private void LoadSens()
+        {
+            if (PlayerPrefs.HasKey("MouseSensitivity"))
+            {
+                Debug.LogError("Fatal error, brak zapisanego sensitivity");
+                return;
+            }
+
+            YawSpeed = PlayerPrefs.GetFloat("MouseSensitivity");
+            PitchSpeed = YawSpeed;
         }
 
         private void YawPlayer()
