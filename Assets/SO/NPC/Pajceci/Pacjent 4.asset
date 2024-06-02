@@ -14,19 +14,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imie: Tomasz More
   _maskMesh: {fileID: 4923970991324832188, guid: 93c0e292bc253dd4c88d43b9ac6d4d00, type: 3}
-  _maskMaterial: {fileID: 2100000, guid: 9d78cbcb8d976004397f875b82692b30, type: 2}
+  _maskMaterial: {fileID: 2100000, guid: 6a225d681bd70a14e9650a9467d4c7d7, type: 2}
   _Choroba: {fileID: 11400000, guid: 8d4cde6a4fb874d4bbf57be3ee3edf19, type: 2}
   _EntryChat:
   - "Tomasz More, mi\u0142o pozna\u0107."
   _NormalChat:
   - "Potrzebuj\u0119 czego\u015B na teraz. Mam jakie\u015B pal\u0105co bol\u0105ce,
-    czarne plamy na ciele, wi\u0119c przyda\u0142oby si\u0119 tego pozby\u0107. Wieczorem
-    jest otwarcie sieroci\u0144ca, kt\xF3ry ufundowa\u0142em. Przyjdzie gromada wa\u017Cnych
-    os\xF3b, dla kt\xF3rych mam przyszykowan\u0105 mow\u0119, wi\u0119c musz\u0119
-    te\u017C pozby\u0107 si\u0119 sucho\u015Bci w gardle. M\u0119czy\u0142o mnie
-    jeszcze przed pojawieniem si\u0119 tych plam. Tylko szybko, bo mnie czas goni,
-    a jeszcze sporo spotka\u0144 przede mn\u0105. Czuj\u0119, \u017Ce \u0142apie
-    mnie gor\u0105czka."
+    czarne plamy na ciele. "
+  - "Przyda\u0142oby si\u0119 tego pozby\u0107. Wieczorem jest otwarcie sieroci\u0144ca,
+    kt\xF3ry ufundowa\u0142em. "
+  - "Przyjdzie gromada wa\u017Cnych os\xF3b, dla kt\xF3rych mam przyszykowan\u0105
+    mow\u0119, wi\u0119c musz\u0119 te\u017C pozby\u0107 si\u0119 sucho\u015Bci w
+    gardle."
+  - "M\u0119czy\u0142o mnie jeszcze przed pojawieniem si\u0119 tych plam. Tylko szybko,
+    bo mnie czas goni, a jeszcze sporo spotka\u0144 przede mn\u0105."
+  - "Czuj\u0119, \u017Ce \u0142apie mnie gor\u0105czka."
   _ExitChat:
   - "Mog\u0142o by\u0107 szybciej. Do widzenia."
   GazetaStory:
@@ -34,3 +36,4 @@ MonoBehaviour:
   - "Klient Umar\u0142 i nie \u017Cyje"
   pieniazkiZaWyleczenie: 30
   "pieniazkiZaPora\u017Cke": 0
+  setDayTime: 2

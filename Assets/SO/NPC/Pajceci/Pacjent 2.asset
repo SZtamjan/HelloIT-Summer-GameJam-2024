@@ -13,15 +13,17 @@ MonoBehaviour:
   m_Name: Pacjent 2
   m_EditorClassIdentifier: 
   imie: "Micha\u0142 z Rucini"
-  _maskMesh: {fileID: 4923970991324832188, guid: 93c0e292bc253dd4c88d43b9ac6d4d00, type: 3}
-  _maskMaterial: {fileID: 2100000, guid: 9d78cbcb8d976004397f875b82692b30, type: 2}
+  _maskMesh: {fileID: 1863409537150222870, guid: 242d21384c0c9fc4e9deb4d3f5844ae6, type: 3}
+  _maskMaterial: {fileID: 2100000, guid: 7c39916505a892049b2bb6889760ff19, type: 2}
   _Choroba: {fileID: 11400000, guid: ae8f9f603f53ddf44a72ba0ed71de4ce, type: 2}
   _EntryChat:
   - Uszanowanie.
   _NormalChat:
   - "M\xF3j kolega ma b\xF3le w dolnej cz\u0119\u015Bci brzucha. Ten kolega ma te\u017C
-    problem, gdy chodzi do wychodka. Nie wiem jaki, ale m\xF3wi\u0142 mi, \u017Ce
-    czasami wypadaj\u0105 mi jakie\u015B twarde kamienie... To znaczy jemu."
+    problem, gdy chodzi do wychodka."
+  - "Nie wiem jaki, ale m\xF3wi\u0142 mi, \u017Ce czasami wypadaj\u0105 mi jakie\u015B
+    twarde kamienie... "
+  - To znaczy jemu.
   _ExitChat:
   - "Dzi\u0119kuj\u0119."
   GazetaStory:
@@ -29,3 +31,4 @@ MonoBehaviour:
   - "Klient Umar\u0142 i nie \u017Cyje"
   pieniazkiZaWyleczenie: 11
   "pieniazkiZaPora\u017Cke": 0
+  setDayTime: 1

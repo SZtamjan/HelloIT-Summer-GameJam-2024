@@ -13,16 +13,17 @@ MonoBehaviour:
   m_Name: Pacjent 9
   m_EditorClassIdentifier: 
   imie: "G\xF3ral Maciej"
-  _maskMesh: {fileID: 4923970991324832188, guid: 93c0e292bc253dd4c88d43b9ac6d4d00, type: 3}
-  _maskMaterial: {fileID: 2100000, guid: 9d78cbcb8d976004397f875b82692b30, type: 2}
+  _maskMesh: {fileID: -6055083838376162081, guid: 4970cc1d0cf71f94eb4ef4ab74a29e4e, type: 3}
+  _maskMaterial: {fileID: 2100000, guid: 7c39916505a892049b2bb6889760ff19, type: 2}
   _Choroba: {fileID: 11400000, guid: 2838973e5ae1e3d4097626bae350024f, type: 2}
   _EntryChat:
   - "Dobry dzie\u0144."
   _NormalChat:
   - "Gdy chodz\u0119 za chat\u0119 si\u0119 odla\u0107 to piecze mnie i jest jaki\u015B
-    dziwny \u017C\xF3\u0142ty kolor moich szczoch\xF3w. Wydaje mi si\u0119 to nienormalne,
-    ale to ty powiniene\u015B wiedzie\u0107. Aha, jeszcze zacz\u0119\u0142y mi \u017C\xF3\u0142kn\u0105\u0107
-    d\u0142onie, nie wiem czy to ma jaki\u015B zwi\u0105zek z tym."
+    dziwny \u017C\xF3\u0142ty kolor moich szczoch\xF3w."
+  - " Wydaje mi si\u0119 to nienormalne, ale to ty powiniene\u015B wiedzie\u0107."
+  - " Aha, jeszcze zacz\u0119\u0142y mi \u017C\xF3\u0142kn\u0105\u0107 d\u0142onie,
+    nie wiem czy to ma jaki\u015B zwi\u0105zek z tym."
   _ExitChat:
   - "Dzi\u0119kuj\u0119."
   GazetaStory:
@@ -30,3 +31,4 @@ MonoBehaviour:
   - "Klient Umar\u0142 i nie \u017Cyje"
   pieniazkiZaWyleczenie: 11
   "pieniazkiZaPora\u017Cke": 0
+  setDayTime: 2

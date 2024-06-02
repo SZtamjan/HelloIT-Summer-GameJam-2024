@@ -13,19 +13,21 @@ MonoBehaviour:
   m_Name: Pacjent 21
   m_EditorClassIdentifier: 
   imie: Marek Markowski
-  _maskMesh: {fileID: 4923970991324832188, guid: 93c0e292bc253dd4c88d43b9ac6d4d00, type: 3}
-  _maskMaterial: {fileID: 2100000, guid: 9d78cbcb8d976004397f875b82692b30, type: 2}
+  _maskMesh: {fileID: -6055083838376162081, guid: 4970cc1d0cf71f94eb4ef4ab74a29e4e, type: 3}
+  _maskMaterial: {fileID: 2100000, guid: 3129ce7bc0446ab4cac02945c8b9bc00, type: 2}
   _Choroba: {fileID: 11400000, guid: ea568e6d33db7dd49b4e5662cad1b959, type: 2}
   _EntryChat:
   - Uszanowanie.
   _NormalChat:
-  - "Mam obrz\u0119k doktorze, czy to ki\u0142a? Wydaj\u0119 mi si\u0119, \u017Ce
-    co\u015B si\u0119 dzieje te\u017C z moj\u0105 sk\xF3r\u0105, czy to mo\u017Ce
-    by\u0107 ospa? Boj\u0119 si\u0119 ospy, wiele os\xF3b, kt\xF3re znam zachorowa\u0142o
-    na ni\u0105. W og\xF3le sucho mi w gardle to na pewno musi by\u0107 gru\u017Alica,
-    prawda? Boli mnie te\u017C ca\u0142e cia\u0142o i wydaj\u0119 mi si\u0119, \u017Ce
-    mam gor\u0105czk\u0119. To jak przy grypie, mam racj\u0119? To wszystko doktorze,
-    nie mam wi\u0119cej pyta\u0144."
+  - "Mam obrz\u0119k doktorze, czy to ki\u0142a?"
+  - "Wydaj\u0119 mi si\u0119, \u017Ce co\u015B si\u0119 dzieje te\u017C z moj\u0105
+    sk\xF3r\u0105, czy to mo\u017Ce by\u0107 ospa?"
+  - " Boj\u0119 si\u0119 ospy, wiele os\xF3b, kt\xF3re znam zachorowa\u0142o na ni\u0105."
+  - "W og\xF3le sucho mi w gardle to na pewno musi by\u0107 gru\u017Alica, prawda?"
+  - " Boli mnie te\u017C ca\u0142e cia\u0142o i wydaj\u0119 mi si\u0119, \u017Ce
+    mam gor\u0105czk\u0119. "
+  - " To jak przy grypie, mam racj\u0119? To wszystko doktorze, nie mam wi\u0119cej
+    pyta\u0144."
   _ExitChat:
   - Do widzenia.
   GazetaStory:
@@ -33,3 +35,4 @@ MonoBehaviour:
   - "Klient Umar\u0142 i nie \u017Cyje"
   pieniazkiZaWyleczenie: 11
   "pieniazkiZaPora\u017Cke": 0
+  setDayTime: 1

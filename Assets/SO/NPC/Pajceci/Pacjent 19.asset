@@ -13,21 +13,26 @@ MonoBehaviour:
   m_Name: Pacjent 19
   m_EditorClassIdentifier: 
   imie: Andrea Doria
-  _maskMesh: {fileID: 4923970991324832188, guid: 93c0e292bc253dd4c88d43b9ac6d4d00, type: 3}
-  _maskMaterial: {fileID: 2100000, guid: 9d78cbcb8d976004397f875b82692b30, type: 2}
+  _maskMesh: {fileID: -2298614842991098249, guid: f20b7eb16c5dc634a87729e2d52dc50d, type: 3}
+  _maskMaterial: {fileID: 2100000, guid: 3129ce7bc0446ab4cac02945c8b9bc00, type: 2}
   _Choroba: {fileID: 11400000, guid: a349470c84df5bd4eab144a2e4557fbb, type: 2}
   _EntryChat:
   - "Baaaczno\u015B\u0107!"
   _NormalChat:
   - "Admira\u0142 Andrea Doria dowodz\u0105cy I Brygady nazwa operacyjna Strzelecka
-    Gromada. Chory na prawdopodobnie ki\u0142\u0119, wniosek wyci\u0105gni\u0119ty
-    po zauwa\u017Ceniu gnicia nosa. Mo\u017Cliwie niezdolny do s\u0142u\u017Cby.
-    Wy potrzebujecie mnie, ja potrzebuj\u0119 was. Jutro z kompani\u0105 wyruszamy
-    wprost na nasze, niedawno przej\u0119te przez wroga, kolonie. Potrzebuj\u0119
-    lekarstwa, kt\xF3re przywr\xF3ci moje zdolno\u015Bci bojowe i u\u015Bmierzy b\xF3l.
-    Kto\u015B musi nowemu narybkowi pokaza\u0107 jak si\u0119 walczy, bo inaczej
-    zamiast po\u0142owy \u015Bwie\u017Cak\xF3w wybij\u0105 nam wszystkich. Jednak
-    z takimi objawami i siln\u0105 gor\u0105czk\u0105 mo\u017Ce by\u0107 ci\u0119\u017Cko. "
+    Gromada."
+  - " Chory na prawdopodobnie ki\u0142\u0119, wniosek wyci\u0105gni\u0119ty po zauwa\u017Ceniu
+    gnicia nosa."
+  - " Mo\u017Cliwie niezdolny do s\u0142u\u017Cby. Wy potrzebujecie mojego z\u0142ota,
+    my potrzebujemy was. "
+  - "Jutro z kompani\u0105 wyruszamy wprost na nasze, niedawno przej\u0119te przez
+    wroga, kolonie. "
+  - "Potrzebuj\u0119 lekarstwa, kt\xF3re przywr\xF3ci moje zdolno\u015Bci bojowe
+    i u\u015Bmierzy b\xF3l. "
+  - "Kto\u015B musi nowemu narybkowi pokaza\u0107 jak si\u0119 walczy, bo inaczej
+    zamiast jedynie po\u0142owy \u015Bwie\u017Cak\xF3w wybij\u0105 nam wszystkich. "
+  - "Jednak z takimi objawami i siln\u0105 gor\u0105czk\u0105 mo\u017Ce by\u0107
+    ci\u0119\u017Cko. "
   _ExitChat:
   - Spocznij.
   GazetaStory:
@@ -35,3 +40,4 @@ MonoBehaviour:
   - "Klient Umar\u0142 i nie \u017Cyje"
   pieniazkiZaWyleczenie: 30
   "pieniazkiZaPora\u017Cke": 0
+  setDayTime: 2

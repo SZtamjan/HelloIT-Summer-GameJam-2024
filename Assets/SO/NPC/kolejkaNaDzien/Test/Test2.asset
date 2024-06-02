@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: Test2
   m_EditorClassIdentifier: 
   kolejka:
-  - {fileID: 11400000, guid: 1753723cc8a81f540bb60dbaf212ab71, type: 2}
+  - {fileID: 11400000, guid: fb4eb216da4ee074a98c94cba6fa916f, type: 2}
+  - {fileID: 11400000, guid: 679f1a8faa6e0e44daec980ac84d7fc8, type: 2}
+  - {fileID: 11400000, guid: a6e537c069d9d774aaf981c9442593a8, type: 2}

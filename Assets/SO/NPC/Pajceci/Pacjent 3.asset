@@ -14,14 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imie: Adam z Szymec
   _maskMesh: {fileID: 4923970991324832188, guid: 93c0e292bc253dd4c88d43b9ac6d4d00, type: 3}
-  _maskMaterial: {fileID: 2100000, guid: 9d78cbcb8d976004397f875b82692b30, type: 2}
+  _maskMaterial: {fileID: 2100000, guid: 7c39916505a892049b2bb6889760ff19, type: 2}
   _Choroba: {fileID: 11400000, guid: cd01c7cf26f282a43b8ecdc38312edbc, type: 2}
   _EntryChat:
   - Witaj.
   _NormalChat:
   - "\u017Ba\u0142uj\u0119 tego i przepraszam Boga, ale cudzo\u0142o\u017Cy\u0142em.
-    Od tego czasu mam dziwne krosty na... Wiesz, gdzie. Da si\u0119 to wyleczy\u0107?
-    \u017Bona jeszcze nie zauwa\u017Cy\u0142a, ale w ko\u0144cu zwr\xF3ci uwag\u0119."
+    Od tego czasu mam dziwne krosty na..."
+  - "Wiesz, gdzie. Da si\u0119 to wyleczy\u0107? \u017Bona jeszcze nie zauwa\u017Cy\u0142a,
+    ale w ko\u0144cu zwr\xF3ci uwag\u0119."
   _ExitChat:
   - Z Bogiem.
   GazetaStory:
@@ -29,3 +30,4 @@ MonoBehaviour:
   - "Klient Umar\u0142 i nie \u017Cyje"
   pieniazkiZaWyleczenie: 11
   "pieniazkiZaPora\u017Cke": 0
+  setDayTime: 2

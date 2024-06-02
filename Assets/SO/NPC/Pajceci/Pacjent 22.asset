@@ -13,16 +13,18 @@ MonoBehaviour:
   m_Name: Pacjent 22
   m_EditorClassIdentifier: 
   imie: "S\u0142ynny Bart Bart\u0142omiej"
-  _maskMesh: {fileID: 4923970991324832188, guid: 93c0e292bc253dd4c88d43b9ac6d4d00, type: 3}
+  _maskMesh: {fileID: -6055083838376162081, guid: 4970cc1d0cf71f94eb4ef4ab74a29e4e, type: 3}
   _maskMaterial: {fileID: 2100000, guid: 9d78cbcb8d976004397f875b82692b30, type: 2}
   _Choroba: {fileID: 11400000, guid: a349470c84df5bd4eab144a2e4557fbb, type: 2}
   _EntryChat:
   - Sen Dobly.
   _NormalChat:
-  - "Doktole, lisa moich objal\xF3w jes balzo dluga. S takich gl\xF3wnych szeszy
-    to na pewno mam gol\u0105ck\u0119 i balso, ale to balso suchy kachel. Mia\u0142em
-    tes katal, ale mi pses\u0142o. Tloch\u0119 mnie bol\u0105 l\u0119ce i nogi. Chyba
-    to wsystko."
+  - "Doktole, lisa moich objal\xF3w jes balzo dluga."
+  - "S takich gl\xF3wnych szeszy to na pewno mam gol\u0105ck\u0119 i balso, ale to
+    balso suchy kachel. "
+  - " Mia\u0142em tes katal, ale mi pses\u0142o. Tloch\u0119 mnie bol\u0105 l\u0119ce
+    i nogi. "
+  - Chyba to wsystko.
   _ExitChat:
   - Segnam.
   GazetaStory:
@@ -30,3 +32,4 @@ MonoBehaviour:
   - "Klient Umar\u0142 i nie \u017Cyje"
   pieniazkiZaWyleczenie: 15
   "pieniazkiZaPora\u017Cke": 0
+  setDayTime: 1

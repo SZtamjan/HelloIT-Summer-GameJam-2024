@@ -13,16 +13,17 @@ MonoBehaviour:
   m_Name: Pacjent 14
   m_EditorClassIdentifier: 
   imie: Jakub z Kopki
-  _maskMesh: {fileID: 4923970991324832188, guid: 93c0e292bc253dd4c88d43b9ac6d4d00, type: 3}
-  _maskMaterial: {fileID: 2100000, guid: 9d78cbcb8d976004397f875b82692b30, type: 2}
+  _maskMesh: {fileID: -6055083838376162081, guid: 4970cc1d0cf71f94eb4ef4ab74a29e4e, type: 3}
+  _maskMaterial: {fileID: 2100000, guid: 6a225d681bd70a14e9650a9467d4c7d7, type: 2}
   _Choroba: {fileID: 11400000, guid: 23b75eb41ddcfe64f88e8d65f426423c, type: 2}
   _EntryChat:
   - Uszanowanie.
   _NormalChat:
   - "Wydaje mi si\u0119, doktorze, \u017Ce mam z\u0142\u0105 krew. Jakby pali\u0142o
-    mnie od \u015Brodka. Od tego czasu czuj\u0119, \u017Ce serce mi chce wyskoczy\u0107
-    przez pier\u015B, a jeszcze wcze\u015Bniej zacz\u0105\u0142 mi doskwiera\u0107
-    b\xF3l ca\u0142ej szcz\u0119ki. "
+    mnie od \u015Brodka. "
+  - "Od tego czasu czuj\u0119, \u017Ce serce mi chce wyskoczy\u0107 przez pier\u015B,
+    a jeszcze wcze\u015Bniej zacz\u0105\u0142 mi doskwiera\u0107 b\xF3l ca\u0142ej
+    szcz\u0119ki. "
   _ExitChat:
   - "Dzi\u0119kuj\u0119, do widzenia."
   GazetaStory:
@@ -30,3 +31,4 @@ MonoBehaviour:
   - "Klient Umar\u0142 i nie \u017Cyje"
   pieniazkiZaWyleczenie: 11
   "pieniazkiZaPora\u017Cke": 0
+  setDayTime: 2

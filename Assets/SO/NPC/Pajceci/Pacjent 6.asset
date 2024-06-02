@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Pacjent 6
   m_EditorClassIdentifier: 
   imie: "Micha\u0142 z Bielactwem"
-  _maskMesh: {fileID: 4923970991324832188, guid: 93c0e292bc253dd4c88d43b9ac6d4d00, type: 3}
-  _maskMaterial: {fileID: 2100000, guid: 9d78cbcb8d976004397f875b82692b30, type: 2}
+  _maskMesh: {fileID: -4517219494649592684, guid: 7a12e93033e0b8741a9edbba7820af4c, type: 3}
+  _maskMaterial: {fileID: 2100000, guid: 7c39916505a892049b2bb6889760ff19, type: 2}
   _Choroba: {fileID: 11400000, guid: 23b75eb41ddcfe64f88e8d65f426423c, type: 2}
   _EntryChat:
   - Uszanowanie.
@@ -29,3 +29,4 @@ MonoBehaviour:
   - "Klient Umar\u0142 i nie \u017Cyje"
   pieniazkiZaWyleczenie: 11
   "pieniazkiZaPora\u017Cke": 0
+  setDayTime: 1

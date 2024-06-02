@@ -13,20 +13,22 @@ MonoBehaviour:
   m_Name: Pacjent 17
   m_EditorClassIdentifier: 
   imie: "Damian zwany Buczy\u0144skim"
-  _maskMesh: {fileID: 4923970991324832188, guid: 93c0e292bc253dd4c88d43b9ac6d4d00, type: 3}
+  _maskMesh: {fileID: 9160873292033164457, guid: 8f299fa14a4ac4d41bee480d2f33d79f, type: 3}
   _maskMaterial: {fileID: 2100000, guid: 9d78cbcb8d976004397f875b82692b30, type: 2}
   _Choroba: {fileID: 11400000, guid: 7266688f9b3850e4cae59acacc6f9fc2, type: 2}
   _EntryChat:
   - Witaj mistrzu w fachu!
   _NormalChat:
   - "Jestem zmuszony zauwa\u017Cy\u0107, \u017Ce do\u015B\u0107 zimno masz w gabinecie
-    *khe* *khe* R\xF3wnie\u017C jestem lekarzem, ale potrzebuj\u0119 twojej pomocy,
-    bo niestety sko\u0144czy\u0142y mi si\u0119 odczynniki do tworzenia mikstur.
-    By\u0142em oczywi\u015Bcie w stanie przynajmniej siebie zdiagnozowa\u0107. *khe*
-    *khe* Strasznie gor\u0105co tu macie Mistrzu. *khe* *khe* Prawdopodobnie pad\u0142em
-    ofiar\u0105 d\u017Cumy. Nie musisz mnie dotyka\u0107, nie chcia\u0142bym, \u017Ceby\u015B
-    si\u0119 zarazi\u0142. Wystarczy mi lekarstwo i ju\u017C wychodz\u0119 mistrzu.
-    Tak poza tym mia\u0142by\u015B mo\u017Ce co\u015B na przeczyszczenie nosa? Niestety
+    *khe* *khe*. "
+  - "R\xF3wnie\u017C jestem lekarzem, ale potrzebuj\u0119 twojej pomocy, bo niestety
+    sko\u0144czy\u0142y mi si\u0119 odczynniki do tworzenia mikstur. "
+  - "By\u0142em oczywi\u015Bcie w stanie siebie zdiagnozowa\u0107. *khe* *khe* "
+  - "Strasznie gor\u0105co tu macie Mistrzu. *khe* *khe*"
+  - " Prawdopodobnie pad\u0142em ofiar\u0105 d\u017Cumy. Nie musisz mnie dotyka\u0107,
+    nie chcia\u0142bym, \u017Ceby\u015B si\u0119 zarazi\u0142. "
+  - "Wystarczy mi lekarstwo i ju\u017C wychodz\u0119 mistrzu. *khe* *khe*"
+  - "Tak poza tym mia\u0142by\u015B mo\u017Ce co\u015B na przeczyszczenie nosa? Niestety
     jak to przy d\u017Cumie mam okropny katar."
   _ExitChat:
   - "\u017Begnaj mistrzu!"
@@ -35,3 +37,4 @@ MonoBehaviour:
   - "Klient Umar\u0142 i nie \u017Cyje"
   pieniazkiZaWyleczenie: 5
   "pieniazkiZaPora\u017Cke": 0
+  setDayTime: 1

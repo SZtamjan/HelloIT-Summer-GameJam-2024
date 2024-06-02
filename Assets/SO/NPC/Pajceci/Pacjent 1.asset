@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Pacjent 1
   m_EditorClassIdentifier: 
   imie: "Natalia z Su\u0142kowic"
-  _maskMesh: {fileID: -2298614842991098249, guid: f20b7eb16c5dc634a87729e2d52dc50d, type: 3}
-  _maskMaterial: {fileID: 2100000, guid: 9d78cbcb8d976004397f875b82692b30, type: 2}
+  _maskMesh: {fileID: 9160873292033164457, guid: 03ba9c1f9c5b86048923ba6dec3e774c, type: 3}
+  _maskMaterial: {fileID: 2100000, guid: 7c39916505a892049b2bb6889760ff19, type: 2}
   _Choroba: {fileID: 11400000, guid: 7266688f9b3850e4cae59acacc6f9fc2, type: 2}
   _EntryChat:
   - "Dzie\u0144 dobry."
@@ -27,3 +27,4 @@ MonoBehaviour:
   - "Klient Umar\u0142 i nie \u017Cyje"
   pieniazkiZaWyleczenie: 11
   "pieniazkiZaPora\u017Cke": 0
+  setDayTime: 1
