@@ -9,6 +9,8 @@ using Class;
 using Crafting;
 using static Class.SkladnikiClass;
 using NaughtyAttributes;
+using NPC;
+using Gameplay;
 
 namespace UI
 {
@@ -39,8 +41,19 @@ namespace UI
 
         [SerializeField] public List<TextMeshProUGUI> tytuly;
 
-        [Header("Book")] 
+        [Header("Book")]
         [SerializeField] private GameObject book;
+
+        #region podsumowanie
+
+        [SerializeField] private GameObject _podsumowanieDnia;
+        [SerializeField] private List<TextMeshProUGUI> _PacjeciTytuly;
+        [SerializeField] private List<TextMeshProUGUI> _PacjeciOpisy;
+
+        [SerializeField] private GameObject _podsumowanieGry;
+        [SerializeField] private TextMeshProUGUI _staty;
+
+        #endregion podsumowanie
 
         #endregion Vars
 
@@ -52,7 +65,7 @@ namespace UI
         private void Start()
         {
             StartNames();
-            
+
             //turn off book
             book.gameObject.SetActive(false);
         }
@@ -164,7 +177,7 @@ namespace UI
         }
 
         #endregion buying
-        
+
         public void OpenBook()
         {
             book.SetActive(true);
@@ -180,5 +193,43 @@ namespace UI
         {
             ActualShop.SetActive(false);
         }
+
+        #region podsumowanie
+
+        public void testc()
+        {
+            WlaczDziennik(true);
+        }
+
+        public void WlaczDziennik(bool on)
+        {
+            if (on)
+            {
+                _podsumowanieDnia.SetActive(true);
+                UpdateDziennk();
+            }
+            else if (NPCController.Instance.KoniecDni())
+            {
+                _podsumowanieDnia.SetActive(false);
+            }
+            else
+            {
+                _podsumowanieDnia.SetActive(false);
+                GameManager.Instance.WlaczSklep();
+            }
+        }
+
+        public void UpdateDziennk()
+        {
+            var pajeci = NPCController.Instance.PacjeciZDzisiaj();
+            for (int i = 0; i < pajeci.Count; i++)
+            {
+                string smierć = pajeci[i].CzyWyleczony() ? "PRZEŻYŁ" : "ZMARŁ";
+                _PacjeciTytuly[i].text = $"{pajeci[i].GetName()} - {smierć} - {pajeci[i].GetPieniazki()} ";
+                _PacjeciOpisy[i].text = $"{pajeci[i].GetGazeta()}";
+            }
+        }
+
+        #endregion podsumowanie
     }
 }

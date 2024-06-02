@@ -122,13 +122,18 @@ namespace Gameplay
 
                 case GameStates.EndDay:
                     Debug.Log("EndDay");
-                    NPCController.Instance.NextDay();
-                    WlaczSklep();
-                    ChangeGameState(GameStates.StartGame);
+                    // Włacz podsumowanie
+                    UIController.Instance.WlaczDziennik(true);
+                    //NPCController.Instance.NextDay();
+                    //WlaczSklep();
+                    //ChangeGameState(GameStates.StartGame);
+                    // ↑ Przeniesione do włącz sklep ↑
                     break;
 
-                case GameStates.WaitState:
-
+                case GameStates.KoniecGry:
+                    //jakiś koniec Gry zaraz robie
+                    Debug.Log("End Game");
+                    UIController.Instance.WlaczDziennik(true);
                     break;
 
                 default:
@@ -139,8 +144,10 @@ namespace Gameplay
             //ChangeGameState(GameStates.WaitState);
         }
 
-        private void WlaczSklep()
+        public void WlaczSklep()
         {
+            NPCController.Instance.NextDay();
+            ChangeGameState(GameStates.StartGame);
             UIController.Instance.ActualShop.SetActive(true);
         }
 
@@ -211,7 +218,11 @@ namespace Gameplay
             yield return new WaitUntil(() => NpcWentAway);
 
             npcWentAway = false;
-            if (NPCController.Instance.KonieKolejki())
+            if (NPCController.Instance.KoniecDni())
+            {
+                ChangeGameState(GameStates.KoniecGry);
+            }
+            else if (NPCController.Instance.KonieKolejki())
             {
                 ChangeGameState(GameStates.EndDay);
             }
@@ -255,5 +266,5 @@ public enum GameStates
     VictoryNPC, //endczat, wyleczylismy
     LoseNPC, //npc umiera
     EndDay,
-    WaitState
+    KoniecGry
 }

@@ -96,7 +96,7 @@ namespace NPC
         {
             return setDayTime;
         }
-        
+
         public string GetName()
         {
             return imie;
@@ -105,6 +105,11 @@ namespace NPC
         public void SetWyleczonyPacjent(bool zadowolenie)
         {
             _wyleczonyPacjent = zadowolenie;
+        }
+
+        public bool CzyWyleczony()
+        {
+            return _wyleczonyPacjent;
         }
 
         public int GetPieniazki()
