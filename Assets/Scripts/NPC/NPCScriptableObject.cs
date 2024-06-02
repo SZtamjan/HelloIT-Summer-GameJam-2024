@@ -26,7 +26,7 @@ namespace NPC
         [SerializeField, Foldout("Pieni¹dze"), Tooltip("Ile zap³aci")] private int pieniazkiZaWyleczenie;
         [SerializeField, Foldout("Pieni¹dze"), Tooltip("Ile zap³aci")] private int pieniazkiZaPora¿ke;
 
-        [SerializeField, Foldout("Envioroment"), Tooltip("Zmien pore dnia na wybrany, gdy ten npc sie pojawi")] private DayTime setDayTime;
+        [SerializeField, Foldout("Envioroment"), Tooltip("Zmien pore dnia na wybrany, gdy ten npc sie pojawi")] public DayTime setDayTime;
 
         private bool _wyleczonyPacjent;
 
@@ -92,6 +92,11 @@ namespace NPC
 
         #endregion gazeta
 
+        public DayTime GetDayTime()
+        {
+            return setDayTime;
+        }
+        
         public string GetName()
         {
             return imie;
