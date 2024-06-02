@@ -39,6 +39,9 @@ namespace UI
 
         [SerializeField] public List<TextMeshProUGUI> tytuly;
 
+        [Header("Book")] 
+        [SerializeField] private GameObject book;
+
         #endregion Vars
 
         private void Awake()
@@ -49,6 +52,9 @@ namespace UI
         private void Start()
         {
             StartNames();
+            
+            //turn off book
+            book.gameObject.SetActive(false);
         }
 
         #region Interactions
@@ -157,6 +163,16 @@ namespace UI
         }
 
         #endregion buying
+        
+        public void OpenBook()
+        {
+            book.SetActive(true);
+        }
+
+        public void CloseBook()
+        {
+            book.SetActive(false);
+        }
 
         [Button]
         public void WylaczSklep()
