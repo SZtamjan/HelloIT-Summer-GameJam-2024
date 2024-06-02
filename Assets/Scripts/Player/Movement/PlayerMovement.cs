@@ -80,7 +80,7 @@ namespace Player.Movement
         {
             if (PlayerPrefs.HasKey("MouseSensitivity"))
             {
-                Debug.LogError("Fatal error, brak zapisanego sensitivity");
+                Debug.LogWarning("Fatal error, brak zapisanego sensitivity");
                 return;
             }
 
