@@ -1,4 +1,5 @@
 using System.Collections;
+using Player.Interact;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,7 +11,7 @@ namespace Player.Movement
         private InputAction _moveAction;
         private InputAction _lookAction;
 
-        [SerializeField] private Camera mainCam;
+        private Camera _mainCam;
         [SerializeField] private Transform camTransform;
 
         private Rigidbody _rb;
@@ -48,6 +49,7 @@ namespace Player.Movement
         private void Start()
         {
             LoadSens();
+            _mainCam = Camera.main;
             _playerInput = GetComponent<PlayerInput>();
             _moveAction = _playerInput.actions.FindAction("Move");
             _lookAction = _playerInput.actions.FindAction("Look");
@@ -137,7 +139,7 @@ namespace Player.Movement
             //Quaternion rot = Quaternion.Slerp(mainCam.transform.rotation, camTransform.rotation, camSpeed * Time.deltaTime);
             Quaternion rot = camTransform.rotation;
             Vector3 pos = camTransform.position;
-            mainCam.transform.SetPositionAndRotation(pos, rot);
+            _mainCam.transform.SetPositionAndRotation(pos, rot);
         }
 
         public IEnumerator TurnPlayerTowardsNPC()

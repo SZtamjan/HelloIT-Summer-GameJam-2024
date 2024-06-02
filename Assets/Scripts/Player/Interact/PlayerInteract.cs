@@ -8,7 +8,7 @@ namespace Player.Interact
 {
     public class PlayerInteract : MonoBehaviour
     {
-        [SerializeField] private Transform camObj;
+        private Transform _camObj;
         [SerializeField] private float detectDistance = 2f;
 
         private InteractableObj _interactableObj;
@@ -19,7 +19,7 @@ namespace Player.Interact
 
         private void Awake()
         {
-            camObj = Camera.main.transform;
+            _camObj = Camera.main.transform;
         }
 
         private void Start()
@@ -35,7 +35,7 @@ namespace Player.Interact
         private bool DetectInteractable()
         {
             RaycastHit hit;
-            Physics.Raycast(camObj.position, camObj.forward, out hit, detectDistance, interactLayer);
+            Physics.Raycast(_camObj.position, _camObj.forward, out hit, detectDistance, interactLayer);
 
             if (hit.collider == null)
             {
