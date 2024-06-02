@@ -18,6 +18,7 @@ namespace Player.Movement
         [SerializeField] private float playerSpeed = 5f;
         [SerializeField] private float YawSpeed = 100f;
         [SerializeField] private float PitchSpeed = 100f;
+        [SerializeField] private float camSpeed = 500f;
         private bool _mouseRotationIsOn = true;
         private bool _playerMovementIsOn = true;
 
@@ -133,7 +134,7 @@ namespace Player.Movement
 
         private void Update()
         {
-            //Quaternion rot = Quaternion.Slerp(mainCam.transform.rotation, camTransform.rotation, CameraSpeed * Time.deltaTime);
+            //Quaternion rot = Quaternion.Slerp(mainCam.transform.rotation, camTransform.rotation, camSpeed * Time.deltaTime);
             Quaternion rot = camTransform.rotation;
             Vector3 pos = camTransform.position;
             mainCam.transform.SetPositionAndRotation(pos, rot);
