@@ -30,7 +30,8 @@ Material:
   - _OUTLINE
   - _SPECULARHIGHLIGHTS_OFF
   - _TOON_SHADING_ON
-  m_InvalidKeywords: []
+  m_InvalidKeywords:
+  - _ALPHAMODULATE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0

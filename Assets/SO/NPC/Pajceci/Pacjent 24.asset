@@ -13,34 +13,42 @@ MonoBehaviour:
   m_Name: Pacjent 24
   m_EditorClassIdentifier: 
   imie: Leonardo/Fernando da Vinci
-  _maskMesh: {fileID: 4923970991324832188, guid: 93c0e292bc253dd4c88d43b9ac6d4d00, type: 3}
-  _maskMaterial: {fileID: 2100000, guid: 9d78cbcb8d976004397f875b82692b30, type: 2}
+  _maskMesh: {fileID: 1863409537150222870, guid: 242d21384c0c9fc4e9deb4d3f5844ae6, type: 3}
+  _maskMaterial: {fileID: 2100000, guid: 6a225d681bd70a14e9650a9467d4c7d7, type: 2}
   _Choroba: {fileID: 11400000, guid: 0f28cee9e49338244b214d4088f14735, type: 2}
   _EntryChat:
   - "Witam ci\u0119 mistrzu!"
   _NormalChat:
   - "B\u0119d\u0119 z tob\u0105 szczery. Wiem, \u017Ce ci\u0105\u017Cy na tobie tajemnica
-    lekarska, a ja nie mog\u0119 tego d\u0142u\u017Cej trzyma\u0107 w sobie. Nie
-    jestem Leonardo, kt\xF3rego znasz z pierwszych stron gazet. Jestem Fernando da
-    Vinci jego brat bli\u017Aniak. S\u0142ysza\u0142e\u015B o wypadku z wie\u017Cami?
-    Leonardo z tego nie wyszed\u0142 ca\u0142y. Wtedy pojawi\u0142em si\u0119 ja.
-    Tylko, \u017Ce moja rola nie b\u0119dzie tak prostolinijna jak mego brata. On
-    by\u0142 wizjonerem, ale jego wynalazki nie tworzy\u0142y dla \u015Bwiata nic
-    po\u017Cytecznego. Planuj\u0119 kontynuowa\u0107 jego wizj\u0119, ale w takiej
-    formie, aby pom\xF3c naszemu kr\xF3lestwu. Aktualnie tworz\u0119 maszyn\u0119
-    wojenn\u0105, kt\xF3ra pozwoli wygra\u0107 ka\u017Cd\u0105 mo\u017Cliw\u0105
-    wojn\u0119. Pojazd, kt\xF3ry tworz\u0119 b\u0119dzie zasilany w ka\u017Cdym aspekcie
-    przez \u017Cebrak\xF3w i je\u0144c\xF3w. Jak pewnie wiesz, mamy ich na p\u0119czki
-    po ostatnich wojnach. Nikt nie zauwa\u017Cy ich znikni\u0119cia, a da nam to
-    darmow\u0105 si\u0142\u0119 robocz\u0105 i... surowce. Uda\u0142o mi si\u0119
-    osi\u0105gn\u0105\u0107 technologi\u0119 pozwalaj\u0105c\u0105 na krystalizowanie
-    krwi. Wyobra\u017A sobie maszyn\u0119 wy\u017Csz\u0105 ni\u017C mury i wystrzeliwuj\u0105c\u0105
-    twarde jak kamienie pociski. Byliby\u015Bmy nie do powstrzymania. Mam jednak
-    problem. Potrzebuj\u0119 do tego czystej krwi, a u moich obiekt\xF3w badawczych
-    wybuch\u0142a epidemia ospy, ty jedyny masz dost\u0119p do lekarstw, aby im pom\xF3c.
-    Nie martw si\u0119. Nie ze wszystkich pozyskuj\u0119 krew, a te\u017C nie zawsze
-    ko\u0144czy si\u0119 to \u015Bmierci\u0105. To i tak lepsze \u017Cycie ni\u017C
-    maj\u0105 w niewoli czy na ulicy. To jak, pomo\u017Cesz?"
+    lekarska, a ja nie mog\u0119 tego d\u0142u\u017Cej trzyma\u0107 w sobie."
+  - "Nie jestem Leonardo, kt\xF3rego znasz z pierwszych stron gazet. Jestem Fernando
+    da Vinci jego brat bli\u017Aniak."
+  - "  S\u0142ysza\u0142e\u015B o wypadku z wie\u017Cami? Leonardo z tego nie wyszed\u0142
+    ca\u0142y. "
+  - "Wtedy pojawi\u0142em si\u0119 ja. Tylko, \u017Ce moja rola nie b\u0119dzie tak
+    prostolinijna jak mego brata. "
+  - "On by\u0142 wizjonerem, ale jego wynalazki nie tworzy\u0142y dla \u015Bwiata
+    nic po\u017Cytecznego. "
+  - "Planuj\u0119 kontynuowa\u0107 jego wizj\u0119, ale w takiej formie, aby pom\xF3c
+    naszemu kr\xF3lestwu. "
+  - "Aktualnie tworz\u0119 maszyn\u0119 wojenn\u0105, kt\xF3ra pozwoli wygra\u0107
+    ka\u017Cd\u0105 mo\u017Cliw\u0105 wojn\u0119."
+  - " Pojazd, kt\xF3ry tworz\u0119 b\u0119dzie zasilany w ka\u017Cdym aspekcie przez
+    \u017Cebrak\xF3w i je\u0144c\xF3w. "
+  - "Jak pewnie wiesz, mamy ich na p\u0119czki po ostatnich wojnach. Nikt nie zauwa\u017Cy
+    ich znikni\u0119cia, a da nam to darmow\u0105 si\u0142\u0119 robocz\u0105 i...
+    surowce."
+  - "Uda\u0142o mi si\u0119 osi\u0105gn\u0105\u0107 technologi\u0119 pozwalaj\u0105c\u0105
+    na krystalizowanie krwi. "
+  - "Wyobra\u017A sobie maszyn\u0119 wy\u017Csz\u0105 ni\u017C mury i wystrzeliwuj\u0105c\u0105
+    twarde jak kamienie pociski."
+  - "  Byliby\u015Bmy nie do powstrzymania. Mam jednak problem. "
+  - "Potrzebuj\u0119 do tego czystej krwi, a u moich obiekt\xF3w badawczych wybuch\u0142a
+    epidemia ospy, ty jedyny masz dost\u0119p do lekarstw, aby im pom\xF3c. "
+  - "Nie martw si\u0119. Nie ze wszystkich pozyskuj\u0119 krew, a te\u017C nie zawsze
+    ko\u0144czy si\u0119 to \u015Bmierci\u0105. "
+  - "To i tak lepsze \u017Cycie ni\u017C maj\u0105 w niewoli czy na ulicy. To jak,
+    pomo\u017Cesz?"
   _ExitChat:
   - "Wierz\u0119, \u017Ce podj\u0105\u0142e\u015B najlepsz\u0105 decyzj\u0119."
   GazetaStory:
@@ -48,3 +56,4 @@ MonoBehaviour:
   - "Klient Umar\u0142 i nie \u017Cyje"
   pieniazkiZaWyleczenie: 100
   "pieniazkiZaPora\u017Cke": 0
+  setDayTime: 2

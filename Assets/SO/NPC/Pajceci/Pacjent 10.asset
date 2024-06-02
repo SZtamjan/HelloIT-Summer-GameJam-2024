@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: Pacjent 10
   m_EditorClassIdentifier: 
   imie: Maximus z Siednic
-  _maskMesh: {fileID: 4923970991324832188, guid: 93c0e292bc253dd4c88d43b9ac6d4d00, type: 3}
-  _maskMaterial: {fileID: 2100000, guid: 9d78cbcb8d976004397f875b82692b30, type: 2}
+  _maskMesh: {fileID: 9160873292033164457, guid: 03ba9c1f9c5b86048923ba6dec3e774c, type: 3}
+  _maskMaterial: {fileID: 2100000, guid: 3129ce7bc0446ab4cac02945c8b9bc00, type: 2}
   _Choroba: {fileID: 11400000, guid: a349470c84df5bd4eab144a2e4557fbb, type: 2}
   _EntryChat:
   - "Dzie\u0144 dobry."
   _NormalChat:
   - "Mam silne b\xF3le cia\u0142a i m\u0119czy mnie gor\u0105czka. Moja sk\xF3ra
-    te\u017C zacz\u0119\u0142a silnie \u017C\xF3\u0142kn\u0105\u0107. Mojemu bratu
-    te\u017C to si\u0119 przydarzy\u0142o czy to, aby nie \u017C\xF3\u0142taczka?
+    te\u017C zacz\u0119\u0142a silnie \u017C\xF3\u0142kn\u0105\u0107."
+  - " Mojemu bratu te\u017C to si\u0119 przydarzy\u0142o czy to, aby nie \u017C\xF3\u0142taczka?
     Mamy akurat zbiory rzepaku i mo\u017Ce to dlatego, ale pewno\u015Bci nie mam."
   _ExitChat:
   - "\u017Begnaj."
@@ -30,3 +30,4 @@ MonoBehaviour:
   - "Klient Umar\u0142 i nie \u017Cyje"
   pieniazkiZaWyleczenie: 11
   "pieniazkiZaPora\u017Cke": 0
+  setDayTime: 0

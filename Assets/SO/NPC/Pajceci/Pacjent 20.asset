@@ -13,15 +13,16 @@ MonoBehaviour:
   m_Name: Pacjent 20
   m_EditorClassIdentifier: 
   imie: Dolot Kacperowski
-  _maskMesh: {fileID: 4923970991324832188, guid: 93c0e292bc253dd4c88d43b9ac6d4d00, type: 3}
+  _maskMesh: {fileID: -90140850427704293, guid: d9a187391ae5c774e908f61392fc8aa3, type: 3}
   _maskMaterial: {fileID: 2100000, guid: 9d78cbcb8d976004397f875b82692b30, type: 2}
   _Choroba: {fileID: 11400000, guid: 0f28cee9e49338244b214d4088f14735, type: 2}
   _EntryChat:
   - Witaj doktorze.
   _NormalChat:
   - "Mam dziwne krosty na ciele, ale nie wydaje mi si\u0119, \u017Ceby bola\u0142y
-    czy przeszkadza\u0142y. Mo\u017Ce troch\u0119 sw\u0119dz\u0105, ale to tyle.
-    Mo\u017Ce to na co\u015B uczulenie?"
+    czy przeszkadza\u0142y."
+  - " Mo\u017Ce troch\u0119 sw\u0119dz\u0105, ale to tyle. Mo\u017Ce to na co\u015B
+    uczulenie?"
   _ExitChat:
   - "\u017Begnaj."
   GazetaStory:
@@ -29,3 +30,4 @@ MonoBehaviour:
   - "Klient Umar\u0142 i nie \u017Cyje"
   pieniazkiZaWyleczenie: 11
   "pieniazkiZaPora\u017Cke": 0
+  setDayTime: 0

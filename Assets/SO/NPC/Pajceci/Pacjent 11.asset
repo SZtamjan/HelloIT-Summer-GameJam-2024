@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Pacjent 11
   m_EditorClassIdentifier: 
   imie: "Julia z \u0141ysic"
-  _maskMesh: {fileID: 4923970991324832188, guid: 93c0e292bc253dd4c88d43b9ac6d4d00, type: 3}
-  _maskMaterial: {fileID: 2100000, guid: 9d78cbcb8d976004397f875b82692b30, type: 2}
+  _maskMesh: {fileID: 1863409537150222870, guid: 242d21384c0c9fc4e9deb4d3f5844ae6, type: 3}
+  _maskMaterial: {fileID: 2100000, guid: 3129ce7bc0446ab4cac02945c8b9bc00, type: 2}
   _Choroba: {fileID: 11400000, guid: 78189e62ea4dbfc419dc8ea2f12b1bea, type: 2}
   _EntryChat:
   - 'Pomocy doktorze! '
@@ -28,3 +28,4 @@ MonoBehaviour:
   - "Klient Umar\u0142 i nie \u017Cyje"
   pieniazkiZaWyleczenie: 11
   "pieniazkiZaPora\u017Cke": 0
+  setDayTime: 1

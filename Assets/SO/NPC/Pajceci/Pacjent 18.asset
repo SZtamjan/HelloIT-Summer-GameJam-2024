@@ -13,17 +13,18 @@ MonoBehaviour:
   m_Name: Pacjent 18
   m_EditorClassIdentifier: 
   imie: "\u015Aled\u017A z Maciejowic"
-  _maskMesh: {fileID: 4923970991324832188, guid: 93c0e292bc253dd4c88d43b9ac6d4d00, type: 3}
+  _maskMesh: {fileID: -2298614842991098249, guid: f20b7eb16c5dc634a87729e2d52dc50d, type: 3}
   _maskMaterial: {fileID: 2100000, guid: 9d78cbcb8d976004397f875b82692b30, type: 2}
   _Choroba: {fileID: 11400000, guid: a349470c84df5bd4eab144a2e4557fbb, type: 2}
   _EntryChat:
   - "Dobry dzie\u0144."
   _NormalChat:
   - "Spad\u0142em jaki\u015B czas temu z konia, ju\u017C chyba z kilka tygodni mnie
-    boli wszystko po tym i czuj\u0119, \u017Ce co\u015B mnie \u0142apie doktorze.
-    Wydawa\u0142o mi si\u0119 to zwyk\u0142ym przezi\u0119bieniem, ale trwa ju\u017C
-    wystarczaj\u0105co d\u0142ugo. Od niedawna nie wa\u017Cne ile wody, mleka czy
-    piwa wypij\u0119 nie jestem w stanie pozby\u0107 si\u0119 wysuszenia w gardle."
+    boli wszystko po tym i czuj\u0119, \u017Ce co\u015B mnie \u0142apie doktorze."
+  - "Wydawa\u0142o mi si\u0119 to zwyk\u0142ym przezi\u0119bieniem, ale trwa ju\u017C
+    wystarczaj\u0105co d\u0142ugo."
+  - "Od niedawna nie wa\u017Cne ile wody, mleka czy piwa wypij\u0119 nie jestem w
+    stanie pozby\u0107 si\u0119 wysuszenia w gardle."
   _ExitChat:
   - Z Bogiem.
   GazetaStory:
@@ -31,3 +32,4 @@ MonoBehaviour:
   - "Klient Umar\u0142 i nie \u017Cyje"
   pieniazkiZaWyleczenie: 11
   "pieniazkiZaPora\u017Cke": 0
+  setDayTime: 2

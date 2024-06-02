@@ -13,26 +13,31 @@ MonoBehaviour:
   m_Name: Pacjent 25
   m_EditorClassIdentifier: 
   imie: Paracelsus
-  _maskMesh: {fileID: 4923970991324832188, guid: 93c0e292bc253dd4c88d43b9ac6d4d00, type: 3}
-  _maskMaterial: {fileID: 2100000, guid: 9d78cbcb8d976004397f875b82692b30, type: 2}
+  _maskMesh: {fileID: 6929103289814954685, guid: cb10124aa97d4d64c990a9247bec8c3a, type: 3}
+  _maskMaterial: {fileID: 2100000, guid: 6a225d681bd70a14e9650a9467d4c7d7, type: 2}
   _Choroba: {fileID: 11400000, guid: 8d4cde6a4fb874d4bbf57be3ee3edf19, type: 2}
   _EntryChat:
   - "Mi\u0142o mi znowu ci\u0119 widzie\u0107 uczniu."
   _NormalChat:
-  - "Przyjemnie zn\xF3w by\u0107 w tym gabin... M\xF3j Bo\u017Ce! Jak ty wygl\u0105dasz!
-    S\u0142ysza\u0142em jak sobie radzi\u0142e\u015B, ale powiniene\u015B zadba\u0107
-    te\u017C o samego siebie! Po samym twoim wygl\u0105dzie widz\u0119, \u017Ce jest
-    \u017Ale... Bardzo \u017Ale. Nie jest to nie do wyleczenia, ale b\u0119dzie ci\u0119\u017Cko.
-    Na strychu mam odpowiednie instrumenty, aby sporz\u0105dzi\u0107 lekarstwo. Ty
-    samemu zosta\u0144 tutaj i tw\xF3rz mikstury. S\u0142uchaj uwa\u017Cnie, bo nie
-    mamy czasu, abym si\u0119 powtarza\u0142. B\u0119d\u0119 tylko przychodzi\u0142
-    po mieszanki i wraca\u0142 od razu do pracy. Najpierw sporz\u0105d\u017A co\u015B
-    na suchoty. Lekarstwo na gru\u017Alic\u0119 powinno wystarczy\u0107. Potem potrzebujemy
-    czego\u015B na silne ska\u017Cenia sk\xF3ry. Idealna tu b\u0119dzie mikstura
-    do leczenia d\u017Cumy. Jeszcze co\u015B na silne nudno\u015Bci... Nie przychodzi
-    mi nic do g\u0142owy, ale wierz\u0119, \u017Ce na co\u015B wpadniesz. Pami\u0119taj,
-    musi by\u0107 w tej kolejno\u015Bci. Daj mi pierwsz\u0105 butelk\u0119 i id\u0119
-    od razu przygotowa\u0107 wszystko."
+  - "Przyjemnie zn\xF3w by\u0107 w tym gabin... "
+  - "M\xF3j Bo\u017Ce! Jak ty wygl\u0105dasz! "
+  - " S\u0142ysza\u0142em jak sobie radzi\u0142e\u015B, ale powiniene\u015B zadba\u0107
+    te\u017C o samego siebie! "
+  - "Po samym twoim wygl\u0105dzie widz\u0119, \u017Ce jest \u017Ale... Bardzo \u017Ale."
+  - " Nie jest to nie do wyleczenia, ale b\u0119dzie ci\u0119\u017Cko. Na strychu
+    mam odpowiednie instrumenty, aby sporz\u0105dzi\u0107 lekarstwo. "
+  - "Ty samemu zosta\u0144 tutaj i tw\xF3rz mikstury. S\u0142uchaj uwa\u017Cnie,
+    bo nie mamy czasu, abym si\u0119 powtarza\u0142."
+  - " B\u0119d\u0119 tylko przychodzi\u0142 po mieszanki i wraca\u0142 od razu do
+    pracy. "
+  - "Najpierw sporz\u0105d\u017A co\u015B na suchoty. Lekarstwo na gru\u017Alic\u0119
+    powinno wystarczy\u0107."
+  - "Potem potrzebujemy czego\u015B na silne ska\u017Cenia sk\xF3ry. Idealna tu b\u0119dzie
+    mikstura do leczenia d\u017Cumy. "
+  - " Jeszcze co\u015B na silne nudno\u015Bci... Nie przychodzi mi teraz nic do g\u0142owy,
+    ale wierz\u0119, \u017Ce na co\u015B wpadniesz."
+  - "Pami\u0119taj, musi by\u0107 w tej kolejno\u015Bci. Daj mi pierwsz\u0105 butelk\u0119
+    i id\u0119 od razu przygotowa\u0107 wszystko."
   _ExitChat:
   - Nie ma czasu do stracenia!
   GazetaStory:
@@ -40,3 +45,4 @@ MonoBehaviour:
   - "Klient Umar\u0142 i nie \u017Cyje"
   pieniazkiZaWyleczenie: 0
   "pieniazkiZaPora\u017Cke": 0
+  setDayTime: 0

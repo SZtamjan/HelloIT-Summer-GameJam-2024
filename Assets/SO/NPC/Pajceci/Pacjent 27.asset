@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: Pacjent 27
   m_EditorClassIdentifier: 
   imie: Paracelsus
-  _maskMesh: {fileID: 4923970991324832188, guid: 93c0e292bc253dd4c88d43b9ac6d4d00, type: 3}
-  _maskMaterial: {fileID: 2100000, guid: 9d78cbcb8d976004397f875b82692b30, type: 2}
+  _maskMesh: {fileID: 6929103289814954685, guid: cb10124aa97d4d64c990a9247bec8c3a, type: 3}
+  _maskMaterial: {fileID: 2100000, guid: 6a225d681bd70a14e9650a9467d4c7d7, type: 2}
   _Choroba: {fileID: 11400000, guid: e662e3f7e1d80724fbdc2c8910e537bc, type: 2}
   _EntryChat:
-  - 
+  - Teraz ostatnia.
   _NormalChat:
-  - "Teraz ostatnia. Mam nadziej\u0119, \u017Ce co\u015B wymy\u015Bli\u0142e\u015B."
+  - "Mam nadziej\u0119, \u017Ce co\u015B wymy\u015Bli\u0142e\u015B."
   _ExitChat:
   - "Cho\u0107 ze mn\u0105."
   GazetaStory:
@@ -27,3 +27,4 @@ MonoBehaviour:
   - "Klient Umar\u0142 i nie \u017Cyje"
   pieniazkiZaWyleczenie: 0
   "pieniazkiZaPora\u017Cke": 0
+  setDayTime: 1

@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: Pacjent 8
   m_EditorClassIdentifier: 
   imie: Oskar z trupy ANZN
-  _maskMesh: {fileID: 4923970991324832188, guid: 93c0e292bc253dd4c88d43b9ac6d4d00, type: 3}
-  _maskMaterial: {fileID: 2100000, guid: 9d78cbcb8d976004397f875b82692b30, type: 2}
+  _maskMesh: {fileID: 6929103289814954685, guid: cb10124aa97d4d64c990a9247bec8c3a, type: 3}
+  _maskMaterial: {fileID: 2100000, guid: 7c39916505a892049b2bb6889760ff19, type: 2}
   _Choroba: {fileID: 11400000, guid: 0f28cee9e49338244b214d4088f14735, type: 2}
   _EntryChat:
   - Witaj.
   _NormalChat:
   - "M\xF3j syn ma krosty na ca\u0142ym ciele, kt\xF3re go sw\u0119dz\u0105. Przez
-    niego mamy za ma\u0142o r\u0105k do pracy w polu. Daj co\u015B co pozwoli mu
-    stan\u0105\u0107 znowu na nogi."
+    niego mamy za ma\u0142o r\u0105k do pracy w polu."
+  - "Daj co\u015B co pozwoli mu stan\u0105\u0107 znowu na nogi."
   _ExitChat:
   - Z Bogiem.
   GazetaStory:
@@ -29,3 +29,4 @@ MonoBehaviour:
   - "Klient Umar\u0142 i nie \u017Cyje"
   pieniazkiZaWyleczenie: 11
   "pieniazkiZaPora\u017Cke": 0
+  setDayTime: 2
