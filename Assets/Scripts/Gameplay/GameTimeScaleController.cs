@@ -13,6 +13,7 @@ namespace Gameplay
 
         public UnityEvent pausedGame;
         public bool gamePaused = false;
+        public bool inOtherUI = false;
 
         private void Start()
         {
@@ -26,6 +27,8 @@ namespace Gameplay
         
         public void SwitchPause()
         {
+            if(inOtherUI) return;
+            
             pausedGame.Invoke();
             
             if (Mathf.RoundToInt(Time.timeScale) == 1)

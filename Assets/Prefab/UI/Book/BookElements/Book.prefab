@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6832726251105153430}
   - component: {fileID: 1260863143241367531}
   - component: {fileID: 8706884563716831123}
+  - component: {fileID: 3348198471371033298}
   m_Layer: 5
   m_Name: Book
   m_TagString: Untagged
@@ -76,3 +77,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pages: []
+--- !u!222 &3348198471371033298
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9193212350829705656}
+  m_CullTransparentMesh: 1

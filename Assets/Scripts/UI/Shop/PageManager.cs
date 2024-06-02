@@ -6,11 +6,18 @@ namespace UI.Shop
 {
     public class PageManager : MonoBehaviour
     {
+        public static PageManager Instance;
+        
         [SerializeField] private List<DoublePage> pages;
         private DoublePage _currentPages;
         private int _currentIndex = 0;
 
-        private void Start()
+        private void Awake()
+        {
+            Instance = this;
+        }
+
+        private void OnEnable()
         {
             _currentPages = new DoublePage();
             LoadPage();
@@ -28,9 +35,16 @@ namespace UI.Shop
             LoadPage();
         }
 
+        private void OnDisable()
+        {
+            Destroy(_currentPages.leftPage);
+            Destroy(_currentPages.rightPage);
+        }
+
         private void LoadPage()
         {
             _currentIndex = Mathf.Clamp(_currentIndex, 0, pages.Count-1);
+            if(_currentIndex<0) return;
             
             //wylacz stare
             if (_currentPages.leftPage != null)
@@ -46,6 +60,12 @@ namespace UI.Shop
             //wlacz nowe
             _currentPages.leftPage.SetActive(true);
             _currentPages.rightPage.SetActive(true);
+        }
+
+        public void LoadBook(List<DoublePage> newPages)
+        {
+            pages = new List<DoublePage>();
+            pages = newPages;
         }
     }
 }
