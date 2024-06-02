@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4741944196562664198}
   - component: {fileID: 4943009974944684756}
   m_Layer: 7
-  m_Name: DialogCanvas
+  m_Name: DialogCanvas - do usuniecia
   m_TagString: DialogCanvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87,7 +87,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &7596220912527335908
 MonoBehaviour:
   m_ObjectHideFlags: 0
