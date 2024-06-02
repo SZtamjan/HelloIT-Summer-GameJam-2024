@@ -35,7 +35,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -50}
-  m_SizeDelta: {x: 550, y: 100}
+  m_SizeDelta: {x: 530, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8883717922806146925
 CanvasRenderer:
@@ -65,17 +65,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 4
+  m_text: v11
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e4af804e9690308458c2ed3acb644dda, type: 2}
+  m_sharedMaterial: {fileID: -6763963794302383620, guid: e4af804e9690308458c2ed3acb644dda, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4279308561
+  m_fontColor: {r: 0.06666667, g: 0.06666667, b: 0.06666667, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -144,7 +144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6460680115010528725}
   m_Layer: 5
-  m_Name: 'Strona 4 - prawo '
+  m_Name: 7 - prochnica - lewo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -169,7 +169,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 550, y: 980}
+  m_SizeDelta: {x: 530, y: 980}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &5394668137737848279
 GameObject:
@@ -206,7 +206,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 440}
-  m_SizeDelta: {x: 550, y: 880}
+  m_SizeDelta: {x: 530, y: 880}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1268542425851051588
 CanvasRenderer:
@@ -236,12 +236,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "MALARIA\r\n\nPrzyprowadzona na statkach przez pionier\xF3w z najdalszych
-    zakamark\xF3w po\u0142udnia. Wci\u0105\u017C nie do ko\u0144ca znany jest jej
-    spos\xF3b przenoszenia. \n\nDla bezpiecze\u0144stwa og\xF3\u0142u najlepiej izolowa\u0107
-    chor\u0105 osob\u0119 na czas kuracji. \n\nCharakteryzuje si\u0119 silnymi nudno\u015Bciami
-    po\u0142\u0105czonymi z zawrotami g\u0142owy, siln\u0105, czasami \u015Bmierteln\u0105,
-    gor\u0105czk\u0105 oraz b\xF3lami pochodz\u0105cymi z, jakby wn\u0119trza cia\u0142a."
+  m_text: "PR\xD3CHNICA\r\n\nZbieraj\u0105ca wci\u0105\u017C rosn\u0105ce \u017Cniwa
+    choroba spotykana w ka\u017Cdej grupie spo\u0142ecznej. Atakuje w nieznany spos\xF3b
+    z\u0119by. Im wi\u0119kszy wiek pacjenta, tym wi\u0119ksza szansa, \u017Ce zachoruje.\n\nPozbycie
+    si\u0119 zepsutego z\u0119ba we wczesnej fazie zazwyczaj blokuje dalszy jej rozw\xF3j,
+    ale nie wyklucza powrotu na innym z\u0119bie w przysz\u0142o\u015Bci. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e4af804e9690308458c2ed3acb644dda, type: 2}
   m_sharedMaterial: {fileID: -6763963794302383620, guid: e4af804e9690308458c2ed3acb644dda, type: 2}
@@ -250,8 +249,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4279308561
+  m_fontColor: {r: 0.06666667, g: 0.06666667, b: 0.06666667, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -345,7 +344,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 0, y: 440}
-  m_SizeDelta: {x: 550, y: 880}
+  m_SizeDelta: {x: 530, y: 880}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5349470934233846237
 MonoBehaviour:
