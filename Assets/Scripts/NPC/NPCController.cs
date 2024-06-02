@@ -1,5 +1,6 @@
 using Crafting;
 using Economy;
+using Gameplay;
 using NaughtyAttributes;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,7 +15,7 @@ namespace NPC
         [SerializeField] private NPCBody _pacjentBody;
 
         [SerializeField] private List<DaysScriptableObject> _kolejka;
-        public int kolejkaCount = -1;
+        public int kolejkaCount = 0;
         [SerializeField] private int dayCount = 0;
         [SerializeField] private NPCScriptableObject TestowyPacjent;
         private Animator _anim;
@@ -23,7 +24,7 @@ namespace NPC
         public void NextDay()
         {
             dayCount++;
-            kolejkaCount = -1;
+            kolejkaCount = 0;
             _pacjentBody.MakeInvisible();
         }
 
@@ -41,7 +42,6 @@ namespace NPC
         [Button]
         public void NastepnyPacjent()
         {
-            kolejkaCount++;
             UpdatePajcent(_kolejka[dayCount].kolejka[kolejkaCount]);
             ChangeVisibility(1);
             _anim.SetTrigger("Start");
@@ -53,6 +53,21 @@ namespace NPC
             EconomyResources.Instance.Resources.Cash += _kolejka[dayCount].kolejka[kolejkaCount].GetPieniazki();
             ChangeVisibility(0);
             _anim.SetTrigger("Stop");
+            kolejkaCount++;
+        }
+
+        public bool KonieKolejki()
+        {
+            if (kolejkaCount >= _kolejka[dayCount].kolejka.Count)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public NPCScriptableObject GetCurrnetPacjent()
+        {
+            return _kolejka[dayCount].kolejka[kolejkaCount];
         }
 
         public void UpdatePajcent(NPCScriptableObject pacjentInfo)
@@ -63,6 +78,7 @@ namespace NPC
         internal void GiveLek(Lek lekarstwo)
         {
             _kolejka[dayCount].kolejka[kolejkaCount].DejLek(lekarstwo);
+            GameManager.Instance.ChangeGameState(GameStates.VictoryNPC);
         }
 
         private void ChangeVisibility(float vis)
