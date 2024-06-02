@@ -4,6 +4,7 @@ using NaughtyAttributes;
 using NPC;
 using Player;
 using Player.Movement;
+using UI;
 using UIDialog;
 using UnityEngine;
 
@@ -123,6 +124,7 @@ namespace Gameplay
                 case GameStates.EndDay:
                     Debug.Log("EndDay");
                     NPCController.Instance.NextDay();
+                    WlaczSklep();
                     ChangeGameState(GameStates.StartGame);
                     break;
 
@@ -136,6 +138,11 @@ namespace Gameplay
                     break;
             }
             //ChangeGameState(GameStates.WaitState);
+        }
+
+        private void WlaczSklep()
+        {
+            UIController.Instance.ActualShop.SetActive(true);
         }
 
         private void LockPlayer()

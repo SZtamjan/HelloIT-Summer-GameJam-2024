@@ -8,6 +8,7 @@ using UnityEngine.UI;
 using Class;
 using Crafting;
 using static Class.SkladnikiClass;
+using NaughtyAttributes;
 
 namespace UI
 {
@@ -30,6 +31,8 @@ namespace UI
         [SerializeField] private TextMeshProUGUI cash;
 
         [Header("ActualShop")]
+        [SerializeField] public GameObject ActualShop;
+
         [SerializeField] public List<Button> buttony;
 
         [SerializeField] public List<TextMeshProUGUI> buttonyText;
@@ -154,5 +157,11 @@ namespace UI
         }
 
         #endregion buying
+
+        [Button]
+        public void WylaczSklep()
+        {
+            ActualShop.SetActive(false);
+        }
     }
 }

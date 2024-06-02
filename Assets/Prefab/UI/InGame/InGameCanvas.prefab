@@ -471,6 +471,7 @@ MonoBehaviour:
   fadeDuration: 2
   textFullAlpha: 2
   cash: {fileID: 4804994534968776052}
+  ActualShop: {fileID: 6784130372881660928}
   buttony:
   - {fileID: 6274709077973959072}
   - {fileID: 8696246371614069609}
@@ -1708,6 +1709,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &6784130372881660928 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6488268949397532348, guid: 665c9c08318c6a648bcdc728edede418, type: 3}
+  m_PrefabInstance: {fileID: 300866629120938684}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &6940853543017957218 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7241288056234120670, guid: 665c9c08318c6a648bcdc728edede418, type: 3}
