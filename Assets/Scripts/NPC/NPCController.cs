@@ -86,6 +86,11 @@ namespace NPC
             return _kolejka[dayCount].kolejka;
         }
 
+        public List<DaysScriptableObject> PacjeciWszyscy()
+        {
+            return _kolejka;
+        }
+
         public NPCScriptableObject GetCurrnetPacjent()
         {
             return _kolejka[dayCount].kolejka[kolejkaCount];

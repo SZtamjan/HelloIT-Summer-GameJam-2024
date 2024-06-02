@@ -217,12 +217,34 @@ namespace UI
             else if (NPCController.Instance.KoniecDni())
             {
                 _podsumowanieDnia.SetActive(false);
+                _podsumowanieGry.SetActive(true);
+                UpdatePodsumowanieGry();
             }
             else
             {
                 _podsumowanieDnia.SetActive(false);
                 GameManager.Instance.WlaczSklep();
             }
+        }
+
+        public void UpdatePodsumowanieGry()
+        {
+            int iloscPacjentow = 0;
+            int iloscZdrowych = 0;
+            int iloscChorych = 0;
+            foreach (var item in NPCController.Instance.PacjeciWszyscy())
+            {
+                foreach (var itemm in item.kolejka)
+                {
+                    iloscPacjentow++;
+                    if (itemm.CzyWyleczony())
+                    {
+                        iloscZdrowych++;
+                    }
+                    else { iloscChorych++; }
+                }
+            }
+            _staty.text = $"Obsłużyłeś{iloscPacjentow} pajcentów \n Z Tego Wyleczyłeś {iloscZdrowych} \n a zabiłeś {iloscChorych} ";
         }
 
         public void UpdateDziennk()
