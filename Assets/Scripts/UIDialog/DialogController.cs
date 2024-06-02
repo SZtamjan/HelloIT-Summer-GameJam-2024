@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Audio;
 using Gameplay;
+using NPC;
 using Player;
 using TMPro;
 using UnityEngine;
@@ -15,6 +17,8 @@ namespace UIDialog
         
         //Components
         private GameManager _gameManager;
+        private NPCInstance _npcInstance;
+        private PlayOnCall _playOnCall;
         
         [SerializeField] private TextMeshProUGUI displayChat;
         
@@ -52,6 +56,15 @@ namespace UIDialog
         private void Start()
         {
             _gameManager = GameManager.Instance;
+            _npcInstance = NPCInstance.Instance;
+            _npcInstance.transform.GetChild(0).TryGetComponent(out PlayOnCall playOnCall);
+            if (playOnCall == null)
+            {
+                Debug.LogError("Brak AudioObj, lub PlayOnCall w AudioObj w npc jako dziecko na pierwszym miejscu");
+                return;
+            }
+            _playOnCall = playOnCall;
+            
             _interactionAction = PlayerManager.Instance.GetComponent<PlayerInput>().actions.FindAction("Interaction");
         }
 
@@ -81,8 +94,12 @@ namespace UIDialog
         private IEnumerator GoThroughChat(List<string> currChat)
         {
             yield return new WaitUntil(() => Mathf.Approximately(_interactionAction.ReadValue<float>(), 0f));
+            
+            //_playOnCall.StartPlayRandomSoundFromMeConstant();
+            
             foreach (var line in currChat)
             {
+                _playOnCall.PlayRandomSoundFromMe();
                 displayChat.text = line;
                 yield return new WaitUntil(() => Mathf.Approximately(_interactionAction.ReadValue<float>(), 1f));
                 yield return new WaitUntil(() => Mathf.Approximately(_interactionAction.ReadValue<float>(), 0f));
@@ -90,6 +107,8 @@ namespace UIDialog
                 //yield return new WaitForSeconds(lineLastFor);
             }
 
+            //_playOnCall.StopPlayRandomSoundFromMeConstant();
+            
             _currChatCor = null;
             yield return null;
         }
