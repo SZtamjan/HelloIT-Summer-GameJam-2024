@@ -149,6 +149,7 @@ namespace Gameplay
             NPCController.Instance.NextDay();
             ChangeGameState(GameStates.StartGame);
             UIController.Instance.ActualShop.SetActive(true);
+            UIController.Instance.UpdateButtons();
         }
 
         private void LockPlayer()
