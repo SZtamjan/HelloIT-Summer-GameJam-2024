@@ -32071,30 +32071,6 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1500188060394944916, guid: beafd9c2c9cf0fc49af4b5239c3ed116, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.84
-      objectReference: {fileID: 0}
-    - target: {fileID: 1500188060394944916, guid: beafd9c2c9cf0fc49af4b5239c3ed116, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.84
-      objectReference: {fileID: 0}
-    - target: {fileID: 1500188060394944916, guid: beafd9c2c9cf0fc49af4b5239c3ed116, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.84
-      objectReference: {fileID: 0}
-    - target: {fileID: 1500188060394944916, guid: beafd9c2c9cf0fc49af4b5239c3ed116, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 32.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1500188060394944916, guid: beafd9c2c9cf0fc49af4b5239c3ed116, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -123.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 1500188060394944916, guid: beafd9c2c9cf0fc49af4b5239c3ed116, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1883633799657903198, guid: beafd9c2c9cf0fc49af4b5239c3ed116, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -32291,6 +32267,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MenuUICanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5250849102589852317, guid: beafd9c2c9cf0fc49af4b5239c3ed116, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5379166645489122676, guid: beafd9c2c9cf0fc49af4b5239c3ed116, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -32324,6 +32304,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8407350727072323328, guid: beafd9c2c9cf0fc49af4b5239c3ed116, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8869666624315747207, guid: beafd9c2c9cf0fc49af4b5239c3ed116, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
