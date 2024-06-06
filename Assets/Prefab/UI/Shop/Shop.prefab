@@ -243,8 +243,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -16.300003, y: 12.300003}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -12.515003, y: 11.050001}
+  m_SizeDelta: {x: -7.5700064, y: -2.5000024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6113159274216615216
 CanvasRenderer:
@@ -276,8 +276,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Dalej
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e4af804e9690308458c2ed3acb644dda, type: 2}
-  m_sharedMaterial: {fileID: -6763963794302383620, guid: e4af804e9690308458c2ed3acb644dda, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bdae81bc6dda4e849a6fbfa9edd67778, type: 2}
+  m_sharedMaterial: {fileID: -576097346808458989, guid: bdae81bc6dda4e849a6fbfa9edd67778, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -301,13 +301,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 55
-  m_fontSizeBase: 55
+  m_fontSize: 27
+  m_fontSizeBase: 27
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 16
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -380,8 +380,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 125}
-  m_SizeDelta: {x: 441.7, y: 212.9}
+  m_AnchoredPosition: {x: -14.5, y: 187.4}
+  m_SizeDelta: {x: 324.6, y: 153.23}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1148440070848868100
 CanvasRenderer:
@@ -618,8 +618,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 97, y: 8.2}
-  m_SizeDelta: {x: 55.8, y: 32.29}
+  m_AnchoredPosition: {x: 75.13, y: 11.1}
+  m_SizeDelta: {x: 37.2, y: 26.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7461434383912722926
 CanvasRenderer:
