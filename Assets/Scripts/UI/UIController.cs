@@ -150,11 +150,11 @@ namespace UI
         private void StartNames()
         {
             Debug.LogWarning("Wywalono nadpisywanie tytulow w sklepie");
-            // string[] skladnikiNames = Enum.GetNames(typeof(Skladniki));
-            // for (int i = 0; i < tytuly.Count; i++)
-            // {
-            //     tytuly[i].text = skladnikiNames[i];
-            // }
+            string[] skladnikiNames = Enum.GetNames(typeof(Skladniki));
+            for (int i = 0; i < tytuly.Count; i++)
+            {
+                tytuly[i].text = skladnikiNames[i];
+            }
             UpdateButtons();
         }
 
@@ -213,7 +213,7 @@ namespace UI
             {
                 ReactionToUI.Instance.UnlockAndShowCursor();
                 ReactionToUI.Instance.LockMouseAndMovement();
-                
+
                 _podsumowanieDnia.SetActive(true);
                 UpdateDziennk();
             }
