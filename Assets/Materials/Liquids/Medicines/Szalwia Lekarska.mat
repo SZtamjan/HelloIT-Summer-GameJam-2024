@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: LiquidTest
+  m_Name: Szalwia Lekarska
   m_Shader: {fileID: -6465566751694194690, guid: 0b21ceadcab06f04584323c6dc3beaf5, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -37,14 +37,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Fill: 0
+    - _Fill: 0.8
     - _QueueControl: 0
     - _QueueOffset: 0
     - _WobbleX: 0
     - _WobbleZ: 0
     m_Colors:
-    - _Side_Color: {r: 0.5566038, g: 0.23548622, b: 0, a: 1}
-    - _Top_Color: {r: 0.6509434, g: 0.41201398, b: 0.06448024, a: 1}
+    - _Side_Color: {r: 0.30966175, g: 0.06256675, b: 0.3584906, a: 1}
+    - _Top_Color: {r: 0.5729671, g: 0.116043955, b: 0.66, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &1823614143488541405
 MonoBehaviour:

@@ -67,8 +67,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Dalej
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: bdae81bc6dda4e849a6fbfa9edd67778, type: 2}
-  m_sharedMaterial: {fileID: -576097346808458989, guid: bdae81bc6dda4e849a6fbfa9edd67778, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e4af804e9690308458c2ed3acb644dda, type: 2}
+  m_sharedMaterial: {fileID: -6763963794302383620, guid: e4af804e9690308458c2ed3acb644dda, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

@@ -31968,6 +31968,10 @@ PrefabInstance:
       value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 358306824231191476, guid: beafd9c2c9cf0fc49af4b5239c3ed116, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 358306824231191476, guid: beafd9c2c9cf0fc49af4b5239c3ed116, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
@@ -32271,6 +32275,10 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5306314577333604070, guid: beafd9c2c9cf0fc49af4b5239c3ed116, type: 3}
+      propertyPath: m_text
+      value: Ustawienia
+      objectReference: {fileID: 0}
     - target: {fileID: 5379166645489122676, guid: beafd9c2c9cf0fc49af4b5239c3ed116, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -32285,6 +32293,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6038106929723747229, guid: beafd9c2c9cf0fc49af4b5239c3ed116, type: 3}
       propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6173241354733265141, guid: beafd9c2c9cf0fc49af4b5239c3ed116, type: 3}
+      propertyPath: m_text
+      value: Rozpocznij
+      objectReference: {fileID: 0}
+    - target: {fileID: 6810951375892408854, guid: beafd9c2c9cf0fc49af4b5239c3ed116, type: 3}
+      propertyPath: m_text
+      value: "Wyj\u015Bcie "
+      objectReference: {fileID: 0}
+    - target: {fileID: 6810951375892408854, guid: beafd9c2c9cf0fc49af4b5239c3ed116, type: 3}
+      propertyPath: m_fontStyle
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6810951375892408854, guid: beafd9c2c9cf0fc49af4b5239c3ed116, type: 3}
+      propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7029806397288503399, guid: beafd9c2c9cf0fc49af4b5239c3ed116, type: 3}

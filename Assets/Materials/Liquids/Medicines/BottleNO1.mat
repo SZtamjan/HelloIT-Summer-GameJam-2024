@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: LiquidTest
+  m_Name: BottleNO1
   m_Shader: {fileID: -6465566751694194690, guid: 0b21ceadcab06f04584323c6dc3beaf5, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -43,6 +43,8 @@ Material:
     - _WobbleX: 0
     - _WobbleZ: 0
     m_Colors:
+    - _In: {r: -3.55, g: 0, b: 0, a: 0}
+    - _Out: {r: -0.36, g: 0, b: 0, a: 0}
     - _Side_Color: {r: 0.5566038, g: 0.23548622, b: 0, a: 1}
     - _Top_Color: {r: 0.6509434, g: 0.41201398, b: 0.06448024, a: 1}
   m_BuildTextureStacks: []
