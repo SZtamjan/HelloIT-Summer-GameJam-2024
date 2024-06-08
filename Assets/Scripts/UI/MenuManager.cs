@@ -16,6 +16,7 @@ namespace UI
         [SerializeField] private GameObject settings;
         [SerializeField] private GameObject confirmation;
         [SerializeField] private GameObject backBtn;
+        [SerializeField] private GameObject creators;
 
         private void Awake()
         {
@@ -31,24 +32,28 @@ namespace UI
                     SwitchSettings(false);
                     SwitchConfirmation(false);
                     SwitchBackBtn(false);
+                    SwitchCreators(false);
                     break;
                 case MenuPos.Settings:
                     SwitchMain(false);
                     SwitchSettings(true);
                     SwitchConfirmation(false);
                     SwitchBackBtn(true);
+                    SwitchCreators(false);
                     break;
-                case MenuPos.AudioSettings:
+                case MenuPos.Creators:
                     SwitchMain(false);
                     SwitchSettings(false);
                     SwitchConfirmation(false);
                     SwitchBackBtn(true);
+                    SwitchCreators(true);
                     break;
                 case MenuPos.Confirmation:
                     SwitchMain(true);
                     SwitchSettings(false);
                     SwitchConfirmation(true);
                     SwitchBackBtn(false);
+                    SwitchCreators(false);
                     break;
                 default:
                     Debug.LogWarning("FATAL ERROR :c");
@@ -78,9 +83,19 @@ namespace UI
             backBtn.SetActive(value);
         }
 
+        private void SwitchCreators(bool value)
+        {
+            creators.SetActive(value);
+        }
+
         public void BackButton()
         {
             if(settings.activeSelf)
+            {
+                ChangeUI(MenuPos.Main);
+                return;
+            }
+            if (creators.activeSelf)
             {
                 ChangeUI(MenuPos.Main);
                 return;
@@ -97,7 +112,7 @@ namespace UI
 
         public void ChangeUIToMain() => ChangeUI(MenuPos.Main);
         public void ChangeUIToSettings() => ChangeUI(MenuPos.Settings);
-        public void ChangeUIToAudioSettings() => ChangeUI(MenuPos.AudioSettings);
+        public void ChangeUIToCreators() => ChangeUI(MenuPos.Creators);
         public void ChangeUIToConfirmation() => ChangeUI(MenuPos.Confirmation);
     }
 }
@@ -107,5 +122,6 @@ public enum MenuPos
     Main,
     Settings,
     AudioSettings,
-    Confirmation
+    Confirmation,
+    Creators
 }
