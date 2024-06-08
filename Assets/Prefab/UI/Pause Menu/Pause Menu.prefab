@@ -640,23 +640,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1095508769321467352, guid: 1293428e21146854d99c7adfb668fada, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 176
+      value: 176.64
       objectReference: {fileID: 0}
     - target: {fileID: 1095508769321467352, guid: 1293428e21146854d99c7adfb668fada, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 53.599976
-      objectReference: {fileID: 0}
-    - target: {fileID: 1095508769321467352, guid: 1293428e21146854d99c7adfb668fada, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.0100002
-      objectReference: {fileID: 0}
-    - target: {fileID: 1095508769321467352, guid: 1293428e21146854d99c7adfb668fada, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2.0100002
-      objectReference: {fileID: 0}
-    - target: {fileID: 1095508769321467352, guid: 1293428e21146854d99c7adfb668fada, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.0100002
+      value: 45.03
       objectReference: {fileID: 0}
     - target: {fileID: 1095508769321467352, guid: 1293428e21146854d99c7adfb668fada, type: 3}
       propertyPath: m_LocalPosition.x
@@ -692,7 +680,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1095508769321467352, guid: 1293428e21146854d99c7adfb668fada, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -445.00006
+      value: -241.15
       objectReference: {fileID: 0}
     - target: {fileID: 1095508769321467352, guid: 1293428e21146854d99c7adfb668fada, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -730,6 +718,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4670128570341789964, guid: 1293428e21146854d99c7adfb668fada, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4670128570341789964, guid: 1293428e21146854d99c7adfb668fada, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cb92392ad568cf0449e5a097a8dfdff3, type: 3}
     - target: {fileID: 6106410996699336985, guid: 1293428e21146854d99c7adfb668fada, type: 3}
       propertyPath: m_Name
       value: BackButton
