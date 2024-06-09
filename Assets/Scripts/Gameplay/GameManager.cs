@@ -153,6 +153,7 @@ namespace Gameplay
         public void WlaczSklep()
         {
             NPCController.Instance.NextDay();
+            UIController.Instance.DateUpdate();
             ChangeGameState(GameStates.StartGame);
             UIController.Instance.ActualShop.SetActive(true);
             UIController.Instance.UpdateButtons();

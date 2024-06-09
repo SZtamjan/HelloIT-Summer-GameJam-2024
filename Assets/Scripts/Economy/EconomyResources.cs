@@ -27,7 +27,7 @@ namespace Economy
         public void BuySkladnik(int value)
         {
             SkladnikController.Instance.AddSkladnik(value);
-            // tu można jakiś hajs zabrać XDD
+            Resources.Cash -= 5;// tu można jakiś hajs zabrać XDD
         }
     }
 }
