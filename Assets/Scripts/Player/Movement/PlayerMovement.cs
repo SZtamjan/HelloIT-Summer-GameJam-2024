@@ -32,6 +32,7 @@ namespace Player.Movement
             get => _playerMovementIsOn;
             set => _playerMovementIsOn = value;
         }
+
         public bool MouseRotationIsOn
         {
             get => _mouseRotationIsOn;
@@ -68,7 +69,7 @@ namespace Player.Movement
         private void FixedUpdate()
         {
             if (PlayerMovementIsOn)
-            { 
+            {
                 MovePlayer();
             }
             if (MouseRotationIsOn)
@@ -78,7 +79,7 @@ namespace Player.Movement
             }
         }
 
-        private void LoadSens()
+        public void LoadSens()
         {
             if (!PlayerPrefs.HasKey("MouseSensitivity"))
             {
@@ -148,6 +149,5 @@ namespace Player.Movement
             camTransform.localRotation = Quaternion.Euler(0, 0, 0);
             transform.rotation = Quaternion.Euler(0, 180, 0);
         }
-        
     }
 }

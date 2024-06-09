@@ -11,8 +11,8 @@ namespace Player.Interact.InteractBehaviors.OpenBook
 
         public void SendBook()
         {
-            PageManager.Instance.LoadBook(bookPages);
             UIController.Instance.OpenBook();
+            PageManager.Instance.LoadBook(bookPages);
         }
     }
 }

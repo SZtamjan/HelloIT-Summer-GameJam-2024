@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Player.Movement;
+using Player;
+using System;
 using System.Globalization;
 using TMPro;
 using UnityEngine;
@@ -21,7 +23,7 @@ namespace Settings.Controls
         {
             float sliderSens = sensSlider.value;
             inputField.text = sliderSens.ToString("0.00");
-            
+
             SaveSens(sliderSens);
         }
 
@@ -29,12 +31,12 @@ namespace Settings.Controls
         {
             string stringSens = inputField.text;
             float sens = float.Parse(stringSens, CultureInfo.InvariantCulture.NumberFormat);
-            
+
             float adjustedSens = Mathf.Clamp(sens, sensSlider.minValue, sensSlider.maxValue);
             sensSlider.value = adjustedSens;
 
             inputField.text = adjustedSens.ToString("0.00");
-            
+
             SaveSens(adjustedSens);
         }
 
@@ -59,7 +61,8 @@ namespace Settings.Controls
 
         private void SaveSens(float newSens)
         {
-            PlayerPrefs.SetFloat("MouseSensitivity",newSens);
+            PlayerPrefs.SetFloat("MouseSensitivity", newSens);
+            PlayerManager.Instance.GetComponent<PlayerMovement>().LoadSens();
         }
 
         private float ReadSens()
