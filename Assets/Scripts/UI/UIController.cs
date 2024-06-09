@@ -22,36 +22,35 @@ namespace UI
 
         [SerializeField] private TextMeshProUGUI interactInfoText;
 
-        [Header("Economy")]
-        [SerializeField] private TextMeshProUGUI economyWarningText;
+        [SerializeField][Foldout("Economy")] private TextMeshProUGUI economyWarningText;
 
-        [SerializeField] private float fadeDuration = 2f;
-        [SerializeField] private float textFullAlpha = 2f;
+        [SerializeField][Foldout("Economy")] private float fadeDuration = 2f;
+        [SerializeField][Foldout("Economy")] private float textFullAlpha = 2f;
         private Coroutine warningMessageCor;
 
-        [Header("Economy Display")]
-        [SerializeField] private TextMeshProUGUI cash;
+        [SerializeField][Foldout("Economy Display")] private TextMeshProUGUI cash;
+        [SerializeField][Foldout("Economy Display")] private TextMeshProUGUI dayCounter;
 
-        [Header("ActualShop")]
-        [SerializeField] public GameObject ActualShop;
+        [SerializeField][Foldout("ActualShop")] public GameObject ActualShop;
 
-        [SerializeField] private List<Button> buttony;
+        [SerializeField][Foldout("ActualShop")] private List<Button> buttony;
 
-        [SerializeField] private List<TextMeshProUGUI> buttonyText;
+        [SerializeField][Foldout("ActualShop")] private List<TextMeshProUGUI> buttonyText;
 
-        [SerializeField] private List<TextMeshProUGUI> tytuly;
+        [SerializeField][Foldout("ActualShop")] private List<TextMeshProUGUI> tytuly;
 
-        [Header("Book")]
+        [Foldout("Book")]
         [SerializeField] private GameObject book;
 
         #region podsumowanie
 
-        [SerializeField] private GameObject _podsumowanieDnia;
-        [SerializeField] private List<TextMeshProUGUI> _PacjeciTytuly;
-        [SerializeField] private List<TextMeshProUGUI> _PacjeciOpisy;
+        [SerializeField][Foldout("podsumowanie")] private GameObject _podsumowanieDnia;
 
-        [SerializeField] private GameObject _podsumowanieGry;
-        [SerializeField] private TextMeshProUGUI _staty;
+        [SerializeField][Foldout("podsumowanie")] private List<TextMeshProUGUI> _PacjeciTytuly;
+        [SerializeField][Foldout("podsumowanie")] private List<TextMeshProUGUI> _PacjeciOpisy;
+
+        [SerializeField][Foldout("podsumowanie")] private GameObject _podsumowanieGry;
+        [SerializeField][Foldout("podsumowanie")] private TextMeshProUGUI _staty;
 
         #endregion podsumowanie
 
@@ -192,13 +191,13 @@ namespace UI
             ReactionToUI.Instance.UnlockMouseAndMovement();
         }
 
-        [Button]
-        public void WylaczSklep()
-        {
-            ActualShop.SetActive(false);
-            ReactionToUI.Instance.LockAndHideCursor();
-            ReactionToUI.Instance.UnlockMouseAndMovement();
-        }
+        //[Button]
+        //public void WylaczSklep()
+        //{
+        //    ActualShop.SetActive(false);
+        //    ReactionToUI.Instance.LockAndHideCursor();
+        //    ReactionToUI.Instance.UnlockMouseAndMovement();
+        //}
 
         #region podsumowanie
 

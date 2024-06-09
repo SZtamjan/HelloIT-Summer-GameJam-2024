@@ -624,6 +624,7 @@ MonoBehaviour:
   fadeDuration: 2
   textFullAlpha: 2
   cash: {fileID: 1314693778716301262}
+  dayCounter: {fileID: 3249813433750519110}
   ActualShop: {fileID: 2479510495895064718}
   buttony:
   - {fileID: 0}
