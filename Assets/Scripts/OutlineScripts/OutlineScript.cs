@@ -11,9 +11,11 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-[DisallowMultipleComponent]
+namespace OutlineScripts
+{
+  [DisallowMultipleComponent]
 
-public class Outline : MonoBehaviour {
+public class OutlineScript : MonoBehaviour {
   private static HashSet<Mesh> registeredMeshes = new HashSet<Mesh>();
 
   public enum Mode {
@@ -307,3 +309,5 @@ public class Outline : MonoBehaviour {
     }
   }
 }
+}
+

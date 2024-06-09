@@ -9,7 +9,7 @@ namespace Player.Interact
         public UnityEvent lookAtObj;
         public string CoToJest;
 
-        public bool dwa = false;
+        [HideInInspector] public bool dwa = false;
         
         public void StartThisOnInteract()
         {
