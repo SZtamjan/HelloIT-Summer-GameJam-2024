@@ -67,6 +67,7 @@ namespace UI
 
             //turn off book
             book.SetActive(false);
+            DateUpdate();
         }
 
         #region Interactions
@@ -91,6 +92,11 @@ namespace UI
         public void EconomyUpdateResources(ResourcesStruct msg)
         {
             cash.text = msg.Cash.ToString();
+        }
+
+        public void DateUpdate()
+        {
+            dayCounter.text = NPCController.Instance.GetDay() + 1.ToString();
         }
 
         public void ShowEconomyWarning(string msg)
@@ -191,13 +197,13 @@ namespace UI
             ReactionToUI.Instance.UnlockMouseAndMovement();
         }
 
-        //[Button]
-        //public void WylaczSklep()
-        //{
-        //    ActualShop.SetActive(false);
-        //    ReactionToUI.Instance.LockAndHideCursor();
-        //    ReactionToUI.Instance.UnlockMouseAndMovement();
-        //}
+        [Button]
+        public void WylaczSklep()
+        {
+            ActualShop.SetActive(false);
+            ReactionToUI.Instance.LockAndHideCursor();
+            ReactionToUI.Instance.UnlockMouseAndMovement();
+        }
 
         #region podsumowanie
 

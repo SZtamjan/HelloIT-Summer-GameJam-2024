@@ -36,6 +36,7 @@ namespace NPC
         public void NextDay()
         {
             dayCount++;
+
             kolejkaCount = 0;
             _pacjentBody.MakeInvisible();
         }
@@ -58,6 +59,11 @@ namespace NPC
             ChangeVisibility(0);
             _anim.SetTrigger("Stop");
             kolejkaCount++;
+        }
+
+        public int GetDay()
+        {
+            return dayCount;
         }
 
         public void ResetAllPacjenci()
