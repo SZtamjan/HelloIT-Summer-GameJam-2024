@@ -90,6 +90,32 @@ namespace NPC
             }
         }
 
+        public string GetNazwaChoroby()
+        {
+            string nazwa = _Choroba.nazwa.ToString();
+            if (string.IsNullOrEmpty(nazwa))
+            {
+                return nazwa;
+            }
+
+            int wielkaLiteraCount = 0;
+
+            for (int i = 0; i < nazwa.Length; i++)
+            {
+                if (char.IsUpper(nazwa[i]))
+                {
+                    wielkaLiteraCount++;
+
+                    if (wielkaLiteraCount == 2)
+                    {
+                        return nazwa[..i] + " " + nazwa[i..];
+                    }
+                }
+            }
+
+            return nazwa;
+        }
+
         #endregion gazeta
 
         public DayTime GetDayTime()

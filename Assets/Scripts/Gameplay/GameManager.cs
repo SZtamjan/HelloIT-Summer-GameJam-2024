@@ -72,6 +72,11 @@ namespace Gameplay
             StartGameMethod();
         }
 
+        public GameStates GetGameState()
+        {
+            return _gameStates;
+        }
+
         private void StartGameMethod()
         {
             ChangeGameState(GameStates.StartGame);
@@ -84,6 +89,7 @@ namespace Gameplay
             switch (newState)
             {
                 case GameStates.StartGame:
+                    NPCController.Instance.ResetAllPacjenci();
                     StartCoroutine(WaitForPlayerToSitOnAChair(GameStates.StartNextNPC));
                     break;
 
@@ -123,7 +129,7 @@ namespace Gameplay
                 case GameStates.EndDay:
                     Debug.Log("EndDay");
                     // Włacz podsumowanie
-                    UIController.Instance.WlaczDziennik(true);
+                    UIController.Instance.WlaczPodsumowanie(true);
                     //NPCController.Instance.NextDay();
                     //WlaczSklep();
                     //ChangeGameState(GameStates.StartGame);
@@ -133,7 +139,7 @@ namespace Gameplay
                 case GameStates.KoniecGry:
                     //jakiś koniec Gry zaraz robie
                     Debug.Log("End Game");
-                    UIController.Instance.WlaczDziennik(true);
+                    UIController.Instance.WlaczPodsumowanie(true);
                     break;
 
                 default:

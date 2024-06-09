@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 using static Class.MaskInfoClass;
 
@@ -11,7 +12,8 @@ namespace NPC
     {
         [SerializeField] private GameObject mask;
         [SerializeField] private GameObject body;
-        [SerializeField] private Material bodyMaterial;
+        [SerializeField] private AudioSource oddychanieSound;
+        private Material bodyMaterial;
         private Collider colider;
 
         private void Start()
@@ -25,6 +27,7 @@ namespace NPC
         {
             mask.GetComponent<MeshRenderer>().material.SetFloat("_DitherThreshold", 0);
             bodyMaterial.SetFloat("_DitherThreshold", 0);
+            oddychanieSound.volume = 0;
             colider.enabled = false;
         }
 
@@ -52,6 +55,7 @@ namespace NPC
                 time += Time.deltaTime / fadeTime;
                 float ditter = Mathf.SmoothStep(startDither, target, time);
                 bodyMaterial.SetFloat("_DitherThreshold", ditter);
+                oddychanieSound.volume = ditter;
                 mask.GetComponent<MeshRenderer>().material.SetFloat("_DitherThreshold", ditter);
                 yield return null;
             }

@@ -35,11 +35,11 @@ namespace UI
         [Header("ActualShop")]
         [SerializeField] public GameObject ActualShop;
 
-        [SerializeField] public List<Button> buttony;
+        [SerializeField] private List<Button> buttony;
 
-        [SerializeField] public List<TextMeshProUGUI> buttonyText;
+        [SerializeField] private List<TextMeshProUGUI> buttonyText;
 
-        [SerializeField] public List<TextMeshProUGUI> tytuly;
+        [SerializeField] private List<TextMeshProUGUI> tytuly;
 
         [Header("Book")]
         [SerializeField] private GameObject book;
@@ -67,7 +67,7 @@ namespace UI
             StartNames();
 
             //turn off book
-            book.gameObject.SetActive(false);
+            book.SetActive(false);
         }
 
         #region Interactions
@@ -204,10 +204,10 @@ namespace UI
 
         public void testc()
         {
-            WlaczDziennik(true);
+            WlaczPodsumowanie(true);
         }
 
-        public void WlaczDziennik(bool on)
+        public void WlaczPodsumowanie(bool on)
         {
             if (on)
             {
@@ -215,7 +215,7 @@ namespace UI
                 ReactionToUI.Instance.LockMouseAndMovement();
 
                 _podsumowanieDnia.SetActive(true);
-                UpdateDziennk();
+                UpdatePodsumowanie();
             }
             else if (NPCController.Instance.KoniecDni())
             {
@@ -250,14 +250,22 @@ namespace UI
             _staty.text = $"Obsłużyłeś{iloscPacjentow} pajcentów \n Z Tego Wyleczyłeś {iloscZdrowych} \n a zabiłeś {iloscChorych} ";
         }
 
-        public void UpdateDziennk()
+        public void UpdatePodsumowanie()
         {
             var pajeci = NPCController.Instance.PacjeciZDzisiaj();
+            if (pajeci.Count < 5)
+            {
+                for (int i = pajeci.Count; i < 5; i++)
+                {
+                    _PacjeciTytuly[i].text = $" ";
+                    _PacjeciOpisy[i].text = $" ";
+                }
+            }
             for (int i = 0; i < pajeci.Count; i++)
             {
                 string smierć = pajeci[i].CzyWyleczony() ? "PRZEŻYŁ" : "ZMARŁ";
                 _PacjeciTytuly[i].text = $"{pajeci[i].GetName()} - {smierć} - {pajeci[i].GetPieniazki()} ";
-                _PacjeciOpisy[i].text = $"{pajeci[i].GetGazeta()}";
+                _PacjeciOpisy[i].text = $"Pacjent był chory na {pajeci[i].GetNazwaChoroby()}";
             }
         }
 

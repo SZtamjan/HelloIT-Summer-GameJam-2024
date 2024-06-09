@@ -1,6 +1,8 @@
 ﻿using Class;
+using Gameplay;
 using NaughtyAttributes;
 using Player.Interact.InteractBehaviors.Fill;
+using System.Collections;
 using UnityEngine;
 using static Class.ObjawyClass;
 
@@ -47,6 +49,7 @@ namespace Crafting
 
         public void CraftujPote()
         {
+            lekarstwo.ClearObjawy();
             Color hdrColor = GetRandomHDRColor(2.0f);
             lekarstwo.GetComponent<MeshRenderer>().materials[2].SetColor("_Side_Color", hdrColor);
             lekarstwo.GetComponent<MeshRenderer>().materials[2].SetColor("_Top_Color", hdrColor);
@@ -57,8 +60,7 @@ namespace Crafting
             lekarstwo.AddObjawy(_butelka2.GetObjawy());
             _butelka1.SetSkladnik(_nic);
             _butelka2.SetSkladnik(_nic);
-
-            lekarstwo.gameObject.layer = 6;
+            StartCoroutine(WaitForPickUp());
         }
 
         public static Color GetRandomHDRColor(float intensity = 1.0f)
@@ -73,6 +75,21 @@ namespace Crafting
 
             // Return the HDR color
             return randomColor;
+        }
+
+        private IEnumerator WaitForPickUp()
+        {
+            yield return null;
+            while (true)
+            {
+                if (GameManager.Instance.GetGameState() == GameStates.StartGameplay)
+                {
+                    break;
+                }
+                yield return null;
+            }
+
+            lekarstwo.gameObject.layer = 6;
         }
     }
 }

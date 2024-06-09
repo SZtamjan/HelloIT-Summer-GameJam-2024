@@ -21,14 +21,6 @@ namespace NPC
         [SerializeField] private NPCScriptableObject TestowyPacjent;
         private Animator _anim;
 
-        [Button]
-        public void NextDay()
-        {
-            dayCount++;
-            kolejkaCount = 0;
-            _pacjentBody.MakeInvisible();
-        }
-
         private void Awake()
         {
             Instance = this;
@@ -38,6 +30,14 @@ namespace NPC
         {
             Debug.LogWarning("Nie ma nigogo w kolejce");
             _anim = _pacjentBody.GetComponent<Animator>();
+        }
+
+        [Button]
+        public void NextDay()
+        {
+            dayCount++;
+            kolejkaCount = 0;
+            _pacjentBody.MakeInvisible();
         }
 
         [Button]
@@ -60,9 +60,20 @@ namespace NPC
             kolejkaCount++;
         }
 
+        public void ResetAllPacjenci()
+        {
+            foreach (var dni in _kolejka)
+            {
+                foreach (var pajcent in dni.kolejka)
+                {
+                    pajcent.SetWyleczonyPacjent(false);
+                }
+            }
+        }
+
         public bool KoniecDni()
         {
-            if (dayCount >= _kolejka.Count)
+            if (dayCount >= _kolejka.Count - 1)
             {
                 return true;
             }

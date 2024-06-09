@@ -7230,7 +7230,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91c6259b1468407e8ac2fe92ea0b9549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 3
+  duration: 2
 --- !u!114 &350820711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7393,7 +7393,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mask: {fileID: 2009048778}
   body: {fileID: 180240268}
-  bodyMaterial: {fileID: 0}
+  oddychanieSound: {fileID: 408461398}
 --- !u!4 &380356885
 Transform:
   m_ObjectHideFlags: 0
@@ -7901,6 +7901,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playOnStart: 1
+--- !u!82 &408461398 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 421182024304811243, guid: 52cc135f5e194d14893a61c98cc35a58, type: 3}
+  m_PrefabInstance: {fileID: 408461394}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &408470426
 GameObject:
   m_ObjectHideFlags: 0
@@ -20256,7 +20261,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 228126346763326997, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.030460922
       objectReference: {fileID: 0}
     - target: {fileID: 228126346763326997, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
       propertyPath: m_AnchorMax.y
@@ -20264,7 +20269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 228126346763326997, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.030460922
       objectReference: {fileID: 0}
     - target: {fileID: 381151997042023805, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
       propertyPath: m_text
@@ -20537,6 +20542,10 @@ PrefabInstance:
     - target: {fileID: 2146337337030600105, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
       propertyPath: m_Color.a
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2230793431122552264, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2238566782156902229, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
       propertyPath: m_IsActive
@@ -20892,7 +20901,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3562134390812714479, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.030460922
       objectReference: {fileID: 0}
     - target: {fileID: 3562134390812714479, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
       propertyPath: m_AnchorMax.y
@@ -21193,6 +21202,10 @@ PrefabInstance:
     - target: {fileID: 5553285129837819191, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
       propertyPath: m_fontSizeBase
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5611429385676017272, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
+      propertyPath: m_MaxValue
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5611429385676017272, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -28265,6 +28278,10 @@ PrefabInstance:
     - target: {fileID: 4087010400265572560, guid: e01933e042b4d3941a3fc0ee8a0995ca, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6508326876252448220, guid: e01933e042b4d3941a3fc0ee8a0995ca, type: 3}
+      propertyPath: m_text
+      value: "Usi\u0105d\u017A by rozpocza\u0107 gre"
       objectReference: {fileID: 0}
     - target: {fileID: 6508326876252448220, guid: e01933e042b4d3941a3fc0ee8a0995ca, type: 3}
       propertyPath: m_fontSize
@@ -48332,7 +48349,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4044934439811826984, guid: 1293428e21146854d99c7adfb668fada, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: WlaczDziennik
+      value: WlaczPodsumowanie
       objectReference: {fileID: 0}
     - target: {fileID: 4044934439811826984, guid: 1293428e21146854d99c7adfb668fada, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName

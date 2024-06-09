@@ -1,4 +1,5 @@
 ﻿using Crafting;
+using Gameplay;
 using UI;
 using UnityEngine;
 using static Class.SkladnikiClass;
@@ -20,6 +21,7 @@ namespace Player.Interact.InteractBehaviors.PickAndPlace
         {
             if (_pickUpSpot.childCount > 0) { return; }
             if (_skladnik.Ilosc < 1) { return; }
+            if (GameManager.Instance.GetGameState() != GameStates.StartGameplay) { return; }
             var copy = Instantiate(gameObject);
             copy.transform.position = _pickUpSpot.position;
             copy.transform.parent = _pickUpSpot;
