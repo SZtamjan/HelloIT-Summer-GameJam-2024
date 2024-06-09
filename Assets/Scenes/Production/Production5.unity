@@ -21346,6 +21346,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UICanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5930942589148767024, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5994836588950998098, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -21849,6 +21853,10 @@ PrefabInstance:
     - target: {fileID: 8100785658342586024, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8145087737439210062, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8154283431031861771, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
       propertyPath: m_AnchoredPosition.x
