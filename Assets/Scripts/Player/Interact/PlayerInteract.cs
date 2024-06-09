@@ -35,7 +35,24 @@ namespace Player.Interact
         private bool DetectInteractable()
         {
             RaycastHit hit;
-            Physics.Raycast(_camObj.position, _camObj.forward, out hit, detectDistance, interactLayer);
+            
+            if (Physics.Raycast(_camObj.position, _camObj.forward, out hit, detectDistance, interactLayer))
+            {
+                if (_interactableObj != null && !_interactableObj.dwa)
+                {
+                    _interactableObj.LookingAtMe();
+                    _interactableObj.dwa = true;
+                }
+            }
+            else
+            {
+                if (_interactableObj != null)
+                {
+                    _interactableObj.LookingAtMe();
+                    _interactableObj.dwa = false;
+                }
+                _interactableObj = null;
+            }
 
             if (hit.collider == null)
             {
