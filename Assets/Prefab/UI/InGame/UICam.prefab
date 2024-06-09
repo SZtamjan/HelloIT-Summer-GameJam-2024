@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7625152085897944531}
   - component: {fileID: 7621347997722937607}
   - component: {fileID: 3964718864444893691}
+  - component: {fileID: 8540417550871624027}
   m_Layer: 0
   m_Name: UICam
   m_TagString: Untagged
@@ -128,3 +129,16 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!114 &8540417550871624027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6743397275846035158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f97db9443f40420408f54698c1375cd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundPlayer: {fileID: 4043361051618472864, guid: 0a4a3ded3d005c64dad12cde6354a2bb, type: 3}
