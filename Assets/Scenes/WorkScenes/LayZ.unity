@@ -39897,10 +39897,10 @@ GameObject:
   - component: {fileID: 1294005330}
   - component: {fileID: 1294005329}
   - component: {fileID: 1294005328}
-  - component: {fileID: 1294005335}
   - component: {fileID: 1294005327}
   - component: {fileID: 1294005326}
   - component: {fileID: 1294005333}
+  - component: {fileID: 1294005335}
   - component: {fileID: 1294005334}
   m_Layer: 6
   m_Name: EmptyBottle1
