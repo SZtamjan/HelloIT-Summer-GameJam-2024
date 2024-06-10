@@ -32,8 +32,27 @@ MonoBehaviour:
   _ExitChat:
   - "Mog\u0142o by\u0107 szybciej. Do widzenia."
   GazetaStory:
-  - "Klient \u017Cyje i ta\u0144czy"
-  - "Klient Umar\u0142 i nie \u017Cyje"
+  - "Tomasz More rozpocz\u0105\u0142 nowe ognisko Czarnej \u015Amierci! Tomasz More,
+    kt\xF3ry wczoraj wraz ze spor\u0105 grup\u0105 ludzi celebrowa\u0142 za\u0142o\u017Cenie
+    sieroci\u0144ca okaza\u0142 si\u0119 nosicielem Plagi. Wyg\u0142aszaj\u0105c
+    wczorajsz\u0105 mow\u0119 More zas\u0142ab\u0142. Gdy zgromadzeni gapie zacz\u0119li
+    mu pomaga\u0107 zauwa\u017Cyli czarne p\u0119cherze na sk\xF3rze! Stra\u017C
+    sprawdza z kim m\xF3g\u0142 mie\u0107 wcze\u015Bniej kontakt i zamyka zara\u017Conych
+    w wi\u0119zieniu. Pono\u0107 wcze\u015Bniej by\u0142 widziany jak wychodzi\u0142
+    od lokalnego lekarza. Jak m\xF3g\u0142 nie zauwa\u017Cy\u0107 tak oczywistych
+    objaw\xF3w i pozwoli\u0142 mu wyj\u015B\u0107? Nie wiem, cho\u0107 s\u0105dz\u0119,
+    \u017Ce w gr\u0119 musia\u0142a wej\u015B\u0107 p\u0119kata sakiewka. Niech ma
+    \u015Bwiadomo\u015B\u0107, \u017Ce ma krew na r\u0119kach. Przyk\u0142ad, \u017Ce
+    nie ka\u017Cdemu warto pomaga\u0107... "
+  - "Tomasz More, kt\xF3ry mia\u0142 otwiera\u0107 wczorajszy bankiet celebruj\u0105cy
+    jego sierociniec zosta\u0142 znaleziony martwy w swoim mieszkaniu! Zaniepokojeni
+    arystokraci brakiem More'a na imprezie powiadomili stra\u017C o zagini\u0119ciu.
+    Po odnalezieniu cia\u0142a okaza\u0142o si\u0119, \u017Ce by\u0142 chory na Czarn\u0105
+    \u015Amier\u0107! Koroner stwierdzi\u0142, \u017Ce powodem \u015Bmierci by\u0142a
+    choroba More'a, a stra\u017Cnicy, kt\xF3rzy go znale\u017Ali zostali wys\u0142ani
+    na kwarantann\u0119. Strach pomy\u015Ble\u0107 co by by\u0142o jakby dotar\u0142
+    na przyj\u0119cie. Mog\u0142oby doj\u015B\u0107 do ponownej epidemii! Niestety
+    oznacza to jednak, \u017Ce sieroty zostaj\u0105 dalej na ulicy. "
   pieniazkiZaWyleczenie: 30
   "pieniazkiZaPora\u017Cke": 0
   setDayTime: 2

@@ -35,8 +35,26 @@ MonoBehaviour:
   _ExitChat:
   - "Bywaj i \u017Cegnaj!"
   GazetaStory:
-  - "Klient \u017Cyje i ta\u0144czy"
-  - "Klient Umar\u0142 i nie \u017Cyje"
+  - "Tragiczny fina\u0142 wy\u015Bmienitej sztuki Shakespeare'a! We wczorajszej wielkiej
+    sztuce artysty dosz\u0142o do niecodziennego incydentu. W improwizowanej scenie
+    kulminacyjnej, w kt\xF3rej aktorzy mieli walczy\u0107 ze sob\u0105 na szpady
+    - odm\xF3wili oni udzia\u0142u. Dosz\u0142o do k\u0142\xF3tni na scenie mi\u0119dzy
+    grup\u0105 \"The Globe\", a samym Shakespearem kt\xF3ra zako\u0144czy\u0142a
+    si\u0119 przeszyciem przez serce znanego nam tw\xF3rcy teatralnego. Grupa zosta\u0142a
+    zatrzymana przez stra\u017C i wtr\u0105cona do lochu. Jednak jej lider Aleksander
+    z Grzybii powiedzia\u0142, \u017Ce sta\u0107 ich na wykup wolno\u015Bci i ju\u017C
+    planuj\u0105 nowe spektakle bez, jak to powiedzia\u0142 \"kuli u nogi\". Musz\u0119
+    przyzna\u0107. Na Shakespearze nie da si\u0119 nudzi\u0107! "
+  - "Sztuka Shakespeare'a ca\u0142kowit\u0105 klap\u0105! Sam wspomniany nawet nie
+    pojawi\u0142 si\u0119 na scenie, a aktorzy zostali zmuszeni do samego poprowadzenia
+    spektaklu. Czego mo\u017Cna by\u0142o si\u0119 spodziewa\u0107 - zostali wybuczeni
+    i obrzuceni wszystkim co tylko wpad\u0142o w r\u0119ce rozjuszonego t\u0142umu.
+    Na szcz\u0119\u015Bcie nikomu nic si\u0119 nie sta\u0142o, ale Shakespeare'a
+    wci\u0105\u017C nie znaleziono. Jeden z cz\u0142onk\xF3w grupy \"The Globe\"
+    Aleksander z Grzybii zdradzi\u0142 mo\u017Cliwy fragment uk\u0142adanki: \"Spodziewali\u015Bmy
+    si\u0119 tego i tak. Od kilku tygodni wygl\u0105da\u0142 jakby mia\u0142 objawy
+    Suchoty. Brak Williama to \u017Cadna dla nas strata i poradzimy sobie bez niego\".
+    Musz\u0119 przyzna\u0107. To by\u0142 niecodzienny zwrot akcji! "
   pieniazkiZaWyleczenie: 30
   "pieniazkiZaPora\u017Cke": 0
   setDayTime: 1
