@@ -9336,8 +9336,8 @@ GameObject:
   - component: {fileID: 615083171}
   - component: {fileID: 615083170}
   - component: {fileID: 615083169}
-  - component: {fileID: 615083168}
   - component: {fileID: 615083167}
+  - component: {fileID: 615083172}
   m_Layer: 6
   m_Name: newspaper
   m_TagString: outline
@@ -9381,21 +9381,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0022592992, y: 0.0039054549, z: 0.00037697967}
   m_Center: {x: 0.000039656123, y: -9.325261e-10, z: 0.0000036980189}
---- !u!114 &615083168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 615083165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25bbae91d910448b8d39e1193393f417, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bookPages:
-  - leftPage: {fileID: 2663119173743940075, guid: d7805f2d238ec464dbac95af36baa6cf, type: 3}
-    rightPage: {fileID: 2663119173743940075, guid: 1dbf01fa9b6b6cc49a838eba6b443950, type: 3}
 --- !u!114 &615083169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9411,8 +9396,8 @@ MonoBehaviour:
   interactedWithObj:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 615083168}
-        m_TargetAssemblyTypeName: Player.Interact.InteractBehaviors.OpenBook.OpenBook,
+      - m_Target: {fileID: 615083172}
+        m_TargetAssemblyTypeName: Player.Interact.InteractBehaviors.OpenBook.OpenNews,
           Assembly-CSharp
         m_MethodName: SendBook
         m_Mode: 1
@@ -9479,6 +9464,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 615083165}
   m_Mesh: {fileID: 5592004026283570208, guid: f0191d27323f2324d886178e05e8cf4f, type: 3}
+--- !u!114 &615083172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615083165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f12bb4247466144db56bdccbac5aed9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bookPages:
+  - leftPage: {fileID: 2663119173743940075, guid: b9a3bb2ce82af3749b756acefc689883, type: 3}
+    rightPage: {fileID: 2663119173743940075, guid: d1f325bd903e1384b95c64493f9294b4, type: 3}
 --- !u!1001 &634272529
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20103,6 +20103,11 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &774016686 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3551244823627076020, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
+  m_PrefabInstance: {fileID: 889963182}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &780249812
 GameObject:
   m_ObjectHideFlags: 0
@@ -20816,6 +20821,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2471435358157734795, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
+      propertyPath: soundPlayer
+      value: 
+      objectReference: {fileID: 1541704233}
     - target: {fileID: 2472797270174340535, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
       propertyPath: m_fontColor.b
       value: 0.909804
@@ -20944,6 +20953,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2810061625957561620, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
+      propertyPath: newsPaperArea
+      value: 
+      objectReference: {fileID: 774016686}
     - target: {fileID: 2810061625957561620, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
       propertyPath: tytuly.Array.size
       value: 8
@@ -21096,6 +21109,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: File
       objectReference: {fileID: 0}
+    - target: {fileID: 2966157765461007003, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
+      propertyPath: soundPlayer
+      value: 
+      objectReference: {fileID: 1541704233}
     - target: {fileID: 2989192402915281808, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -21152,6 +21169,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 3339991417225790246, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
+      propertyPath: soundPlayer
+      value: 
+      objectReference: {fileID: 1462669952}
     - target: {fileID: 3440495141250805409, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -12.514999
@@ -21167,6 +21188,10 @@ PrefabInstance:
     - target: {fileID: 3447632498670323565, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 267.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3551244823627076020, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3562134390812714479, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
       propertyPath: m_AnchorMax.x
@@ -22264,6 +22289,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 448.6
       objectReference: {fileID: 0}
+    - target: {fileID: 8835445252638082079, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8835445252638082079, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7f2f4dfa4c8ae404ebfda87f81774c8d, type: 3}
     - target: {fileID: 8927866352624984286, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
       propertyPath: m_SizeDelta.x
       value: -4.9999924
@@ -22392,6 +22425,8 @@ PrefabInstance:
     - {fileID: 5426107279378815752, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
     - {fileID: 2061076704926616757, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
     - {fileID: 8906481954851070524, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
+    - {fileID: 4182658294226975961, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
+    - {fileID: 7698842452735930174, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 9003830128527231915, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
       insertIndex: 0
