@@ -9,13 +9,15 @@ namespace Player.Interact
         public UnityEvent lookAtObj;
         public string CoToJest;
 
+        [HideInInspector] public bool dwa = false;
+        
         public void StartThisOnInteract()
         {
             Debug.Log("Interacted!");
             interactedWithObj.Invoke();
         }
 
-        public void OnLookAtMe()
+        public void LookingAtMe()
         {
             Debug.Log("Player just looked at me!");
             lookAtObj.Invoke();

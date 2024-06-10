@@ -1,37 +1,29 @@
-﻿//
-//  OutlineFill.shader
-//  QuickOutline
-//
-//  Created by Chris Nolet on 2/21/18.
-//  Copyright © 2018 Chris Nolet. All rights reserved.
-//
-
-Shader "Custom/Outline Fill" {
+﻿Shader "Custom/Outline Fill" {
   Properties {
     [Enum(UnityEngine.Rendering.CompareFunction)] _ZTest("ZTest", Float) = 0
-
     _OutlineColor("Outline Color", Color) = (1, 1, 1, 1)
-    _OutlineWidth("Outline Width", Range(0, 10)) = 2
+    _OutlineWidth("Outline Width", Range(0, 20)) = 2
   }
 
   SubShader {
     Tags {
-      "Queue" = "Transparent+110"
+      "Queue" = "Overlay"
       "RenderType" = "Transparent"
       "DisableBatching" = "True"
     }
 
     Pass {
       Name "Fill"
-      Cull Off
+      Cull Front
       ZTest [_ZTest]
-      ZWrite Off
+      ZWrite On
       Blend SrcAlpha OneMinusSrcAlpha
       ColorMask RGB
 
       Stencil {
         Ref 1
         Comp NotEqual
+        Pass Replace
       }
 
       CGPROGRAM
@@ -66,7 +58,7 @@ Shader "Custom/Outline Fill" {
         float3 viewPosition = UnityObjectToViewPos(input.vertex);
         float3 viewNormal = normalize(mul((float3x3)UNITY_MATRIX_IT_MV, normal));
 
-        output.position = UnityViewToClipPos(viewPosition + viewNormal * -viewPosition.z * _OutlineWidth / 1000.0);
+        output.position = UnityViewToClipPos(viewPosition + viewNormal * _OutlineWidth / 1000.0);
         output.color = _OutlineColor;
 
         return output;
@@ -78,4 +70,6 @@ Shader "Custom/Outline Fill" {
       ENDCG
     }
   }
+
+  Fallback "Diffuse"
 }

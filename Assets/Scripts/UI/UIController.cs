@@ -96,7 +96,7 @@ namespace UI
 
         public void DateUpdate()
         {
-            dayCounter.text = NPCController.Instance.GetDay() + 1.ToString();
+            dayCounter.text = (NPCController.Instance.GetDay() + 1).ToString();
         }
 
         public void ShowEconomyWarning(string msg)
