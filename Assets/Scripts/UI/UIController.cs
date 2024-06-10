@@ -42,6 +42,9 @@ namespace UI
         [Foldout("Book")]
         [SerializeField] private GameObject book;
 
+        [Foldout("Book")]
+        [SerializeField] private GameObject newsPaperArea;
+
         #region podsumowanie
 
         [SerializeField][Foldout("podsumowanie")] private GameObject _podsumowanieDnia;
@@ -193,6 +196,20 @@ namespace UI
         public void CloseBook()
         {
             book.SetActive(false);
+            ReactionToUI.Instance.LockAndHideCursor();
+            ReactionToUI.Instance.UnlockMouseAndMovement();
+        }
+
+        public void OpenNews()
+        {
+            newsPaperArea.SetActive(true);
+            ReactionToUI.Instance.UnlockAndShowCursor();
+            ReactionToUI.Instance.LockMouseAndMovement();
+        }
+
+        public void CloseNews()
+        {
+            newsPaperArea.SetActive(false);
             ReactionToUI.Instance.LockAndHideCursor();
             ReactionToUI.Instance.UnlockMouseAndMovement();
         }

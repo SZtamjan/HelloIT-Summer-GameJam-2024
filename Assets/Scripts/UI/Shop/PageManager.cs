@@ -69,5 +69,13 @@ namespace UI.Shop
             _currentIndex = 0;
             LoadPage();
         }
+
+        public void LoadNews(List<DoublePage> newPages)
+        {
+            //pages = new List<DoublePage>();
+            pages = newPages;
+            _currentIndex = 0;
+            LoadPage();
+        }
     }
 }
