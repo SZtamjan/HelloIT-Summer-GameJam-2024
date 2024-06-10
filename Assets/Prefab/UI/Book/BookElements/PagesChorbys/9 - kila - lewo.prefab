@@ -205,8 +205,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 440}
-  m_SizeDelta: {x: 530, y: 880}
+  m_AnchoredPosition: {x: 10, y: 440}
+  m_SizeDelta: {x: 510, y: 880}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1268542425851051588
 CanvasRenderer:
@@ -236,11 +236,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "KI\u0141A\r\n\nNajbardziej rozpowszechniona choroba naszych czas\xF3w.
-    D\u0142ugotrwale nieleczona prowadzi ostatecznie do \u015Bmierci. \n\nWcze\u015Bniej
-    doprowadzi do zgnicia nosa, kt\xF3ry stopniowo odpadnie. \n\nCharakterystyczne
-    dziury na twarzy w miejscu nosa odr\xF3\u017Cniaj\u0105 \u0142atwo osoby dawno
-    zara\u017Cone od os\xF3b chor\xF3b. "
+  m_text: "SYFILIS\n\nNajbardziej rozpowszechniona choroba naszych czas\xF3w. D\u0142ugotrwale
+    nieleczona prowadzi ostatecznie do \u015Bmierci. \n\nWcze\u015Bniej doprowadzi
+    do zgnicia nosa, kt\xF3ry stopniowo odpadnie. \n\nCharakterystyczne dziury na
+    twarzy w miejscu nosa odr\xF3\u017Cniaj\u0105 \u0142atwo osoby dawno zara\u017Cone
+    od os\xF3b chor\xF3b. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e4af804e9690308458c2ed3acb644dda, type: 2}
   m_sharedMaterial: {fileID: -6763963794302383620, guid: e4af804e9690308458c2ed3acb644dda, type: 2}
@@ -267,8 +267,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -343,7 +343,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 440}
+  m_AnchoredPosition: {x: 10, y: 440}
   m_SizeDelta: {x: 530, y: 880}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5349470934233846237
