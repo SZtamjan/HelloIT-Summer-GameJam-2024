@@ -11,6 +11,11 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+public interface ISwitchable
+{
+    bool IsEnabled { get; set; }
+}
+
 namespace OutlineScripts
 {
   [DisallowMultipleComponent]

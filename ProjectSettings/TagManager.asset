@@ -6,6 +6,7 @@ TagManager:
   tags:
   - DialogCanvas
   - Selectable
+  - outline
   layers:
   - Default
   - TransparentFX
