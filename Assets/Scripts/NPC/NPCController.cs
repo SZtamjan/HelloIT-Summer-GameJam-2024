@@ -28,6 +28,7 @@ namespace NPC
 
         private void Start()
         {
+            ResetAllPacjenci();
             Debug.LogWarning("Nie ma nigogo w kolejce");
             _anim = _pacjentBody.GetComponent<Animator>();
         }

@@ -89,7 +89,6 @@ namespace Gameplay
             switch (newState)
             {
                 case GameStates.StartGame:
-                    NPCController.Instance.ResetAllPacjenci();
                     StartCoroutine(WaitForPlayerToSitOnAChair(GameStates.StartNextNPC));
                     break;
 

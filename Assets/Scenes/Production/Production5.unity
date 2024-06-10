@@ -9396,14 +9396,6 @@ MonoBehaviour:
   bookPages:
   - leftPage: {fileID: 2663119173743940075, guid: d7805f2d238ec464dbac95af36baa6cf, type: 3}
     rightPage: {fileID: 2663119173743940075, guid: 1dbf01fa9b6b6cc49a838eba6b443950, type: 3}
-  - leftPage: {fileID: 2663119173743940075, guid: 3c26650a455b8e446bd44df7fef22813, type: 3}
-    rightPage: {fileID: 2663119173743940075, guid: 9cbbb6a85e0b9cb439023e5a133d3eac, type: 3}
-  - leftPage: {fileID: 2663119173743940075, guid: aebfe8f3e8e957741896b070b79cce9d, type: 3}
-    rightPage: {fileID: 2663119173743940075, guid: 1cd08b2fc561a2741b9d71d2e67797ad, type: 3}
-  - leftPage: {fileID: 2663119173743940075, guid: 53f02748c62dae84ab4bce683fc0e721, type: 3}
-    rightPage: {fileID: 2663119173743940075, guid: 5a2c082f836614043b234de535c36e6b, type: 3}
-  - leftPage: {fileID: 2663119173743940075, guid: c4739e8a640a9204e877ecea5767d229, type: 3}
-    rightPage: {fileID: 2663119173743940075, guid: 36518694997f81c4a8b18776161d3fd6, type: 3}
 --- !u!114 &615083169
 MonoBehaviour:
   m_ObjectHideFlags: 0

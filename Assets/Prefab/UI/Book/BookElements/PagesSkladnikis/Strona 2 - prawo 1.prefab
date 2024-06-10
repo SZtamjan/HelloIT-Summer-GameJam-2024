@@ -143,6 +143,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6460680115010528725}
+  - component: {fileID: 5871204458771334585}
   m_Layer: 5
   m_Name: Strona 2 - prawo 1
   m_TagString: Untagged
@@ -171,6 +172,53 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 530, y: 980}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &5871204458771334585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2663119173743940075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89946368ea21f3b42b7ee6fbfc165a2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  opis: {fileID: 1082075450921666317}
+  loreThing:
+  - "Do naszego miasta zawita s\u0142ynny William Shakespeare wraz ze swoj\u0105
+    grup\u0105 \"The Globe\"! Nikt nie musi tego zacnego cz\u0142owieka przedstawia\u0107.
+    Po ostatniej eksperymentalnej sztuce, w kt\xF3rej aktorzy musieli  wbrew swojej
+    woli pojedynkowa\u0107 si\u0119 naprawd\u0119 powiedzia\u0142, \u017Ce to dopiero
+    pocz\u0105tek i na nast\u0119pn\u0105 sztuk\u0119 przygotuje co\u015B jeszcze
+    bardziej zaskakuj\u0105cego.Sam nie mog\u0119 si\u0119 doczeka\u0107 co tym razem
+    wymy\u015Bli! Bilety do kupienia u dobrych kupc\xF3w. "
+  - "Kap\u0142an Marcin Luter oskar\u017Cony o herezj\u0119! Duchowny po wczorajszej
+    manifestacji zosta\u0142 ekskomunikowany i oczekuje na wyrok w areszcie domowym.
+    Za obraz\u0119 Ko\u015Bcio\u0142a grozi mu nawet do\u017Cywocie w lochu! Niech
+    to b\u0119dzie przestroga dla wszystkich drwi\u0105cych z Boga. "
+  - "Kolejne zwyci\u0119stwo naszej floty! Admira\u0142 Andrea Doria powraca po wygranej
+    bitwie z po\u0142udniowcami. Wed\u0142ug pos\u0142a\u0144ca, b\u0119dzie to tylko
+    kr\xF3tka przerwa przed wypraw\u0105 na zach\xF3d, aby uzupe\u0142ni\u0107 zapasy
+    i zrekrutowa\u0107 kolejnych \u017Co\u0142nierzy. Kr\xF3l og\u0142osi\u0142,
+    \u017Ce p\xF3ki admira\u0142 b\u0119dzie przynosi\u0142 rezultaty nie musi si\u0119
+    martwi\u0107 stratami w ludziach. Z ca\u0142ego serca \u017Cycz\u0119 Lwowi Morskiemu
+    powodzenia! "
+  - "Mistrz Leonardo da Vinci z nowym pomys\u0142em! Po ostatnim pokazie maszyny
+    lataj\u0105cej, w kt\xF3rym niestety uderzy\u0142 w wie\u017C\u0119 stra\u017Cnicz\u0105
+    i drugim pokazie, gdzie uderzy\u0142 w towarzysz\u0105c\u0105 wie\u017C\u0119,
+    zmieni\u0142 koncepcj\u0119. Stwierdzi\u0142, \u017Ce miejsce ludzi jest jednak
+    na ziemi. Zamierza stworzy\u0107 maszyn\u0119 wojenn\u0105 przypominaj\u0105c\u0105
+    krocz\u0105c\u0105 powoli gazel\u0119 i wystrzeliwuj\u0105c\u0105 niespotykany
+    do tej pory rodzaj amunicji. Przy okazji zapowiedzia\u0142 rozwi\u0105zanie problemu
+    imigrant\xF3w w naszym kr\xF3lestwie. Ciekawe czym tym razem zaskoczy nas mistrz
+    Leonardo? "
+  - "Paracelsus powr\xF3ci\u0142! Mistrz lekarski dzisiaj nad ranem dotar\u0142 do
+    bram miasta wracaj\u0105c z odleg\u0142ej delegacji. Zapowiedzia\u0142, \u017Ce
+    je\u015Bli jego ucze\u0144 spisa\u0142 si\u0119 poprawnie pod jego nieobecno\u015B\u0107
+    przeka\u017Ce mu oficjalny tytu\u0142 mistrzowski. On sam zamierza odej\u015B\u0107
+    w cie\u0144 i spokojnie do\u017Cy\u0107 staro\u015Bci. Taki tytu\u0142 z pewno\u015Bci\u0105
+    zaprowadzi go do wymarzonego \u017Cycia. \u017Byczymy mu powodzenia!"
 --- !u!1 &4626186112201757560
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,7 +253,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -1, y: 475}
+  m_AnchoredPosition: {x: -1, y: 900}
   m_SizeDelta: {x: 530, y: 880}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6324800770786613017
@@ -236,7 +284,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Sk\u0142adniki i objawy - Paracelsus"
+  m_text: "Ca\u0142a \u015Bmietanka arystokracji zebra\u0142a si\u0119 z najdalszych
+    okolic, aby \u015Bwi\u0119towa\u0107 otwarcie sieroci\u0144ca im. Tomasza More'a!
+    Kontrowersyjny pisarz sam ufundowa\u0142 ca\u0142e przedsi\u0119wzi\u0119cie
+    i instytucj\u0119. Czy pr\xF3buje poprawi\u0107 relacje z w\u0142adzami? Sprawd\u017Acie
+    sami ju\u017C dzisiaj wieczorem! "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e4af804e9690308458c2ed3acb644dda, type: 2}
   m_sharedMaterial: {fileID: -6763963794302383620, guid: e4af804e9690308458c2ed3acb644dda, type: 2}
@@ -263,14 +315,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -305,140 +357,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!1 &5394668137737848279
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1106370523955243335}
-  - component: {fileID: 1268542425851051588}
-  - component: {fileID: 6389784991660016475}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1106370523955243335
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5394668137737848279}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4132638435886650839}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -1, y: -364}
-  m_SizeDelta: {x: 510, y: 880}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &1268542425851051588
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5394668137737848279}
-  m_CullTransparentMesh: 1
---- !u!114 &6389784991660016475
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5394668137737848279}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Ingredientia et indicia
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e4af804e9690308458c2ed3acb644dda, type: 2}
-  m_sharedMaterial: {fileID: -6763963794302383620, guid: e4af804e9690308458c2ed3acb644dda, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4279308561
-  m_fontColor: {r: 0.06666667, g: 0.06666667, b: 0.06666667, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 1
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &8681087868319269441
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,7 +386,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1106370523955243335}
   - {fileID: 7368764704341593069}
   m_Father: {fileID: 6460680115010528725}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
