@@ -15,7 +15,7 @@ MonoBehaviour:
   imie: Tomasz More
   _maskMesh: {fileID: 4923970991324832188, guid: 93c0e292bc253dd4c88d43b9ac6d4d00, type: 3}
   _maskMaterial: {fileID: 2100000, guid: 6a225d681bd70a14e9650a9467d4c7d7, type: 2}
-  _Choroba: {fileID: 11400000, guid: 8d4cde6a4fb874d4bbf57be3ee3edf19, type: 2}
+  _Choroba: {fileID: 11400000, guid: ea568e6d33db7dd49b4e5662cad1b959, type: 2}
   _EntryChat:
   - "Tomasz More, mi\u0142o pozna\u0107."
   _NormalChat:
