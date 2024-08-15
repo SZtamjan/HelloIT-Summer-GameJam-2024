@@ -154,9 +154,13 @@ namespace Gameplay
         {
             NPCController.Instance.NextDay();
             UIController.Instance.DateUpdate();
-            ChangeGameState(GameStates.StartGame);
             UIController.Instance.ActualShop.SetActive(true);
             UIController.Instance.UpdateButtons();
+        }
+
+        public void NaWylaczSklepStartNowyDzien()
+        {
+            ChangeGameState(GameStates.StartGame);
         }
 
         private void LockPlayer()
