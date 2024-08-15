@@ -33,7 +33,7 @@ namespace Gameplay
                 ReactionToUI.Instance.LockMouseAndMovement();
                 
                 ReactionToUI.Instance.blockers.Add(this.SwitchPause);
-                Debug.Log("Dlugosc blockers listy " + ReactionToUI.Instance.blockers.Count);
+                //Debug.Log("Dlugosc blockers listy " + ReactionToUI.Instance.blockers.Count);
                 
                 _menuManager.SwitchMenuVis(true);
                 gamePaused = true;
@@ -42,7 +42,7 @@ namespace Gameplay
             }
 
             ReactionToUI.Instance.blockers.Remove(this.SwitchPause);
-            Debug.Log("Dlugosc blockers listy " + ReactionToUI.Instance.blockers.Count);
+            //Debug.Log("Dlugosc blockers listy " + ReactionToUI.Instance.blockers.Count);
             
             ReactionToUI.Instance.LockAndHideCursor();
 

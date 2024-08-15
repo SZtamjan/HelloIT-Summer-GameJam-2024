@@ -24,10 +24,11 @@ namespace Economy
             UIController.Instance.EconomyUpdateResources(Resources);
         }
 
-        public void BuySkladnik(int value)
+        public bool BuySkladnik(int value)
         {
-            SkladnikController.Instance.AddSkladnik(value);
-            Resources.Cash -= 5;// tu można jakiś hajs zabrać XDD
+            if (SkladnikController.Instance.AddSkladnik(value)) return true;
+
+            return false;
         }
     }
 }

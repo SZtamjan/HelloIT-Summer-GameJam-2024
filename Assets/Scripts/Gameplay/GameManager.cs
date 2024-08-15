@@ -163,7 +163,7 @@ namespace Gameplay
         {
             ReactionToUI.Instance.LockMouseAndMovement();
             ReactionToUI.Instance.blockers.Add(this.LockPlayer);
-            Debug.Log("Dlugosc blockers listy " + ReactionToUI.Instance.blockers.Count);
+            //Debug.Log("Dlugosc blockers listy " + ReactionToUI.Instance.blockers.Count);
 
             _playerMovement.TurnPlayerTowardsNPC();
         }
@@ -171,7 +171,7 @@ namespace Gameplay
         private void UnlockPlayer()
         {
             ReactionToUI.Instance.blockers.Remove(this.LockPlayer);
-            Debug.Log("Dlugosc blockers listy " + ReactionToUI.Instance.blockers.Count);
+            //Debug.Log("Dlugosc blockers listy " + ReactionToUI.Instance.blockers.Count);
 
 
             if (ReactionToUI.Instance.blockers.Count == 0)

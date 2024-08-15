@@ -7324,7 +7324,7 @@ GameObject:
   - component: {fileID: 350820709}
   - component: {fileID: 350820708}
   - component: {fileID: 350820717}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Medicine (1)
   m_TagString: outline
   m_Icon: {fileID: 0}
@@ -21839,6 +21839,10 @@ PrefabInstance:
     - target: {fileID: 7179599148145660667, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0.50499916
+      objectReference: {fileID: 0}
+    - target: {fileID: 7187821558121034465, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7195917494001900086, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
       propertyPath: m_Sprite
@@ -39830,6 +39834,25 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &1170231590 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4550348536129920987, guid: 153767db9c758294e9e90256b0c0cc2f, type: 3}
+  m_PrefabInstance: {fileID: 1917464349}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1170231593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170231590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 623d73aa9d87825408a4fcb57a1886a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textFullAlpha: 2
+  fadeDuration: 2
 --- !u!1 &1215469430
 GameObject:
   m_ObjectHideFlags: 0
@@ -49623,7 +49646,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4550348536129920987, guid: 153767db9c758294e9e90256b0c0cc2f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1170231593}
   m_SourcePrefab: {fileID: 100100000, guid: 153767db9c758294e9e90256b0c0cc2f, type: 3}
 --- !u!114 &1917464350 stripped
 MonoBehaviour:

@@ -14,4 +14,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   kolejka:
   - {fileID: 11400000, guid: 1753723cc8a81f540bb60dbaf212ab71, type: 2}
-  - {fileID: 11400000, guid: 105530ec77d56cd4d9ae91e5cc0921d2, type: 2}

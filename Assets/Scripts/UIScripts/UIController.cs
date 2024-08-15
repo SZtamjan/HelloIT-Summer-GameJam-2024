@@ -7,6 +7,7 @@ using Economy;
 using UnityEngine.UI;
 using Class;
 using Crafting;
+using Economy.EconomyActions;
 using static Class.SkladnikiClass;
 using NaughtyAttributes;
 using NPC;
@@ -107,7 +108,9 @@ namespace UI
         public void ShowEconomyWarning(string msg)
         {
             economyWarningText.text = msg;
-
+            
+            economyWarningText.gameObject.SetActive(true);
+            
             if (warningMessageCor == null)
                 warningMessageCor = StartCoroutine(WarningLenght());
         }
@@ -142,6 +145,8 @@ namespace UI
 
                 elapsedTime += Time.deltaTime;
             }
+            
+            economyWarningText.gameObject.SetActive(false);
 
             warningMessageCor = null;
         }
@@ -152,9 +157,10 @@ namespace UI
 
         public void BuySkladnik(int value)
         {
-            EconomyResources.Instance.BuySkladnik(value);
-            // ewentualnie jakiś hajs tu albo w linijcie wyżej
-            UpdateButtons();
+            if (EconomyResources.Instance.BuySkladnik(value))
+            {
+                UpdateButtons();
+            }
         }
 
         private void StartNames()
@@ -196,7 +202,7 @@ namespace UI
             ReactionToUI.Instance.LockMouseAndMovement();
             
             ReactionToUI.Instance.blockers.Add(this.CloseBook);
-            Debug.Log("Dlugosc blockers listy " + ReactionToUI.Instance.blockers.Count);
+            //Debug.Log("Dlugosc blockers listy " + ReactionToUI.Instance.blockers.Count);
         }
 
         public void CloseBook()
@@ -205,7 +211,7 @@ namespace UI
             ReactionToUI.Instance.LockAndHideCursor();
             
             ReactionToUI.Instance.blockers.Remove(this.CloseBook);
-            Debug.Log("Dlugosc blockers listy " + ReactionToUI.Instance.blockers.Count);
+            //Debug.Log("Dlugosc blockers listy " + ReactionToUI.Instance.blockers.Count);
 
             if (ReactionToUI.Instance.blockers.Count == 0)
             {
@@ -221,7 +227,7 @@ namespace UI
             ReactionToUI.Instance.LockMouseAndMovement();
             
             ReactionToUI.Instance.blockers.Add(this.CloseNews);
-            Debug.Log("Dlugosc blockers listy " + ReactionToUI.Instance.blockers.Count);
+            //Debug.Log("Dlugosc blockers listy " + ReactionToUI.Instance.blockers.Count);
         }
 
         public void CloseNews()
@@ -230,7 +236,7 @@ namespace UI
             ReactionToUI.Instance.LockAndHideCursor();
             
             ReactionToUI.Instance.blockers.Remove(this.CloseNews);
-            Debug.Log("Dlugosc blockers listy " + ReactionToUI.Instance.blockers.Count);
+            //Debug.Log("Dlugosc blockers listy " + ReactionToUI.Instance.blockers.Count);
 
             if (ReactionToUI.Instance.blockers.Count == 0)
             {

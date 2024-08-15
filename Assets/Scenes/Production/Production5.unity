@@ -7324,7 +7324,7 @@ GameObject:
   - component: {fileID: 350820709}
   - component: {fileID: 350820708}
   - component: {fileID: 350820717}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Medicine (1)
   m_TagString: outline
   m_Icon: {fileID: 0}

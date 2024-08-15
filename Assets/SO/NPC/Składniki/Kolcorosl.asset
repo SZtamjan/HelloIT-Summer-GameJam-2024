@@ -14,3 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nazwa: 1
   objawy: 050000000100000006000000
+  cena:
+    updatedResources:
+      m_PersistentCalls:
+        m_Calls: []
+    cash: 2

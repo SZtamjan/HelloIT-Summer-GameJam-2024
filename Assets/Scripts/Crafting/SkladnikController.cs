@@ -3,6 +3,7 @@ using Crafting;
 using NaughtyAttributes;
 using System.Collections;
 using System.Collections.Generic;
+using Economy.EconomyActions;
 using Unity.VisualScripting;
 using UnityEngine;
 using static Class.SkladnikiClass;
@@ -39,11 +40,18 @@ namespace Crafting
             Debug.Log(ReturnIlosc(test));
         }
 
-        public void AddSkladnik(int num)
+        public bool AddSkladnik(int num)
         {
-            var skladnik = storages.Find(x => x.GetSk≥adnik().nazwa == (SkladnikiClass.Skladniki)num);
-            if (skladnik == null) { return; }
-            skladnik.Ilosc = 1;
+            var skladnik = storages.Find(x => x.GetSk≈Çadnik().nazwa == (SkladnikiClass.Skladniki)num);
+            if (skladnik == null) { return false; }
+
+            if (EconomyOperations.Purchase(skladnik.Cena))
+            {
+                skladnik.Ilosc = 1;
+                return true;
+            }
+            
+            return false;
         }
 
         public int ReturnIlosc(int num)
@@ -53,7 +61,7 @@ namespace Crafting
             Debug.Log(testo);
             foreach (var item in storages)
             {
-                if (item.GetSk≥adnik().nazwa == testo)
+                if (item.GetSk≈Çadnik().nazwa == testo)
                 {
                     skladnik = item;
                 }

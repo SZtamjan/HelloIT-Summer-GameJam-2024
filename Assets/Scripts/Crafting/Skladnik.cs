@@ -47,5 +47,7 @@ namespace Crafting
                 }
             }
         }
+
+        public ResourcesStruct Cena => skladnik.cena;
     }
 }
