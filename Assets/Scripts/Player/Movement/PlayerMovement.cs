@@ -1,4 +1,5 @@
 using System.Collections;
+using NaughtyAttributes;
 using Player.Interact;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -143,11 +144,19 @@ namespace Player.Movement
             _mainCam.transform.SetPositionAndRotation(pos, rot);
         }
 
-        public IEnumerator TurnPlayerTowardsNPC()
+        [Button]
+        public void Test()
         {
-            yield return new WaitForEndOfFrame();
             camTransform.localRotation = Quaternion.Euler(0, 0, 0);
             transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
+
+        public void TurnPlayerTowardsNPC()
+        {
+            //yield return new WaitForSeconds(1f);
+            camTransform.localRotation = Quaternion.Euler(0, 0, 0);
+            transform.rotation = Quaternion.Euler(0, 180, 0);
+            Physics.SyncTransforms();
         }
     }
 }

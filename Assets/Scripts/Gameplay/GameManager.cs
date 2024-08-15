@@ -93,7 +93,7 @@ namespace Gameplay
                     break;
 
                 case GameStates.StartNextNPC:
-                    StartNPC(); //NPC WalksIn - EMPTY Method // zrobione
+                    StartNPC(); //NPC WalksIn // zrobione
                     ChangeGameState(GameStates.StartChat); //StartChat
 
                     break;
@@ -162,7 +162,7 @@ namespace Gameplay
         {
             _playerMovement.MouseRotationIsOn = false;
             _playerMovement.PlayerMovementIsOn = false;
-            StartCoroutine(_playerMovement.TurnPlayerTowardsNPC());
+            _playerMovement.TurnPlayerTowardsNPC();
         }
 
         private void UnlockPlayer()
