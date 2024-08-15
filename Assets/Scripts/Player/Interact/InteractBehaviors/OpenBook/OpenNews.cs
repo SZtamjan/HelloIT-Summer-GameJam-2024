@@ -11,8 +11,7 @@ namespace Player.Interact.InteractBehaviors.OpenBook
 
         public void SendBook()
         {
-            UIController.Instance.OpenNews();
-            PageManager.Instance.LoadNews(bookPages);
+            UIController.Instance.OpenNews(bookPages);
         }
     }
 }

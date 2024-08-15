@@ -11,6 +11,7 @@ using static Class.SkladnikiClass;
 using NaughtyAttributes;
 using NPC;
 using Gameplay;
+using UI.Shop;
 
 namespace UI
 {
@@ -38,12 +39,12 @@ namespace UI
         [SerializeField][Foldout("ActualShop")] private List<TextMeshProUGUI> buttonyText;
 
         [SerializeField][Foldout("ActualShop")] private List<TextMeshProUGUI> tytuly;
-
-        [Foldout("Book")]
-        [SerializeField] private GameObject book;
-
-        [Foldout("Book")]
-        [SerializeField] private GameObject newsPaperArea;
+        
+        [SerializeField][Foldout("Book")] private GameObject book;
+        [SerializeField][Foldout("Book")] private PageManager bookPageManager;
+        
+        [SerializeField][Foldout("Book")] private GameObject newsPaperArea;
+        [SerializeField][Foldout("Book")] private PageManager newsPaperPageManager;
 
         #region podsumowanie
 
@@ -186,9 +187,10 @@ namespace UI
 
         #endregion buying
 
-        public void OpenBook()
+        public void OpenBook(List<DoublePage> newPages)
         {
             book.SetActive(true);
+            bookPageManager.LoadPages(newPages);
             ReactionToUI.Instance.UnlockAndShowCursor();
             ReactionToUI.Instance.LockMouseAndMovement();
         }
@@ -200,9 +202,10 @@ namespace UI
             ReactionToUI.Instance.UnlockMouseAndMovement();
         }
 
-        public void OpenNews()
+        public void OpenNews(List<DoublePage> newPages)
         {
             newsPaperArea.SetActive(true);
+            newsPaperPageManager.LoadPages(newPages);
             ReactionToUI.Instance.UnlockAndShowCursor();
             ReactionToUI.Instance.LockMouseAndMovement();
         }

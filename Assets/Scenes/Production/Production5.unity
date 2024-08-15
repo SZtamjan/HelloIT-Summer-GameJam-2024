@@ -20103,11 +20103,6 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!1 &774016686 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3551244823627076020, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
-  m_PrefabInstance: {fileID: 889963182}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &780249812
 GameObject:
   m_ObjectHideFlags: 0
@@ -20953,10 +20948,6 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2810061625957561620, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
-      propertyPath: newsPaperArea
-      value: 
-      objectReference: {fileID: 774016686}
     - target: {fileID: 2810061625957561620, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
       propertyPath: tytuly.Array.size
       value: 8
@@ -22323,7 +22314,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8772094950517389747, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 801.13007
+      value: 801.1301
       objectReference: {fileID: 0}
     - target: {fileID: 8794126512088220264, guid: f3e344d7a4fc60144bae53cea98a3a2d, type: 3}
       propertyPath: m_SizeDelta.x
@@ -48048,7 +48039,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1095508769321467352, guid: 1293428e21146854d99c7adfb668fada, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 947.27545
+      value: 947.2755
       objectReference: {fileID: 0}
     - target: {fileID: 1095508769321467352, guid: 1293428e21146854d99c7adfb668fada, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -49254,7 +49245,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1095508769321467352, guid: 1293428e21146854d99c7adfb668fada, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 947.27545
+      value: 947.2755
       objectReference: {fileID: 0}
     - target: {fileID: 1095508769321467352, guid: 1293428e21146854d99c7adfb668fada, type: 3}
       propertyPath: m_AnchoredPosition.y

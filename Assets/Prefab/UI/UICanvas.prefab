@@ -730,7 +730,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   book: {fileID: 2238566782156902229}
-  newsPaperArea: {fileID: 0}
+  bookPageManager: {fileID: 3702474516107948318}
+  newsPaperArea: {fileID: 3551244823627076020}
+  newsPaperPageManager: {fileID: 2105896881916997631}
   _podsumowanieDnia: {fileID: 1363269280083782174}
   _PacjeciTytuly:
   - {fileID: 1956296100217406853}
@@ -1944,6 +1946,22 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 3339991417225790246}
   m_SourcePrefab: {fileID: 100100000, guid: 6c7258aa4302fee42899c0682a89a6fa, type: 3}
+--- !u!114 &2105896881916997631 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4781964984117784960, guid: 6c7258aa4302fee42899c0682a89a6fa, type: 3}
+  m_PrefabInstance: {fileID: 6873994823908564607}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3266d54bd08483fad07ebe050d5d893, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &3551244823627076020 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7939243083949739979, guid: 6c7258aa4302fee42899c0682a89a6fa, type: 3}
+  m_PrefabInstance: {fileID: 6873994823908564607}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &4182658294226975961 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7308951119236752038, guid: 6c7258aa4302fee42899c0682a89a6fa, type: 3}
@@ -2379,6 +2397,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7939243083949739979, guid: 6c7258aa4302fee42899c0682a89a6fa, type: 3}
   m_PrefabInstance: {fileID: 8159721142353821854}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &3702474516107948318 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4781964984117784960, guid: 6c7258aa4302fee42899c0682a89a6fa, type: 3}
+  m_PrefabInstance: {fileID: 8159721142353821854}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3266d54bd08483fad07ebe050d5d893, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &6158322333410084644 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2615437640052099002, guid: 6c7258aa4302fee42899c0682a89a6fa, type: 3}
