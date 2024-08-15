@@ -1,13 +1,17 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using Player;
 using Player.Movement;
 using UnityEngine;
 
-namespace UI
+namespace UIScripts
 {
     public class ReactionToUI : MonoBehaviour
     {
         public static ReactionToUI Instance;
+
+        public delegate void Blocker();
+
+        public List<Blocker> blockers = new List<Blocker>();
 
         private void Awake()
         {

@@ -6,6 +6,7 @@ using Player;
 using Player.Movement;
 using UI;
 using UIDialog;
+using UIScripts;
 using UnityEngine;
 
 namespace Gameplay
@@ -160,15 +161,24 @@ namespace Gameplay
 
         private void LockPlayer()
         {
-            _playerMovement.MouseRotationIsOn = false;
-            _playerMovement.PlayerMovementIsOn = false;
+            ReactionToUI.Instance.LockMouseAndMovement();
+            ReactionToUI.Instance.blockers.Add(this.LockPlayer);
+            Debug.Log("Dlugosc blockers listy " + ReactionToUI.Instance.blockers.Count);
+
             _playerMovement.TurnPlayerTowardsNPC();
         }
 
         private void UnlockPlayer()
         {
-            _playerMovement.MouseRotationIsOn = true;
-            _playerMovement.PlayerMovementIsOn = true;
+            ReactionToUI.Instance.blockers.Remove(this.LockPlayer);
+            Debug.Log("Dlugosc blockers listy " + ReactionToUI.Instance.blockers.Count);
+
+
+            if (ReactionToUI.Instance.blockers.Count == 0)
+            {
+                ReactionToUI.Instance.UnlockMouseAndMovement();
+            }
+
             _playerManager.AmSitting = false;
         }
 
@@ -214,7 +224,10 @@ namespace Gameplay
             Debug.Log("Waiting for player to sit down");
             yield return new WaitUntil(() => _playerManager.AmSitting);
             LockPlayer();
-
+            
+            ReactionToUI.Instance.blockers.Remove(this.LockPlayer);
+            Debug.Log("Dlugosc blockers listy " + ReactionToUI.Instance.blockers.Count);
+            
             ChangeGameState(toState);
         }
 

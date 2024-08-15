@@ -12,6 +12,7 @@ using NaughtyAttributes;
 using NPC;
 using Gameplay;
 using UI.Shop;
+using UIScripts;
 
 namespace UI
 {
@@ -193,13 +194,23 @@ namespace UI
             bookPageManager.LoadPages(newPages);
             ReactionToUI.Instance.UnlockAndShowCursor();
             ReactionToUI.Instance.LockMouseAndMovement();
+            
+            ReactionToUI.Instance.blockers.Add(this.CloseBook);
+            Debug.Log("Dlugosc blockers listy " + ReactionToUI.Instance.blockers.Count);
         }
 
         public void CloseBook()
         {
             book.SetActive(false);
             ReactionToUI.Instance.LockAndHideCursor();
-            ReactionToUI.Instance.UnlockMouseAndMovement();
+            
+            ReactionToUI.Instance.blockers.Remove(this.CloseBook);
+            Debug.Log("Dlugosc blockers listy " + ReactionToUI.Instance.blockers.Count);
+
+            if (ReactionToUI.Instance.blockers.Count == 0)
+            {
+                ReactionToUI.Instance.UnlockMouseAndMovement();
+            }
         }
 
         public void OpenNews(List<DoublePage> newPages)
@@ -208,13 +219,23 @@ namespace UI
             newsPaperPageManager.LoadPages(newPages);
             ReactionToUI.Instance.UnlockAndShowCursor();
             ReactionToUI.Instance.LockMouseAndMovement();
+            
+            ReactionToUI.Instance.blockers.Add(this.CloseNews);
+            Debug.Log("Dlugosc blockers listy " + ReactionToUI.Instance.blockers.Count);
         }
 
         public void CloseNews()
         {
             newsPaperArea.SetActive(false);
             ReactionToUI.Instance.LockAndHideCursor();
-            ReactionToUI.Instance.UnlockMouseAndMovement();
+            
+            ReactionToUI.Instance.blockers.Remove(this.CloseNews);
+            Debug.Log("Dlugosc blockers listy " + ReactionToUI.Instance.blockers.Count);
+
+            if (ReactionToUI.Instance.blockers.Count == 0)
+            {
+                ReactionToUI.Instance.UnlockMouseAndMovement();
+            }
         }
 
         [Button]

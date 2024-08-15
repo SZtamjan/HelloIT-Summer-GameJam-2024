@@ -1,6 +1,5 @@
-﻿using System;
-using Player;
-using UI;
+﻿using UI;
+using UIScripts;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -33,15 +32,25 @@ namespace Gameplay
                 ReactionToUI.Instance.UnlockAndShowCursor();
                 ReactionToUI.Instance.LockMouseAndMovement();
                 
+                ReactionToUI.Instance.blockers.Add(this.SwitchPause);
+                Debug.Log("Dlugosc blockers listy " + ReactionToUI.Instance.blockers.Count);
+                
                 _menuManager.SwitchMenuVis(true);
                 gamePaused = true;
                 Time.timeScale = 0f;
                 return;
             }
 
-            ReactionToUI.Instance.LockAndHideCursor();
-            ReactionToUI.Instance.UnlockMouseAndMovement();
+            ReactionToUI.Instance.blockers.Remove(this.SwitchPause);
+            Debug.Log("Dlugosc blockers listy " + ReactionToUI.Instance.blockers.Count);
             
+            ReactionToUI.Instance.LockAndHideCursor();
+
+            if (ReactionToUI.Instance.blockers.Count == 0)
+            {
+                ReactionToUI.Instance.UnlockMouseAndMovement();
+            }
+
             gamePaused = false;
             _menuManager.SwitchMenuVis(false);
             Time.timeScale = 1f;
