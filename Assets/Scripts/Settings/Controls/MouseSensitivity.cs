@@ -62,6 +62,7 @@ namespace Settings.Controls
         private void SaveSens(float newSens)
         {
             PlayerPrefs.SetFloat("MouseSensitivity", newSens);
+            if(PlayerManager.Instance == null) return;
             PlayerManager.Instance.GetComponent<PlayerMovement>().LoadSens();
         }
 

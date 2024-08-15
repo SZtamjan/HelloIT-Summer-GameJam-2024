@@ -19,6 +19,8 @@ namespace Crafting
 
         [SerializeField] private SkladnikiScriptableObject _nic;
 
+        public Coroutine currentFill;
+        
         private void Awake()
         {
             Instance = this;
@@ -55,7 +57,7 @@ namespace Crafting
             lekarstwo.GetComponent<MeshRenderer>().materials[2].SetColor("_Top_Color", hdrColor);
             StartCoroutine(_butelka1.GetComponent<BottlesFillAnim>().PlayDeFill(_butelka1.gameObject));
             StartCoroutine(_butelka2.GetComponent<BottlesFillAnim>().PlayDeFill(_butelka2.gameObject));
-            StartCoroutine(lekarstwo.GetComponent<BottlesFillAnim>().PlayFill(0.3f));
+            currentFill = StartCoroutine(lekarstwo.GetComponent<BottlesFillAnim>().PlayFill(0.3f,this));
             lekarstwo.AddObjawy(_butelka1.GetObjawy());
             lekarstwo.AddObjawy(_butelka2.GetObjawy());
             _butelka1.SetSkladnik(_nic);
@@ -88,6 +90,8 @@ namespace Crafting
                 }
                 yield return null;
             }
+
+            yield return new WaitUntil(() => currentFill == null);
 
             lekarstwo.gameObject.layer = 6;
         }

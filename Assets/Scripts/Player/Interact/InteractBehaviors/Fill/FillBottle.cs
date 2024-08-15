@@ -18,6 +18,7 @@ namespace Player.Interact.InteractBehaviors.Fill
 
         public Coroutine FillCor
         {
+            get => fillCor;
             set => fillCor = value;
         }
 

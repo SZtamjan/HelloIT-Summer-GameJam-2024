@@ -24,6 +24,13 @@ namespace Player.Interact.InteractBehaviors.PickAndPlace
             if (GameManager.Instance.GetGameState() != GameStates.StartGameplay) { return; }
             var copy = Instantiate(gameObject);
             copy.transform.position = _pickUpSpot.position;
+            
+            Quaternion pickupRot = _pickUpSpot.rotation;
+            Vector3 rot = pickupRot.eulerAngles;
+            rot.x -= 90f;
+            pickupRot.eulerAngles = rot;
+            copy.transform.rotation = pickupRot;
+            
             copy.transform.parent = _pickUpSpot;
             copy.GetComponent<Collider>().enabled = false;
             _skladnik.Ilosc = -1;

@@ -10,7 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2567160b4cb88324bbb992cec9ce1115, type: 3}
-  m_Name: Test2
+  m_Name: TestDay2
   m_EditorClassIdentifier: 
   kolejka:
-  - {fileID: 11400000, guid: fa9fe2428cabb774f83bad8d9ae3c74b, type: 2}
+  - {fileID: 11400000, guid: 464a41609ef9ad0449e1ea3bc5dcecf0, type: 2}
+  - {fileID: 11400000, guid: 6a42b6b47a2d8fc4a9b80aac1467422b, type: 2}

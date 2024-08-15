@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using Crafting;
 using UnityEngine;
 
 namespace Player.Interact.InteractBehaviors.Fill
@@ -50,6 +51,30 @@ namespace Player.Interact.InteractBehaviors.Fill
 
             _fillBottle.FillCor = null;
             yield return null;
+        }
+        
+        public IEnumerator PlayFill(float fillValueOfOtherBottle,CraftingController craftingControllerInstance)
+        {
+            Material liquid = GetComponent<MeshRenderer>().materials[2];
+
+            float endValue = fillValueOfOtherBottle;
+            float elapsedTime = 0f;
+            float currentValue;
+
+            while (liquid.GetFloat("_Fill") >= 0f)
+            {
+                elapsedTime += Time.deltaTime;
+                currentValue = Mathf.Lerp(0f, endValue, elapsedTime / duration);
+                liquid.SetFloat("_Fill", currentValue);
+                if (elapsedTime >= duration)
+                {
+                    currentValue = 0f;
+                    break;
+                }
+                yield return null;
+            }
+
+            craftingControllerInstance.currentFill = null;
         }
 
         public IEnumerator PlayEmpty(GameObject bottle)
