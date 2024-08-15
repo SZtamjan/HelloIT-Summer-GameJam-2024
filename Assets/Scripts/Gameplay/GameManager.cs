@@ -142,6 +142,10 @@ namespace Gameplay
                     UIController.Instance.WlaczPodsumowanie(true);
                     break;
 
+                case GameStates.LoseCuzOfRent:
+                    UIController.Instance.ShowEndGame(false);
+                    break;
+                
                 default:
                     Debug.LogError("Critical error");
                     Debug.LogError("State not found");
@@ -290,5 +294,6 @@ public enum GameStates
     VictoryNPC, //endczat, wyleczylismy
     LoseNPC, //npc umiera
     EndDay,
-    KoniecGry
+    KoniecGry,
+    LoseCuzOfRent
 }

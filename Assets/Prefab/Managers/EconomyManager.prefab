@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 598768349334929193}
   - component: {fileID: 6096760160677454568}
+  - component: {fileID: 511787411258780097}
+  - component: {fileID: 7807333034210121264}
   m_Layer: 0
   m_Name: EconomyManager
   m_TagString: Untagged
@@ -49,3 +51,34 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     cash: 58
+--- !u!114 &511787411258780097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6126486956611835079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 623d73aa9d87825408a4fcb57a1886a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textFullAlpha: 2
+  fadeDuration: 2
+--- !u!114 &7807333034210121264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6126486956611835079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2051f88f81bb4912bbf80555d051e5f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rentAmount:
+    updatedResources:
+      m_PersistentCalls:
+        m_Calls: []
+    cash: 20

@@ -8,6 +8,7 @@ using UnityEngine.UI;
 using Class;
 using Crafting;
 using Economy.EconomyActions;
+using Economy.Rent;
 using static Class.SkladnikiClass;
 using NaughtyAttributes;
 using NPC;
@@ -47,6 +48,9 @@ namespace UI
         
         [SerializeField][Foldout("Book")] private GameObject newsPaperArea;
         [SerializeField][Foldout("Book")] private PageManager newsPaperPageManager;
+
+        [SerializeField] [Foldout("Rent")] private GameObject rentObject;
+        [SerializeField] [Foldout("Rent")] private TextMeshProUGUI rentText;
 
         #region podsumowanie
 
@@ -271,18 +275,48 @@ namespace UI
             }
             else if (NPCController.Instance.KoniecDni())
             {
-                _podsumowanieDnia.SetActive(false);
-                _podsumowanieGry.SetActive(true);
-                UpdatePodsumowanieGry();
+                ShowEndGame(true);
             }
             else
             {
                 _podsumowanieDnia.SetActive(false);
-                GameManager.Instance.WlaczSklep();
+                SwitchRent(true);
             }
         }
 
-        public void UpdatePodsumowanieGry()
+        public void SwitchRent(bool value)
+        {
+            if (value)
+            {
+                rentObject.SetActive(true);
+                int cost = RentManager.Instance.RentAmount.Cash;
+                int cash = EconomyResources.Instance.Resources.Cash;
+                int left = cash - cost;
+                rentText.text = $"Koszt czynszu: {cost}\nIlość pieniędzy: {cash}\nPozostało: {left}";
+            }
+            else
+            {
+                if (RentManager.Instance.PayRent())
+                {
+                    rentObject.SetActive(false);
+                    GameManager.Instance.WlaczSklep();
+                }
+                else
+                {
+                    rentObject.SetActive(false);
+                    GameManager.Instance.ChangeGameState(GameStates.LoseCuzOfRent);
+                }
+            }
+        }
+
+        public void ShowEndGame(bool value)
+        {
+            _podsumowanieDnia.SetActive(false);
+            _podsumowanieGry.SetActive(true);
+            UpdatePodsumowanieGry(value);
+        }
+
+        public void UpdatePodsumowanieGry(bool value)
         {
             int iloscPacjentow = 0;
             int iloscZdrowych = 0;
@@ -299,7 +333,16 @@ namespace UI
                     else { iloscChorych++; }
                 }
             }
-            _staty.text = $"Obsłużyłeś{iloscPacjentow} pajcentów \n Z Tego Wyleczyłeś {iloscZdrowych} \n a zabiłeś {iloscChorych} ";
+
+            if (value)
+            {
+                _staty.text = $"Obsłużyłeś {iloscPacjentow} pajcentów \n Z Tego Wyleczyłeś {iloscZdrowych} \n A zabiłeś {iloscChorych} ";
+            }
+            else
+            {
+                _staty.text = $"Zbankrutowałeś!\nObsłużyłeś {iloscPacjentow} pajcentów \n Z Tego Wyleczyłeś {iloscZdrowych} \n A zabiłeś {iloscChorych} ";
+            }
+            
         }
 
         public void UpdatePodsumowanie()
